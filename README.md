@@ -119,7 +119,7 @@ While sharing the work, we also discussed the technologies that we will use in t
 | ----- | ----- |
 | Game development | Unity (2D), C\#, Unity Engine |
 | Machine Learning | Python, Tensorflow, ML.NET, Keras.NET |
-| DevOps | Git, GitHub Actions, Unity Cloud Build |
+| DevOps | Git, GitHub Actions |
 | Testing | NUnit, Unity Test Framework |
 | Version Control | Git, GitHub |
 | UX/UI | Unity UI Toolkit, Canvas System, Figma, Miro |
