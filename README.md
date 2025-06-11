@@ -153,3 +153,11 @@ While sharing the work, we also discussed the technologies that we will use in t
 3. First project release: [https://github.com/IU-Capstone-Project-2025/SignGame/releases/tag/0b](https://github.com/IU-Capstone-Project-2025/SignGame/releases/tag/0b)  
 4. Miro board: [https://miro.com/welcomeonboard/NjllanVudnhUd2Fhd3RGQUpCMlN0S3d2Nm9SakkrNzI1YVhsK0VKYmZpQkR6Titjc2xycjRyNnpYRTNGRTlvNyt5anpZa3R4TkZVUEdwNjIwdDVTcjdqQksyeUJBbTcreDg3cXNHWllsZFk2VWlhSHRvTTJ2aU5uU3BuR2hvRG5NakdSWkpBejJWRjJhRnhhb1UwcS9BPT0hdjE=?share\_link\_id=131423753479](https://miro.com/welcomeonboard/NjllanVudnhUd2Fhd3RGQUpCMlN0S3d2Nm9SakkrNzI1YVhsK0VKYmZpQkR6Titjc2xycjRyNnpYRTNGRTlvNyt5anpZa3R4TkZVUEdwNjIwdDVTcjdqQksyeUJBbTcreDg3cXNHWllsZFk2VWlhSHRvTTJ2aU5uU3BuR2hvRG5NakdSWkpBejJWRjJhRnhhb1UwcS9BPT0hdjE=?share_link_id=131423753479)
 
+### How to install and start the game
+
+1. Come to releases page by the link: [https://github.com/IU-Capstone-Project-2025/SignGame/tags](https://github.com/IU-Capstone-Project-2025/SignGame/tags)
+2. Choose the latest one
+3. Download archive file (**.zip**) and extract files in any folder
+4. Open installing (**.exe**) file
+5. Enjoy our game!
+
