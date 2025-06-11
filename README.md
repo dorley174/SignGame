@@ -13,10 +13,10 @@ Code repository: [link](https://github.com/IU-Capstone-Project-2025/SignGame)
 | Team Member | Telegram Alias | Email Address | Track | Responsibilities |
 | :---- | :---- | :---- | :---- | :---- |
 | Sviatoslav Fediaev *(Lead)* | [@SfedBro](http://t.me/SfedBro) | [s.fediaev@innopolis.university](mailto:s.fediaev@innopolis.university) | Game development | Enemy intelligence;<br>Enemy movement |
-| Danil Valiev | [@Dorley](http://t.me/Dorley) | [d.valiev@innopolis.university](mailto:d.valiev@innopolis.university) | DevOps Documentation | Linting;<br>Build optimizing;<br>Report structure   |
+| Danil Valiev | [@Dorley](http://t.me/Dorley) | [d.valiev@innopolis.university](mailto:d.valiev@innopolis.university) | DevOps <br>Documentation | Linting;<br>Build optimizing;<br>Report structure   |
 | Valeriia Kolesnikova | [@Codekd](http://t.me/Codekd) | [v.kolesnikova@innopolis.university](mailto:v.kolesnikova@innopolis.university) | Game development | Shop concept;<br>Characteristics display;<br>GUI |
-| Stanislav Delyukov | [@shines\_light](http://t.me/shines_light) | [s.delyukov@innopolis.university](mailto:s.delyukov@innopolis.university) | UX/UI Design | Draw models;<br>Sign patterns;<br>Game field structure   |
-| Fanis Zinnurov | [@qobz1e](http://t.me/qobz1e) | [f.zinnurov@innopolis.university](mailto:f.zinnurov@innopolis.university) | Testing Documentation | Bug finding;<br>GitHub repo structure |
+| Stanislav Delyukov | [@shines\_light](http://t.me/shines_light) | [s.delyukov@innopolis.university](mailto:s.delyukov@innopolis.university) | UX/UI <br>Design | Draw models;<br>Sign patterns;<br>Game field structure   |
+| Fanis Zinnurov | [@qobz1e](http://t.me/qobz1e) | [f.zinnurov@innopolis.university](mailto:f.zinnurov@innopolis.university) | Testing <br>Documentation | Bug finding;<br>GitHub repo structure |
 | Egor Savchenko | [@KOSMOGOR](http://t.me/KOSMOGOR) | [e.savchenko@innopolis.university](mailto:e.savchenko@innopolis.university) | Game development | Base movement;<br>Character abilities  |
 | Nikita Stepankov | [@NikitaXLV](http://t.me/NikitaXLV) | [n.stepankov@innopolis.university](mailto:n.stepankov@innopolis.university) | Machine Learning | Sign recognition;<br>Accuracy of drawn figures  |
 
