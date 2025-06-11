@@ -1,4 +1,0 @@
-repository "SignGame@KvadratoPhobiaIndie@cloud"
-  path "/"
-    br "/main"
-    co "/main"
