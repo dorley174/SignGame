@@ -1,4 +1,4 @@
-name: Lint C# Code (Unity Project)
+name: Lint and Autoformat C# Scripts
 
 on:
   push:
@@ -7,24 +7,31 @@ on:
     branches: [ DevOps ]
 
 jobs:
-  lint-csharp:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout code
       uses: actions/checkout@v3
-
-    - name: Set up .NET
-      uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'  
+        token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Install dotnet-format
-      run: dotnet tool install -g dotnet-format
+    - name: Install Node.js (for csharpier)
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
 
-    - name: Add dotnet tools to PATH
-      run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
+    - name: Install csharpier
+      run: npm install -g csharpier
 
-    - name: Run dotnet-format on Unity project
+    - name: Run csharpier on C# files
       run: |
-        dotnet format --verify-no-changes --verbosity diagnostic
+        csharpier Assets/Scripts/**/*.cs
+
+    - name: Commit and push changes if any
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git diff --cached --quiet || git commit -m "chore: autoformat C# scripts"
+        git push
