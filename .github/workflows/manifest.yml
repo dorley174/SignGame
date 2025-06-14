@@ -16,17 +16,31 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Install Node.js (for csharpier)
-      uses: actions/setup-node@v3
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v3
       with:
-        node-version: '18'
+        dotnet-version: '8.0.x'
 
-    - name: Install csharpier
-      run: npm install -g csharpier
+    - name: Install csharpier CLI tool
+      run: dotnet tool install --global csharpier
+
+    - name: Add dotnet tools to PATH
+      run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
     - name: Run csharpier on C# files
+      run: csharpier Assets/Scripts/**/*.cs
+
+    - name: Show changes per file
       run: |
-        csharpier Assets/Scripts/**/*.cs
+        if git diff --quiet; then
+          echo "No changes after formatting."
+        else
+          echo "Changes detected:"
+          git diff --name-only | while read file; do
+            changed_rows=$(git diff "$file" | grep -E '^\+|^\-' | grep -vE '^\+\+\+|^\-\-\-' | wc -l)
+            echo "Changed $changed_rows rows in file: \"$file\""
+          done
+        fi
 
     - name: Commit and push changes if any
       run: |
