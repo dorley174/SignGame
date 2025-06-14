@@ -1,43 +1,43 @@
-name: Lint and Autoformat C# Scripts
+name: Unity Build (Linux)
 
 on:
   push:
-    branches: [ DevOps ]
+    branches: [DevOps]
   pull_request:
-    branches: [ DevOps ]
+    branches: [DevOps]
 
 jobs:
-  lint:
+  build:
+    name: Build Unity Project
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Setup .NET SDK
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '8.0.x'
+      - name: Cache Unity packages
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/unity3d
+            ~/.config/unity3d
+          key: ${{ runner.os }}-unity-${{ hashFiles('**/Packages/manifest.json') }}
 
-    - name: Install csharpier CLI tool
-      run: dotnet tool install --global csharpier
+      - name: Install Unity
+        uses: game-ci/unity-installer@v2
+        with:
+          unityVersion: 6000.0.50f1
+      - name: Build project
+        uses: game-ci/unity-builder@v2
+        with:
+          unityVersion: 2022.3.10f1
+          targetPlatform: StandaloneLinux64
+          buildName: MyUnityBuild
+          projectPath: .
+          buildsPath: build
 
-    - name: Add dotnet tools to PATH
-      run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
-
-    - name: Run csharpier on C# files
-      run: csharpier format Assets/Scripts
-
-    - name: Show changes per file
-      run: |
-        if git diff --quiet; then
-          echo "No changes after formatting."
-        else
-          echo "Changes detected:"
-          git diff --name-only | while read file; do
-            changed_rows=$(git diff "$file" | grep -E '^\+|^\-' | grep -vE '^\+\+\+|^\-\-\-' | wc -l)
-            echo "Changed $changed_rows rows in file: \"$file\""
-          done
-        fi
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: UnityBuild-Linux
+          path: build/StandaloneLinux64
