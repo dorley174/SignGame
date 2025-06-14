@@ -2,9 +2,9 @@ name: Lint C# Code (Unity Project)
 
 on:
   push:
-    branches: [ main ]
+    branches: [ DevOps ]
   pull_request:
-    branches: [ main ]
+    branches: [ DevOps ]
 
 jobs:
   lint-csharp:
