@@ -109,6 +109,39 @@ We analyzed the market of such games and collected a small sum of information ab
 
 ## 
 
+## Releases
+
+### MVP 0 - Core Functionality (week 3)
+
+This is the minimal viable version focused on launching the essential mechanics of the game:
+
+* Base player movement
+
+* Main location
+
+* Spell use (keystrokes on the keyboard)
+
+* Store entity
+
+* Checkpoints, progress saving
+
+* Simple enemy
+
+### MVP 1 - Fully Functional Release (week 7)
+
+This version delivers the complete intended functionality for the course project:
+
+* Spell use (combo of abilities, elemental reaction)
+
+* Particles, assets
+
+* A variety of enemies: their complexity and reviving logic
+
+* Boss fight
+
+* Store items, coins logic
+
+
 ## Tech stack
 
 While sharing the work, we also discussed the technologies that we will use in the project. Convenient and practical technologies were selected for each IT sphere.
