@@ -28,7 +28,7 @@ jobs:
       run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
     - name: Run csharpier on C# files
-      run: csharpier Assets/Scripts/**/*.cs
+      run: csharpier format Assets/Scripts
 
     - name: Show changes per file
       run: |
