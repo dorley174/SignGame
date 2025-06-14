@@ -4,17 +4,28 @@ using System.Collections.Generic;
 
 public class Checkpoint : MonoBehaviour
 {
-    [SerializeField] private int coins;
-    
-    void Start()
+    private Transform player;
+    public int index;
+
+    void Awake()
     {
+        player = GameObject.Find("Player").transform;
+        if (DataContainer.checkpointIndex == index)
+        {
+            player.position = transform.position;
+        }
     }
 
-    // Method for checkpoint activation
-    void Activation()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        PlayerPrefs.Save();
-        int totalCoins = PlayerPrefs.GetInt("coins");
-        PlayerPrefs.SetInt("coins", totalCoins + coins);
+        Debug.Log("Trigger entered by: " + other.name);
+        if (other.CompareTag("Player"))
+        {
+            if (index > DataContainer.checkpointIndex)
+            {
+                DataContainer.checkpointIndex = index;
+            }
+            
+        }
     }
 }
