@@ -115,14 +115,25 @@ class HighConfidenceModel:
 def load_dataset(data_dir):
     images = []
     labels = []
-    class_names = {'circle': 0, 'rectangle': 1, 'unknown': 2}
+    class_names ={
+    'air1': 0, 'air2': 1, 'air3': 2,
+    'fire1': 3, 'fire2': 4, 'fire3': 5,
+    'dark1': 6, 'dark2': 7, 'dark3': 8,
+    'water1': 9, 'water2': 10, 'water3': 11,
+    'light1': 12, 'light2': 13, 'light3': 14,
+    'poison1': 15, 'poison2': 16, 'poison3': 17,
+    'reflection1': 18, 'reflection2': 19, 'reflection3': 20,
+    'life1': 21, 'life2': 22, 'life3': 23,
+    'earth1': 24, 'earth2': 25, 'earth3': 26}
     
     for filename in os.listdir(data_dir):
         if filename.endswith('.png'):
             if filename.startswith('x'):
-                label = 'unknown'
+                continue
             else:
-                label = ''.join([c for c in filename if not c.isdigit()]).split('.')[0]
+                label = filename[:filename.find('-')]
+                
+            
             
             img_path = os.path.join(data_dir, filename)
             img = Image.open(img_path).convert('L')
@@ -132,7 +143,7 @@ def load_dataset(data_dir):
             
             images.append(img_array)
             labels.append(class_names[label])
-    
+    print(set(labels))
     return np.array(images), np.array(labels)
 
 def plot_history(history):
@@ -154,7 +165,7 @@ def plot_history(history):
 
 if __name__ == "__main__":
     # Load and prepare data
-    dataset_dir = "images"
+    dataset_dir = "static_ml\images"
     X, y = load_dataset(dataset_dir)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     
