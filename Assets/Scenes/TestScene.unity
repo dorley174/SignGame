@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 840320653}
   - component: {fileID: 840320656}
   - component: {fileID: 840320655}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 899401006}
   - component: {fileID: 899401007}
   - component: {fileID: 899401010}
+  - component: {fileID: 899401011}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -540,12 +541,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalVelocity: 3
+  horizontalAcceleration: 30
   jumpVelocity: 8
   groundDetectionOffset: 0.1
-  playerLayerMask:
+  groundLayerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   onGround: 0
+--- !u!114 &899401011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899401005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0794fe08ee8be4dbadd94a16bbe227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 100
+  hp: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
