@@ -169,84 +169,323 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: Buy
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 0}
+  m_isSDFShader: 0
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 0}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 0
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_fontColor:
+    r: 0.19607843
+    g: 0.19607843
+    b: 0.19607843
+    a: 1
+  m_underlineColor:
+    rgba: 4294967295
+  m_strikethroughColor:
+    rgba: 4294967295
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: 
+    m_HashCode: 0
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 24
+  m_currentFontSize: 0
   m_fontSizeBase: 24
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 0
+  m_maxFontSize: 0
+  m_minFontSize: 0
+  m_AutoSizeIterationCount: 0
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
+  m_lineJustification: 0
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 0
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 0
+  m_marginHeight: 0
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 0}, characterCount: 0, spriteCount: 0, spaceCount: 0, wordCount: 0, linkCount: 0, lineCount: 0, pageCount: 0, materialCount: 0}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 0}
+  m_rectTransform: {fileID: 0}
+  m_PreviousRectTransformSize: {x: 0, y: 0}
+  m_PreviousPivotPosition: {x: 0, y: 0}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 0
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 0
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 0
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 0
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_FXScale: {x: 0, y: 0, z: 0}
+  m_InternalTextProcessingArraySize: 0
+  m_totalCharacterCount: 0
+  m_characterCount: 0
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 0
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 0
+  m_maxTextAscender: 0
+  m_maxCapHeight: 0
+  m_ElementAscender: 0
+  m_ElementDescender: 0
+  m_maxLineAscender: 0
+  m_maxLineDescender: 0
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4294967295
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 0
+  m_padding: 0
+  m_baselineOffset: 0
+  m_xAdvance: 0
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 0
+    m_Unicode: 0
+    m_TextAsset: {fileID: 0}
+    m_Glyph:
+      m_Index: 0
+      m_Metrics:
+        m_Width: 0
+        m_Height: 0
+        m_HorizontalBearingX: 0
+        m_HorizontalBearingY: 0
+        m_HorizontalAdvance: 0
+      m_GlyphRect:
+        m_X: 0
+        m_Y: 0
+        m_Width: 0
+        m_Height: 0
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 0
+    m_Scale: 0
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: -1
+  m_RectTransformCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_canvasRenderer: {fileID: 0}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 0
+  m_isFirstAllocation: 0
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &12734368
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -306,6 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_EnableCalled: 0
   m_Navigation:
     m_Mode: 3
     m_WrapAround: 0
@@ -315,18 +555,34 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    m_HighlightedColor:
+      r: 0.9607843
+      g: 0.9607843
+      b: 0.9607843
+      a: 1
+    m_PressedColor:
+      r: 0.78431374
+      g: 0.78431374
+      b: 0.78431374
+      a: 1
+    m_SelectedColor:
+      r: 0.9607843
+      g: 0.9607843
+      b: 0.9607843
+      a: 1
+    m_DisabledColor:
+      r: 0.78431374
+      g: 0.78431374
+      b: 0.78431374
+      a: 0.5019608
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+  m_SpriteState: {m_HighlightedSprite: {fileID: 0}, m_PressedSprite: {fileID: 0}, m_SelectedSprite: {fileID: 0}, m_DisabledSprite: {fileID: 0}}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -335,9 +591,15 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 68511090}
+  m_GroupsAllowInteraction: 1
+  m_CurrentIndex: -1
+  <isPointerInside>k__BackingField: 0
+  <isPointerDown>k__BackingField: 0
+  <hasSelection>k__BackingField: 0
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
 --- !u!114 &68511090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,13 +613,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -366,8 +636,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &68511091
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -442,13 +715,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 0.392
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -457,8 +738,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &101366221
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -517,84 +801,323 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: "\u0417\u043D\u0430\u043D\u0438\u044F \u043C\u0430\u0433\u0438\u0438"
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 0}
+  m_isSDFShader: 0
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 0}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 0
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  m_underlineColor:
+    rgba: 4294967295
+  m_strikethroughColor:
+    rgba: 4294967295
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: 
+    m_HashCode: 0
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 300
+  m_currentFontSize: 0
   m_fontSizeBase: 300
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 0
+  m_maxFontSize: 0
+  m_minFontSize: 0
+  m_AutoSizeIterationCount: 0
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
+  m_lineJustification: 0
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 0
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 6.8328404, y: 0, z: -0.98486257, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 0
+  m_marginHeight: 0
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 0}, characterCount: 0, spriteCount: 0, spaceCount: 0, wordCount: 0, linkCount: 0, lineCount: 0, pageCount: 0, materialCount: 0}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 0}
+  m_rectTransform: {fileID: 0}
+  m_PreviousRectTransformSize: {x: 0, y: 0}
+  m_PreviousPivotPosition: {x: 0, y: 0}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 0
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 0
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 0
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 0
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_FXScale: {x: 0, y: 0, z: 0}
+  m_InternalTextProcessingArraySize: 0
+  m_totalCharacterCount: 0
+  m_characterCount: 0
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 0
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 0
+  m_maxTextAscender: 0
+  m_maxCapHeight: 0
+  m_ElementAscender: 0
+  m_ElementDescender: 0
+  m_maxLineAscender: 0
+  m_maxLineDescender: 0
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4294967295
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 0
+  m_padding: 0
+  m_baselineOffset: 0
+  m_xAdvance: 0
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 0
+    m_Unicode: 0
+    m_TextAsset: {fileID: 0}
+    m_Glyph:
+      m_Index: 0
+      m_Metrics:
+        m_Width: 0
+        m_Height: 0
+        m_HorizontalBearingX: 0
+        m_HorizontalBearingY: 0
+        m_HorizontalAdvance: 0
+      m_GlyphRect:
+        m_X: 0
+        m_Y: 0
+        m_Width: 0
+        m_Height: 0
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 0
+    m_Scale: 0
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: -1
+  m_RectTransformCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_canvasRenderer: {fileID: 0}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 0
+  m_isFirstAllocation: 0
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &193220555
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -653,84 +1176,323 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: "\u0417\u0430\u043F\u0438\u0441\u0438 \u043E \u0431\u043E\u0433\u0430\u0445"
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 0}
+  m_isSDFShader: 0
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 0}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 0
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  m_underlineColor:
+    rgba: 4294967295
+  m_strikethroughColor:
+    rgba: 4294967295
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: 
+    m_HashCode: 0
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 300
+  m_currentFontSize: 0
   m_fontSizeBase: 300
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 0
+  m_maxFontSize: 0
+  m_minFontSize: 0
+  m_AutoSizeIterationCount: 0
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
+  m_lineJustification: 0
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 0
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 6.8328404, y: 0, z: -0.98486257, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 0
+  m_marginHeight: 0
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 0}, characterCount: 0, spriteCount: 0, spaceCount: 0, wordCount: 0, linkCount: 0, lineCount: 0, pageCount: 0, materialCount: 0}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 0}
+  m_rectTransform: {fileID: 0}
+  m_PreviousRectTransformSize: {x: 0, y: 0}
+  m_PreviousPivotPosition: {x: 0, y: 0}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 0
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 0
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 0
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 0
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_FXScale: {x: 0, y: 0, z: 0}
+  m_InternalTextProcessingArraySize: 0
+  m_totalCharacterCount: 0
+  m_characterCount: 0
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 0
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 0
+  m_maxTextAscender: 0
+  m_maxCapHeight: 0
+  m_ElementAscender: 0
+  m_ElementDescender: 0
+  m_maxLineAscender: 0
+  m_maxLineDescender: 0
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4294967295
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 0
+  m_padding: 0
+  m_baselineOffset: 0
+  m_xAdvance: 0
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 0
+    m_Unicode: 0
+    m_TextAsset: {fileID: 0}
+    m_Glyph:
+      m_Index: 0
+      m_Metrics:
+        m_Width: 0
+        m_Height: 0
+        m_HorizontalBearingX: 0
+        m_HorizontalBearingY: 0
+        m_HorizontalAdvance: 0
+      m_GlyphRect:
+        m_X: 0
+        m_Y: 0
+        m_Width: 0
+        m_Height: 0
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 0
+    m_Scale: 0
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: -1
+  m_RectTransformCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_canvasRenderer: {fileID: 0}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 0
+  m_isFirstAllocation: 0
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &201103128
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -789,84 +1551,323 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: "\u0428\u0438\u043F\u0430\u0441\u0442\u044B\u0439 \u043D\u0430\u0433\u0440\u0443\u0434\u043D\u0438\u043A"
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 0}
+  m_isSDFShader: 0
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 0}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 0
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  m_underlineColor:
+    rgba: 4294967295
+  m_strikethroughColor:
+    rgba: 4294967295
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: 
+    m_HashCode: 0
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 300
+  m_currentFontSize: 0
   m_fontSizeBase: 300
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 0
+  m_maxFontSize: 0
+  m_minFontSize: 0
+  m_AutoSizeIterationCount: 0
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
+  m_lineJustification: 0
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 0
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 6.8328404, y: 0, z: -0.98486257, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 0
+  m_marginHeight: 0
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 0}, characterCount: 0, spriteCount: 0, spaceCount: 0, wordCount: 0, linkCount: 0, lineCount: 0, pageCount: 0, materialCount: 0}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 0}
+  m_rectTransform: {fileID: 0}
+  m_PreviousRectTransformSize: {x: 0, y: 0}
+  m_PreviousPivotPosition: {x: 0, y: 0}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 0
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 0
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 0
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 0
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_FXScale: {x: 0, y: 0, z: 0}
+  m_InternalTextProcessingArraySize: 0
+  m_totalCharacterCount: 0
+  m_characterCount: 0
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 0
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 0
+  m_maxTextAscender: 0
+  m_maxCapHeight: 0
+  m_ElementAscender: 0
+  m_ElementDescender: 0
+  m_maxLineAscender: 0
+  m_maxLineDescender: 0
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4294967295
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 0
+  m_padding: 0
+  m_baselineOffset: 0
+  m_xAdvance: 0
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 0
+    m_Unicode: 0
+    m_TextAsset: {fileID: 0}
+    m_Glyph:
+      m_Index: 0
+      m_Metrics:
+        m_Width: 0
+        m_Height: 0
+        m_HorizontalBearingX: 0
+        m_HorizontalBearingY: 0
+        m_HorizontalAdvance: 0
+      m_GlyphRect:
+        m_X: 0
+        m_Y: 0
+        m_Width: 0
+        m_Height: 0
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 0
+    m_Scale: 0
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: -1
+  m_RectTransformCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_canvasRenderer: {fileID: 0}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 0
+  m_isFirstAllocation: 0
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &210400498
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -925,85 +1926,324 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: "\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0435
     \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u0435"
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 0}
+  m_isSDFShader: 0
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 0}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 0
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  m_underlineColor:
+    rgba: 4294967295
+  m_strikethroughColor:
+    rgba: 4294967295
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: 
+    m_HashCode: 0
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 300
+  m_currentFontSize: 0
   m_fontSizeBase: 300
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 0
+  m_maxFontSize: 0
+  m_minFontSize: 0
+  m_AutoSizeIterationCount: 0
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
+  m_lineJustification: 0
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 0
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 6.8328404, y: 0, z: -0.98486257, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 0
+  m_marginHeight: 0
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 0}, characterCount: 0, spriteCount: 0, spaceCount: 0, wordCount: 0, linkCount: 0, lineCount: 0, pageCount: 0, materialCount: 0}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 0}
+  m_rectTransform: {fileID: 0}
+  m_PreviousRectTransformSize: {x: 0, y: 0}
+  m_PreviousPivotPosition: {x: 0, y: 0}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 0
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 0
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 0
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 0
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_FXScale: {x: 0, y: 0, z: 0}
+  m_InternalTextProcessingArraySize: 0
+  m_totalCharacterCount: 0
+  m_characterCount: 0
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 0
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 0
+  m_maxTextAscender: 0
+  m_maxCapHeight: 0
+  m_ElementAscender: 0
+  m_ElementDescender: 0
+  m_maxLineAscender: 0
+  m_maxLineDescender: 0
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4294967295
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 0
+  m_padding: 0
+  m_baselineOffset: 0
+  m_xAdvance: 0
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 0
+    m_Unicode: 0
+    m_TextAsset: {fileID: 0}
+    m_Glyph:
+      m_Index: 0
+      m_Metrics:
+        m_Width: 0
+        m_Height: 0
+        m_HorizontalBearingX: 0
+        m_HorizontalBearingY: 0
+        m_HorizontalAdvance: 0
+      m_GlyphRect:
+        m_X: 0
+        m_Y: 0
+        m_Width: 0
+        m_Height: 0
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 0
+    m_Scale: 0
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: -1
+  m_RectTransformCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_canvasRenderer: {fileID: 0}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 0
+  m_isFirstAllocation: 0
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &252958841
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1062,84 +2302,323 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: Buy
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 0}
+  m_isSDFShader: 0
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 0}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 0
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_fontColor:
+    r: 0.19607843
+    g: 0.19607843
+    b: 0.19607843
+    a: 1
+  m_underlineColor:
+    rgba: 4294967295
+  m_strikethroughColor:
+    rgba: 4294967295
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: 
+    m_HashCode: 0
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 24
+  m_currentFontSize: 0
   m_fontSizeBase: 24
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 0
+  m_maxFontSize: 0
+  m_minFontSize: 0
+  m_AutoSizeIterationCount: 0
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
+  m_lineJustification: 0
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 0
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 0
+  m_marginHeight: 0
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 0}, characterCount: 0, spriteCount: 0, spaceCount: 0, wordCount: 0, linkCount: 0, lineCount: 0, pageCount: 0, materialCount: 0}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 0}
+  m_rectTransform: {fileID: 0}
+  m_PreviousRectTransformSize: {x: 0, y: 0}
+  m_PreviousPivotPosition: {x: 0, y: 0}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 0
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 0
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 0
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 0
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_FXScale: {x: 0, y: 0, z: 0}
+  m_InternalTextProcessingArraySize: 0
+  m_totalCharacterCount: 0
+  m_characterCount: 0
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 0
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 0
+  m_maxTextAscender: 0
+  m_maxCapHeight: 0
+  m_ElementAscender: 0
+  m_ElementDescender: 0
+  m_maxLineAscender: 0
+  m_maxLineDescender: 0
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4294967295
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 0
+  m_padding: 0
+  m_baselineOffset: 0
+  m_xAdvance: 0
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 0
+    m_Unicode: 0
+    m_TextAsset: {fileID: 0}
+    m_Glyph:
+      m_Index: 0
+      m_Metrics:
+        m_Width: 0
+        m_Height: 0
+        m_HorizontalBearingX: 0
+        m_HorizontalBearingY: 0
+        m_HorizontalAdvance: 0
+      m_GlyphRect:
+        m_X: 0
+        m_Y: 0
+        m_Width: 0
+        m_Height: 0
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 0
+    m_Scale: 0
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: -1
+  m_RectTransformCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_canvasRenderer: {fileID: 0}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 0
+  m_isFirstAllocation: 0
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &289230884
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1269,7 +2748,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &318014382
@@ -1337,84 +2816,323 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: "\u0421\u043A\u043E\u0440\u043E\u0445\u043E\u0434"
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 0}
+  m_isSDFShader: 0
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 0}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 0
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  m_underlineColor:
+    rgba: 4294967295
+  m_strikethroughColor:
+    rgba: 4294967295
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: 
+    m_HashCode: 0
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 300
+  m_currentFontSize: 0
   m_fontSizeBase: 300
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 0
+  m_maxFontSize: 0
+  m_minFontSize: 0
+  m_AutoSizeIterationCount: 0
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
+  m_lineJustification: 0
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 0
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 6.8328404, y: 0, z: -0.98486257, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 0
+  m_marginHeight: 0
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 0}, characterCount: 0, spriteCount: 0, spaceCount: 0, wordCount: 0, linkCount: 0, lineCount: 0, pageCount: 0, materialCount: 0}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 0}
+  m_rectTransform: {fileID: 0}
+  m_PreviousRectTransformSize: {x: 0, y: 0}
+  m_PreviousPivotPosition: {x: 0, y: 0}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 0
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 0
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 0
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 0
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_FXScale: {x: 0, y: 0, z: 0}
+  m_InternalTextProcessingArraySize: 0
+  m_totalCharacterCount: 0
+  m_characterCount: 0
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 0
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 0
+  m_maxTextAscender: 0
+  m_maxCapHeight: 0
+  m_ElementAscender: 0
+  m_ElementDescender: 0
+  m_maxLineAscender: 0
+  m_maxLineDescender: 0
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4294967295
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 0
+  m_padding: 0
+  m_baselineOffset: 0
+  m_xAdvance: 0
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 0
+    m_Unicode: 0
+    m_TextAsset: {fileID: 0}
+    m_Glyph:
+      m_Index: 0
+      m_Metrics:
+        m_Width: 0
+        m_Height: 0
+        m_HorizontalBearingX: 0
+        m_HorizontalBearingY: 0
+        m_HorizontalAdvance: 0
+      m_GlyphRect:
+        m_X: 0
+        m_Y: 0
+        m_Width: 0
+        m_Height: 0
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 0
+    m_Scale: 0
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: -1
+  m_RectTransformCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_canvasRenderer: {fileID: 0}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 0
+  m_isFirstAllocation: 0
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &406378812
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1473,84 +3191,323 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: Buy
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 0}
+  m_isSDFShader: 0
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 0}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 0
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_fontColor:
+    r: 0.19607843
+    g: 0.19607843
+    b: 0.19607843
+    a: 1
+  m_underlineColor:
+    rgba: 4294967295
+  m_strikethroughColor:
+    rgba: 4294967295
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: 
+    m_HashCode: 0
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 24
+  m_currentFontSize: 0
   m_fontSizeBase: 24
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 0
+  m_maxFontSize: 0
+  m_minFontSize: 0
+  m_AutoSizeIterationCount: 0
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
+  m_lineJustification: 0
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 0
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 0
+  m_marginHeight: 0
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 0}, characterCount: 0, spriteCount: 0, spaceCount: 0, wordCount: 0, linkCount: 0, lineCount: 0, pageCount: 0, materialCount: 0}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 0}
+  m_rectTransform: {fileID: 0}
+  m_PreviousRectTransformSize: {x: 0, y: 0}
+  m_PreviousPivotPosition: {x: 0, y: 0}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 0
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 0
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 0
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 0
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_FXScale: {x: 0, y: 0, z: 0}
+  m_InternalTextProcessingArraySize: 0
+  m_totalCharacterCount: 0
+  m_characterCount: 0
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 0
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 0
+  m_maxTextAscender: 0
+  m_maxCapHeight: 0
+  m_ElementAscender: 0
+  m_ElementDescender: 0
+  m_maxLineAscender: 0
+  m_maxLineDescender: 0
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4294967295
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 0
+  m_padding: 0
+  m_baselineOffset: 0
+  m_xAdvance: 0
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 0
+    m_Unicode: 0
+    m_TextAsset: {fileID: 0}
+    m_Glyph:
+      m_Index: 0
+      m_Metrics:
+        m_Width: 0
+        m_Height: 0
+        m_HorizontalBearingX: 0
+        m_HorizontalBearingY: 0
+        m_HorizontalAdvance: 0
+      m_GlyphRect:
+        m_X: 0
+        m_Y: 0
+        m_Width: 0
+        m_Height: 0
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 0
+    m_Scale: 0
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: -1
+  m_RectTransformCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_canvasRenderer: {fileID: 0}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 0
+  m_isFirstAllocation: 0
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &424709971
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1609,84 +3566,323 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: Ach
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_isSDFShader: 1
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 1
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_fontColor:
+    r: 0.19607843
+    g: 0.19607843
+    b: 0.19607843
+    a: 1
+  m_underlineColor:
+    rgba: 4281479730
+  m_strikethroughColor:
+    rgba: 4281479730
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: Normal
+    m_HashCode: -1183493901
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 24
+  m_currentFontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 0
+  m_maxFontSize: 72
+  m_minFontSize: 18
+  m_AutoSizeIterationCount: 1
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
+  m_lineJustification: 2
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 2
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 70
+  m_marginHeight: 70
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 556192645}, characterCount: 3, spriteCount: 0, spaceCount: 0, wordCount: 1, linkCount: 0, lineCount: 1, pageCount: 1, materialCount: 1}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 556192644}
+  m_rectTransform: {fileID: 556192644}
+  m_PreviousRectTransformSize: {x: 70, y: 70}
+  m_PreviousPivotPosition: {x: 0.5, y: 0.5}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 1
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 1
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 1
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 1
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_FXScale: {x: 1, y: 1, z: 1}
+  m_InternalTextProcessingArraySize: 3
+  m_totalCharacterCount: 3
+  m_characterCount: 3
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 2
+  m_lastVisibleCharacterOfLine: 2
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 3
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 21.726564
+  m_maxTextAscender: 21.726564
+  m_maxCapHeight: 16.465117
+  m_ElementAscender: 21.726564
+  m_ElementDescender: -5.085938
+  m_maxLineAscender: 21.726564
+  m_maxLineDescender: -5.085938
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4281479730
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 35
+  m_padding: 1.25
+  m_baselineOffset: 0
+  m_xAdvance: 41.30233
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 1
+    m_Unicode: 104
+    m_TextAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    m_Glyph:
+      m_Index: 75
+      m_Metrics:
+        m_Width: 38
+        m_Height: 62
+        m_HorizontalBearingX: 5
+        m_HorizontalBearingY: 62
+        m_HorizontalAdvance: 48
+      m_GlyphRect:
+        m_X: 430
+        m_Y: 666
+        m_Width: 38
+        m_Height: 62
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 75
+    m_Scale: 1
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: 1
+  m_RectTransformCorners:
+  - {x: -35, y: -35, z: 0}
+  - {x: -35, y: 35, z: 0}
+  - {x: 35, y: 35, z: 0}
+  - {x: 35, y: -35, z: 0}
+  m_canvasRenderer: {fileID: 556192646}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 1
+  m_isFirstAllocation: 1
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &556192646
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1745,13 +3941,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 0.392
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -1760,8 +3964,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &641743228
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1891,7 +4098,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &745102291
@@ -2052,6 +4259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_EnableCalled: 0
   m_Navigation:
     m_Mode: 3
     m_WrapAround: 0
@@ -2061,18 +4269,34 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    m_HighlightedColor:
+      r: 0.9607843
+      g: 0.9607843
+      b: 0.9607843
+      a: 1
+    m_PressedColor:
+      r: 0.78431374
+      g: 0.78431374
+      b: 0.78431374
+      a: 1
+    m_SelectedColor:
+      r: 0.9607843
+      g: 0.9607843
+      b: 0.9607843
+      a: 1
+    m_DisabledColor:
+      r: 0.78431374
+      g: 0.78431374
+      b: 0.78431374
+      a: 0.5019608
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+  m_SpriteState: {m_HighlightedSprite: {fileID: 0}, m_PressedSprite: {fileID: 0}, m_SelectedSprite: {fileID: 0}, m_DisabledSprite: {fileID: 0}}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -2081,9 +4305,15 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 760245340}
+  m_GroupsAllowInteraction: 1
+  m_CurrentIndex: -1
+  <isPointerInside>k__BackingField: 0
+  <isPointerDown>k__BackingField: 0
+  <hasSelection>k__BackingField: 0
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
 --- !u!114 &760245340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2097,13 +4327,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -2112,8 +4350,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &760245341
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2173,6 +4414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_EnableCalled: 0
   m_Navigation:
     m_Mode: 3
     m_WrapAround: 0
@@ -2182,18 +4424,34 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    m_HighlightedColor:
+      r: 0.9607843
+      g: 0.9607843
+      b: 0.9607843
+      a: 1
+    m_PressedColor:
+      r: 0.78431374
+      g: 0.78431374
+      b: 0.78431374
+      a: 1
+    m_SelectedColor:
+      r: 0.9607843
+      g: 0.9607843
+      b: 0.9607843
+      a: 1
+    m_DisabledColor:
+      r: 0.78431374
+      g: 0.78431374
+      b: 0.78431374
+      a: 0.5019608
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+  m_SpriteState: {m_HighlightedSprite: {fileID: 0}, m_PressedSprite: {fileID: 0}, m_SelectedSprite: {fileID: 0}, m_DisabledSprite: {fileID: 0}}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -2202,9 +4460,15 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 793996538}
+  m_GroupsAllowInteraction: 1
+  m_CurrentIndex: -1
+  <isPointerInside>k__BackingField: 0
+  <isPointerDown>k__BackingField: 0
+  <hasSelection>k__BackingField: 0
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
 --- !u!114 &793996538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2218,13 +4482,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -2233,8 +4505,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &793996539
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2293,13 +4568,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 0.392
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -2308,8 +4591,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &805920375
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2369,6 +4655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_EnableCalled: 0
   m_Navigation:
     m_Mode: 3
     m_WrapAround: 0
@@ -2378,18 +4665,34 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    m_HighlightedColor:
+      r: 0.9607843
+      g: 0.9607843
+      b: 0.9607843
+      a: 1
+    m_PressedColor:
+      r: 0.78431374
+      g: 0.78431374
+      b: 0.78431374
+      a: 1
+    m_SelectedColor:
+      r: 0.9607843
+      g: 0.9607843
+      b: 0.9607843
+      a: 1
+    m_DisabledColor:
+      r: 0.78431374
+      g: 0.78431374
+      b: 0.78431374
+      a: 0.5019608
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+  m_SpriteState: {m_HighlightedSprite: {fileID: 0}, m_PressedSprite: {fileID: 0}, m_SelectedSprite: {fileID: 0}, m_DisabledSprite: {fileID: 0}}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -2398,9 +4701,15 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 812085180}
+  m_GroupsAllowInteraction: 1
+  m_CurrentIndex: 0
+  <isPointerInside>k__BackingField: 0
+  <isPointerDown>k__BackingField: 0
+  <hasSelection>k__BackingField: 0
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
 --- !u!114 &812085180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2414,13 +4723,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -2429,8 +4746,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &812085181
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2510,7 +4830,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &840320654
@@ -2632,8 +4952,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SendPointerHoverToParent: 1
+  m_EventSystem: {fileID: 0}
+  m_InputOverride: {fileID: 0}
+  m_DefaultInput: {fileID: 0}
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
+  m_TrackedDeviceDragThresholdMultiplier: 2
   m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
@@ -2662,9 +4986,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SystemInputModules: []
+  m_CurrentInputModule: {fileID: 0}
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+  m_CurrentSelected: {fileID: 0}
+  m_HasFocus: 1
+  m_SelectionGuard: 0
+  m_Started: 0
+  m_IsTrackingUIToolkitPanels: 0
 --- !u!4 &850445069
 Transform:
   m_ObjectHideFlags: 0
@@ -2816,7 +5147,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &899401009
@@ -2850,9 +5181,10 @@ MonoBehaviour:
   jumpVelocity: 8
   groundDetectionOffset: 0.1
   playerLayerMask:
-    serializedVersion: 2
     m_Bits: 64
   onGround: 0
+  rb: {fileID: 0}
+  col: {fileID: 0}
 --- !u!1 &1017308670
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,13 +5266,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.8757578, b: 0, a: 1}
+  m_Color:
+    r: 1
+    g: 0.8757578
+    b: 0
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2949,8 +5289,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &1052056305
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3010,6 +5353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_EnableCalled: 0
   m_Navigation:
     m_Mode: 3
     m_WrapAround: 0
@@ -3019,18 +5363,34 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    m_HighlightedColor:
+      r: 0.9607843
+      g: 0.9607843
+      b: 0.9607843
+      a: 1
+    m_PressedColor:
+      r: 0.78431374
+      g: 0.78431374
+      b: 0.78431374
+      a: 1
+    m_SelectedColor:
+      r: 0.9607843
+      g: 0.9607843
+      b: 0.9607843
+      a: 1
+    m_DisabledColor:
+      r: 0.78431374
+      g: 0.78431374
+      b: 0.78431374
+      a: 0.5019608
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+  m_SpriteState: {m_HighlightedSprite: {fileID: 0}, m_PressedSprite: {fileID: 0}, m_SelectedSprite: {fileID: 0}, m_DisabledSprite: {fileID: 0}}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -3039,9 +5399,15 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1067570430}
+  m_GroupsAllowInteraction: 1
+  m_CurrentIndex: -1
+  <isPointerInside>k__BackingField: 0
+  <isPointerDown>k__BackingField: 0
+  <hasSelection>k__BackingField: 0
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
 --- !u!114 &1067570430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3055,13 +5421,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -3070,8 +5444,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &1067570431
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3131,6 +5508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_EnableCalled: 0
   m_Navigation:
     m_Mode: 3
     m_WrapAround: 0
@@ -3140,18 +5518,34 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    m_HighlightedColor:
+      r: 0.9607843
+      g: 0.9607843
+      b: 0.9607843
+      a: 1
+    m_PressedColor:
+      r: 0.78431374
+      g: 0.78431374
+      b: 0.78431374
+      a: 1
+    m_SelectedColor:
+      r: 0.9607843
+      g: 0.9607843
+      b: 0.9607843
+      a: 1
+    m_DisabledColor:
+      r: 0.78431374
+      g: 0.78431374
+      b: 0.78431374
+      a: 0.5019608
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+  m_SpriteState: {m_HighlightedSprite: {fileID: 0}, m_PressedSprite: {fileID: 0}, m_SelectedSprite: {fileID: 0}, m_DisabledSprite: {fileID: 0}}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -3160,9 +5554,15 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1098165825}
+  m_GroupsAllowInteraction: 1
+  m_CurrentIndex: -1
+  <isPointerInside>k__BackingField: 0
+  <isPointerDown>k__BackingField: 0
+  <hasSelection>k__BackingField: 0
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
 --- !u!114 &1098165825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3176,13 +5576,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -3191,8 +5599,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &1098165826
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3251,13 +5662,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 0.392
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -3266,8 +5685,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &1425437880
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3326,13 +5748,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 0.392
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -3341,8 +5771,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &1431535002
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3382,11 +5815,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_RootRaycaster: {fileID: 0}
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
-    serializedVersion: 2
     m_Bits: 4294967295
+  m_Canvas: {fileID: 0}
 --- !u!114 &1432332486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3409,6 +5843,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_Canvas: {fileID: 1432332487}
   m_PresetInfoIsWorld: 0
 --- !u!223 &1432332487
 Canvas:
@@ -3506,84 +5941,323 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: Buy
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 0}
+  m_isSDFShader: 0
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 0}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 0
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_fontColor:
+    r: 0.19607843
+    g: 0.19607843
+    b: 0.19607843
+    a: 1
+  m_underlineColor:
+    rgba: 4294967295
+  m_strikethroughColor:
+    rgba: 4294967295
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: 
+    m_HashCode: 0
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 24
+  m_currentFontSize: 0
   m_fontSizeBase: 24
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 0
+  m_maxFontSize: 0
+  m_minFontSize: 0
+  m_AutoSizeIterationCount: 0
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
+  m_lineJustification: 0
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 0
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 0
+  m_marginHeight: 0
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 0}, characterCount: 0, spriteCount: 0, spaceCount: 0, wordCount: 0, linkCount: 0, lineCount: 0, pageCount: 0, materialCount: 0}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 0}
+  m_rectTransform: {fileID: 0}
+  m_PreviousRectTransformSize: {x: 0, y: 0}
+  m_PreviousPivotPosition: {x: 0, y: 0}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 0
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 0
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 0
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 0
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_FXScale: {x: 0, y: 0, z: 0}
+  m_InternalTextProcessingArraySize: 0
+  m_totalCharacterCount: 0
+  m_characterCount: 0
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 0
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 0
+  m_maxTextAscender: 0
+  m_maxCapHeight: 0
+  m_ElementAscender: 0
+  m_ElementDescender: 0
+  m_maxLineAscender: 0
+  m_maxLineDescender: 0
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4294967295
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 0
+  m_padding: 0
+  m_baselineOffset: 0
+  m_xAdvance: 0
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 0
+    m_Unicode: 0
+    m_TextAsset: {fileID: 0}
+    m_Glyph:
+      m_Index: 0
+      m_Metrics:
+        m_Width: 0
+        m_Height: 0
+        m_HorizontalBearingX: 0
+        m_HorizontalBearingY: 0
+        m_HorizontalAdvance: 0
+      m_GlyphRect:
+        m_X: 0
+        m_Y: 0
+        m_Width: 0
+        m_Height: 0
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 0
+    m_Scale: 0
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: -1
+  m_RectTransformCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_canvasRenderer: {fileID: 0}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 0
+  m_isFirstAllocation: 0
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &1582876487
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3642,84 +6316,323 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 0}
+  m_isSDFShader: 0
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 0}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 0
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  m_underlineColor:
+    rgba: 4294967295
+  m_strikethroughColor:
+    rgba: 4294967295
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: 
+    m_HashCode: 0
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 300
+  m_currentFontSize: 0
   m_fontSizeBase: 300
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 0
+  m_maxFontSize: 0
+  m_minFontSize: 0
+  m_AutoSizeIterationCount: 0
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
+  m_lineJustification: 0
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 0
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 0, y: 0, z: -0.0013733535, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 0
+  m_marginHeight: 0
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 0}, characterCount: 0, spriteCount: 0, spaceCount: 0, wordCount: 0, linkCount: 0, lineCount: 0, pageCount: 0, materialCount: 0}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 0}
+  m_rectTransform: {fileID: 0}
+  m_PreviousRectTransformSize: {x: 0, y: 0}
+  m_PreviousPivotPosition: {x: 0, y: 0}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 0
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 0
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 0
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 0
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_FXScale: {x: 0, y: 0, z: 0}
+  m_InternalTextProcessingArraySize: 0
+  m_totalCharacterCount: 0
+  m_characterCount: 0
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 0
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 0
+  m_maxTextAscender: 0
+  m_maxCapHeight: 0
+  m_ElementAscender: 0
+  m_ElementDescender: 0
+  m_maxLineAscender: 0
+  m_maxLineDescender: 0
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4294967295
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 0
+  m_padding: 0
+  m_baselineOffset: 0
+  m_xAdvance: 0
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 0
+    m_Unicode: 0
+    m_TextAsset: {fileID: 0}
+    m_Glyph:
+      m_Index: 0
+      m_Metrics:
+        m_Width: 0
+        m_Height: 0
+        m_HorizontalBearingX: 0
+        m_HorizontalBearingY: 0
+        m_HorizontalAdvance: 0
+      m_GlyphRect:
+        m_X: 0
+        m_Y: 0
+        m_Width: 0
+        m_Height: 0
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 0
+    m_Scale: 0
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: -1
+  m_RectTransformCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_canvasRenderer: {fileID: 0}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 0
+  m_isFirstAllocation: 0
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &1651244778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3778,13 +6691,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 0.392
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 0
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -3793,8 +6714,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_AlphaHitTestMinimumThreshold: 0
+  m_Tracked: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  m_CachedReferencePixelsPerUnit: 100
 --- !u!222 &1663112100
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3853,84 +6777,323 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: Buy
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 0}
+  m_isSDFShader: 0
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 0}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 0
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_fontColor:
+    r: 0.19607843
+    g: 0.19607843
+    b: 0.19607843
+    a: 1
+  m_underlineColor:
+    rgba: 4294967295
+  m_strikethroughColor:
+    rgba: 4294967295
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: 
+    m_HashCode: 0
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 24
+  m_currentFontSize: 0
   m_fontSizeBase: 24
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 0
+  m_maxFontSize: 0
+  m_minFontSize: 0
+  m_AutoSizeIterationCount: 0
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
+  m_lineJustification: 0
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 0
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 0
+  m_marginHeight: 0
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 0}, characterCount: 0, spriteCount: 0, spaceCount: 0, wordCount: 0, linkCount: 0, lineCount: 0, pageCount: 0, materialCount: 0}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 0}
+  m_rectTransform: {fileID: 0}
+  m_PreviousRectTransformSize: {x: 0, y: 0}
+  m_PreviousPivotPosition: {x: 0, y: 0}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 0
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 0
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 0
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 0
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_FXScale: {x: 0, y: 0, z: 0}
+  m_InternalTextProcessingArraySize: 0
+  m_totalCharacterCount: 0
+  m_characterCount: 0
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 0
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 0
+  m_maxTextAscender: 0
+  m_maxCapHeight: 0
+  m_ElementAscender: 0
+  m_ElementDescender: 0
+  m_maxLineAscender: 0
+  m_maxLineDescender: 0
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4294967295
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 0
+  m_padding: 0
+  m_baselineOffset: 0
+  m_xAdvance: 0
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 0
+    m_Unicode: 0
+    m_TextAsset: {fileID: 0}
+    m_Glyph:
+      m_Index: 0
+      m_Metrics:
+        m_Width: 0
+        m_Height: 0
+        m_HorizontalBearingX: 0
+        m_HorizontalBearingY: 0
+        m_HorizontalAdvance: 0
+      m_GlyphRect:
+        m_X: 0
+        m_Y: 0
+        m_Width: 0
+        m_Height: 0
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 0
+    m_Scale: 0
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: -1
+  m_RectTransformCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_canvasRenderer: {fileID: 0}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 0
+  m_isFirstAllocation: 0
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &1883486916
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4010,7 +7173,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1885687392
@@ -4109,84 +7272,323 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_RaycastTarget: 1
+  m_RaycastTargetCache: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
   m_Maskable: 1
+  m_IsMaskingGraphic: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_text: 0
+  m_IsTextBackingStringDirty: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_isSDFShader: 1
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_currentMaterialIndex: 0
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
+  m_isMaterialDirty: 1
   m_fontColor32:
-    serializedVersion: 2
     rgba: 4278233087
-  m_fontColor: {r: 1, g: 0.65441054, b: 0, a: 1}
+  m_fontColor:
+    r: 1
+    g: 0.65441054
+    b: 0
+    a: 1
+  m_underlineColor:
+    rgba: 4278233087
+  m_strikethroughColor:
+    rgba: 4278233087
+  m_ConvertToLinearSpace: 0
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
   m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: Normal
+    m_HashCode: -1183493901
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: []
+    m_ClosingTagArray: []
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
-    serializedVersion: 2
     rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_currentEnvMapRotation: {x: 0, y: 0, z: 0}
+  m_hasEnvMapProperty: 0
   m_fontSize: 214.3
+  m_currentFontSize: 214.3
   m_fontSizeBase: 300
   m_fontWeight: 400
+  m_FontWeightInternal: 400
   m_enableAutoSizing: 1
+  m_maxFontSize: 214.35
+  m_minFontSize: 214.3
+  m_AutoSizeIterationCount: 15
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 1
   m_fontSizeMin: 24
   m_fontSizeMax: 350
   m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
+  m_lineJustification: 1
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_duoSpace: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
   m_TextWrappingMode: 1
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_LastBaseGlyphIndex: 0
+  m_ActiveFontFeatures:
+  - 1801810542
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
+  m_isOverlay: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
+  m_renderMode: 255
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+  m_isNewPage: 0
   m_margin: {x: 0, y: 0, z: -2.8426208, w: 0.50251746}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 303.16263
+  m_marginHeight: 239.45139
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 1945337081}, characterCount: 1, spriteCount: 0, spaceCount: 0, wordCount: 1, linkCount: 0, lineCount: 1, pageCount: 1, materialCount: 1}
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 1945337083}
+  m_rectTransform: {fileID: 1945337083}
+  m_PreviousRectTransformSize: {x: 300.32, y: 239.9539}
+  m_PreviousPivotPosition: {x: 0.5, y: 0.5}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
   m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_RenderedWidth: 0
+  m_isPreferredWidthDirty: 1
+  m_preferredHeight: 0
+  m_RenderedHeight: 0
+  m_isPreferredHeightDirty: 1
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 1
+  m_isWaitingOnResourceLoad: 0
+  m_inputSource: 0
+  m_fontScaleMultiplier: 1
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isTextLayoutPhase: 0
+  m_FXRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_FXScale: {x: 1, y: 1, z: 1}
+  m_InternalTextProcessingArraySize: 1
+  m_totalCharacterCount: 1
+  m_characterCount: 1
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 1
+  m_lineVisibleSpaceCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 194.00009
+  m_maxTextAscender: 194.00009
+  m_maxCapHeight: 147.01976
+  m_ElementAscender: 194.00009
+  m_ElementDescender: -45.41318
+  m_maxLineAscender: 194.00009
+  m_maxLineDescender: -45.41318
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4278233087
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 35
+  m_padding: 1.25
+  m_baselineOffset: 0
+  m_xAdvance: 119.6093
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 1
+    m_Unicode: 48
+    m_TextAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    m_Glyph:
+      m_Index: 19
+      m_Metrics:
+        m_Width: 42
+        m_Height: 61
+        m_HorizontalBearingX: 3
+        m_HorizontalBearingY: 60
+        m_HorizontalAdvance: 48
+      m_GlyphRect:
+        m_X: 532
+        m_Y: 249
+        m_Width: 42
+        m_Height: 61
+      m_Scale: 1
+      m_AtlasIndex: 0
+      m_ClassDefinitionType: 0
+    m_GlyphIndex: 19
+    m_Scale: 1
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_isRebuildingLayout: 0
+  m_ShouldUpdateCulling: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
   m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: 0.3
+  m_RectTransformCorners:
+  - {x: -150.16, y: -119.97695, z: 0}
+  - {x: -150.16, y: 119.97695, z: 0}
+  - {x: 150.16, y: 119.97695, z: 0}
+  - {x: 150.16, y: -119.97695, z: 0}
+  m_canvasRenderer: {fileID: 1945337082}
+  m_canvas: {fileID: 1432332487}
+  m_CanvasScaleFactor: 1
+  m_isFirstAllocation: 1
+  m_max_characters: 8
   m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
 --- !u!222 &1945337082
 CanvasRenderer:
   m_ObjectHideFlags: 0
