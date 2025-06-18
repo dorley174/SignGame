@@ -87,6 +87,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &6751723738138586362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6798334097850243840}
+  m_Layer: 0
+  m_Name: Ground Checker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6798334097850243840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6751723738138586362}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.764, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 282918613760511247}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6756031849493778654
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,11 +128,12 @@ GameObject:
   m_Component:
   - component: {fileID: 282918613760511247}
   - component: {fileID: 4466998318849624972}
+  - component: {fileID: 6779593553360534519}
   - component: {fileID: 6493718901206921931}
   - component: {fileID: 3264134942053604156}
   - component: {fileID: 3661724723506086405}
-  - component: {fileID: 8581599539730578904}
   - component: {fileID: 5495617925394699211}
+  - component: {fileID: 8835969361204809701}
   m_Layer: 0
   m_Name: mage
   m_TagString: Player
@@ -119,11 +151,12 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 747815365633153528}
   - {fileID: 6542800115032726514}
+  - {fileID: 6798334097850243840}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4466998318849624972
@@ -181,6 +214,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6779593553360534519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6756031849493778654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 283da228703071a4ea91fcc8b397dc93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 6
+  acceleration: 50
+  deceleration: 50
+  airControl: 0.8
+  jumpForce: 12
+  maxJumps: 1
+  jumpCutMultiplier: 0.5
+  coyoteTime: 0.1
+  jumpBufferTime: 0.1
+  dashSpeed: 20
+  dashTime: 0.2
+  dashCooldown: 0.5
+  canDashInAir: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheckSize: {x: 0.4, y: 0.1}
+  groundCheck: {fileID: 6798334097850243840}
 --- !u!50 &6493718901206921931
 Rigidbody2D:
   serializedVersion: 5
@@ -252,7 +315,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6756031849493778654}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f44e5058fbef074c8bbbdd8df5128e6, type: 3}
   m_Name: 
@@ -264,20 +327,6 @@ MonoBehaviour:
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 64
---- !u!114 &8581599539730578904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6756031849493778654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c82855996efa654cb8579cb6d4c52ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reverse: 0
-  facingRight: 0
 --- !u!95 &5495617925394699211
 Animator:
   serializedVersion: 7
@@ -300,6 +349,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8835969361204809701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6756031849493778654}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c82855996efa654cb8579cb6d4c52ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reverse: 0
+  facingRight: 0
 --- !u!1 &7703783001909327375
 GameObject:
   m_ObjectHideFlags: 0
