@@ -48,8 +48,8 @@ jobs:
           fi
  
   code-lint:
-    needs: validate-structure
     runs-on: ubuntu-latest
+    needs: validate-structure
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -59,27 +59,24 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Install dotnet-format tool
-        run: dotnet tool install -g dotnet-format
+      - name: Install CSharpier tool
+        run: dotnet tool install -g csharpier
 
-      - name: Run dotnet-format and calculate score
+      - name: Run code style check with CSharpier
         run: |
           export PATH="$PATH:$HOME/.dotnet/tools"
-          echo "🔍 Running dotnet-format analysis..."
 
-          # Найдём все C# файлы
+          echo "🔍 Searching for .cs files..."
           cs_files=$(find . -type f -name "*.cs")
           echo "📂 Files to be checked:"
           echo "$cs_files"
           echo "$cs_files" > cs_file_list.txt
 
-          # Запустим dotnet-format на каждом из файлов индивидуально
           issue_count=0
           while IFS= read -r file; do
-            result=$(dotnet format "$file" --verify-no-changes --severity info 2>&1 || true)
-            echo "$result"
-            # Увеличим счётчик, если были изменения
-            if echo "$result" | grep -q "formatted"; then
+            output=$(csharpier --check "$file" 2>&1 || true)
+            echo "$output"
+            if echo "$output" | grep -q "formatted"; then
               issue_count=$((issue_count + 1))
             fi
           done < cs_file_list.txt
@@ -88,7 +85,6 @@ jobs:
 
           score=$(echo "scale=1; 10 - ($issue_count / 5)" | bc)
           score=$(echo "$score" | awk '{ if ($1 < 0) print 0; else print }')
-
           echo "📊 Code style score: $score/10"
 
           if (( $(echo "$score < 3" | bc -l) )); then
