@@ -42,9 +42,9 @@ After meeting with TA, we came to the conclusion that we need to change a little
 
 4. **Main menu** for future management of various play settings;
 
-5. Basic **signs**, their **combinations**, the ability to **draw**, as well as a **model for their recognition**
+5. Basic **signs**, their **combinations**, the ability to **draw**, as well as a **model for their recognition**;
 
-6. **Checkpoints** and *saving overall progress* when leaving the game
+6. **Checkpoints** and *saving overall progress* when leaving the game.
 
 
 ### Design
@@ -142,9 +142,17 @@ Stanislav Delyukov:
 
 ### Plan for Week #3
 
-* Prepare a project for **MVP stage**
+The main goal of this week is to *prepar*e a project *for MVP stage*. To fulfill this goal, we need to **finalize or complete the following tasks**:
 
-* Improve combo
+* **Achievement system**: their *list* and mechanics of *achieve*
+
+* A full opportunity to **buy items in a store**
+
+* **Design** of a merchant, items, currencies for purchase, main menu and enemies
+
+* The mechanics of **revival** of enemies
+
+* **Spell testing** using the keyboard
 
 *For more information about the tasks, their distribution and responsibilities for each development week, you can visit our [TaskBoard](https://trello.com/b/g98QWgRE/sign-game)*
 
