@@ -4,17 +4,17 @@ Week \#2
 
 ### **Sources**
 
-Code repository: [GitHub](https://github.com/IU-Capstone-Project-2025/SignGame)
+* Code repository: [GitHub](https://github.com/IU-Capstone-Project-2025/SignGame)
 
-Project TaskBoard: [Trello](https://trello.com/b/g98QWgRE/sign-game)
+* Project TaskBoard: [Trello](https://trello.com/b/g98QWgRE/sign-game)
 
-Interactive board of ideas: [Miro](https://miro.com/welcomeonboard/NjllanVudnhUd2Fhd3RGQUpCMlN0S3d2Nm9SakkrNzI1YVhsK0VKYmZpQkR6Titjc2xycjRyNnpYRTNGRTlvNyt5anpZa3R4TkZVUEdwNjIwdDVTcjdqQksyeUJBbTcreDg3cXNHWllsZFk2VWlhSHRvTTJ2aU5uU3BuR2hvRG5NakdSWkpBejJWRjJhRnhhb1UwcS9BPT0hdjE=?share_link_id=131423753479)
+* Interactive board of ideas: [Miro](https://miro.com/welcomeonboard/NjllanVudnhUd2Fhd3RGQUpCMlN0S3d2Nm9SakkrNzI1YVhsK0VKYmZpQkR6Titjc2xycjRyNnpYRTNGRTlvNyt5anpZa3R4TkZVUEdwNjIwdDVTcjdqQksyeUJBbTcreDg3cXNHWllsZFk2VWlhSHRvTTJ2aU5uU3BuR2hvRG5NakdSWkpBejJWRjJhRnhhb1UwcS9BPT0hdjE=?share_link_id=131423753479)
 
-Week 2 game preview: [Demo](https://drive.google.com/file/d/1ZlTNwjkXILwU5iktKVtxvfjICnNpqr_m/view?usp=sharing)
+* Week 2 demo preview: [Demo](https://drive.google.com/file/d/1ZlTNwjkXILwU5iktKVtxvfjICnNpqr_m/view?usp=sharing)
 
 This week our project is prepared for the **MVP stage** - the functionality of the tasks required for it is *gradually added and tested*.
 
-### Main changes
+### Changes
 
 After meeting with TA, we came to the conclusion that we need to change the distribution of duties in the team slightly:
 
@@ -28,9 +28,32 @@ After meeting with TA, we came to the conclusion that we need to change the dist
 | Nikita Stepankov  | [n.stepankov@innopolis.university](mailto:n.stepankov@innopolis.university) | Machine Learning | 
 | Stanislav Delyukov  | [s.delyukov@innopolis.university](mailto:s.delyukov@innopolis.university) | UX/UI <br>Design | 
 
-### 
+## Project specific progress
 
-## 
+### Game development
+
+1. xxx
+
+2. xxx
+
+3. xxx
+
+### Design
+
+1. xxx
+
+2. xxx
+
+3. xxx
+
+### ML
+
+1. xxx
+
+2. xxx
+
+3. xxx
+
 
 ## Weekly commitments
 
@@ -72,11 +95,13 @@ Egor Savchenko:
 
 Danil Valiev:
 
-* 1
+* Created and actively manage [TaskBoard](https://trello.com/b/g98QWgRE/sign-game);
   
-* 2
+* Creation [CI/CD](https://github.com/IU-Capstone-Project-2025/SignGame/tree/main/.github/workflows) for directory validation, as well as code lint;
   
-* 3
+* Organization of team meetings, as well as meetings with TA;
+
+* [Week #1 report](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/week1.md) editing and creating [Week 2 report](https://github.com/IU-Capstone-Project-2025/SignGame/edit/reports/week2.md).
 
 Nikita Stepankov:
 
