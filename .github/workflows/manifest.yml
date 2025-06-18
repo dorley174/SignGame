@@ -1,4 +1,4 @@
-name: Check Project Structure
+name: Check Project Structure and Lint
 
 on:
   push:
@@ -48,3 +48,42 @@ jobs:
             echo "⚠️ No matching level files found"
           fi
 
+  code-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x' 
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build project
+        run: dotnet build --no-restore
+
+      - name: Run code analysis and rate score
+        run: |
+          echo "🔍 Running static code analysis..."
+          output=$(dotnet build -warnasmessage)
+          echo "$output" > build_output.txt
+          
+          warnings=$(grep -c "warning" build_output.txt || true)
+          errors=$(grep -c "error" build_output.txt || true)
+
+          total_issues=$((warnings + errors))
+          echo "⚠️ Found $warnings warnings, ❌ $errors errors"
+
+          # Псевдооценка: 10 - min(10, total_issues / 5)
+          score=$(echo "scale=1; 10 - ($total_issues / 5)" | bc)
+          score=$(echo "$score" | awk '{ if ($1 < 0) print 0; else print }')
+
+          echo "📊 Code quality score: $score/10"
+
+          if (( $(echo "$score < 3" | bc -l) )); then
+            echo "❌ Code quality too low"
+            exit 1
+          fi
