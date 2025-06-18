@@ -48050,6 +48050,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1231191988748743822, guid: 18a58a3b6ef5e5745baf005e50113955, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2206903335249312023, guid: 18a58a3b6ef5e5745baf005e50113955, type: 3}
       propertyPath: m_Name
       value: ShopCanvas
@@ -48856,6 +48860,10 @@ PrefabInstance:
     - target: {fileID: 6756031849493778654, guid: 2e211742f13c79f4da49f37851b24bdd, type: 3}
       propertyPath: m_Name
       value: mage
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779593553360534519, guid: 2e211742f13c79f4da49f37851b24bdd, type: 3}
+      propertyPath: canDashInAir
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
