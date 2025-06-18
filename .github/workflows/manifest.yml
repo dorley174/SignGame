@@ -38,7 +38,8 @@ jobs:
           if [ -f "Assets/Scenes/MainMenuScene.unity" ]; then
             echo "✅ 'MainMenuScene.unity' found"
           else
-            echo "❌ 'MainMenuScene.unity' is missing"
+            echo "❌ Start menu 'MainMenuScene.unity' is missing!"
+            exit 1
           fi
 
       - name: Search for level files matching pattern
