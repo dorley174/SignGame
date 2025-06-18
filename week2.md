@@ -74,7 +74,7 @@ After meeting with TA, we came to the conclusion that we need to change a little
 
 ## Weekly commitments
 
-### Individual contribution of each participan
+### Individual contribution of each participant
 
 Each member of the team made significant changes this week!
 
@@ -114,13 +114,13 @@ Egor Savchenko:
 
 Danil Valiev:
 
-* Created and actively manage [TaskBoard](https://trello.com/b/g98QWgRE/sign-game);
+* Creation and actively management [TaskBoard](https://trello.com/b/g98QWgRE/sign-game);
   
 * Creation [CI/CD](https://github.com/IU-Capstone-Project-2025/SignGame/tree/main/.github/workflows) for directory validation, as well as code lint;
   
 * Organization of team meetings, as well as meetings with TA;
 
-* [Week #1 report](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/week1.md) editing and creating [Week 2 report](https://github.com/IU-Capstone-Project-2025/SignGame/edit/reports/week2.md).
+* [Week 1 report](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/week1.md) editing and creating [Week 2 report](https://github.com/IU-Capstone-Project-2025/SignGame/edit/reports/week2.md).
 
 Nikita Stepankov:
 
