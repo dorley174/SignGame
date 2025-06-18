@@ -15,35 +15,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Check for 'Assets' folder
+      - name: Check for level folder
         run: |
           if [ -d "Assets" ]; then
-            echo "✅ 'Assets' folder found"
+            echo "✅ 'Assets' folder found!"
+            if [ -d "Assets/Scenes" ]; then
+              echo "✅ 'Assets/Scenes' folder found!"
+            else
+              echo "❌ 'Assets/Scenes' folder is missing!"
+              exit 1
+            fi
           else
-            echo "❌ 'Assets' folder is missing"
+            echo "❌ 'Assets' folder is missing!"
             exit 1
           fi
 
-      - name: Check for 'Assets/Scenes' folder
+      - name: Check for menu and level scenes
         run: |
-          if [ -d "Assets/Scenes" ]; then
-            echo "✅ 'Assets/Scenes' folder found"
-          else
-            echo "❌ 'Assets/Scenes' folder is missing"
-            exit 1
-          fi
-
-      - name: Check for 'MainMenuScene.unity' file
-        run: |
+          echo "🔍 Searching start menu scene..."
           if [ -f "Assets/Scenes/MainMenuScene.unity" ]; then
             echo "✅ 'MainMenuScene.unity' found"
           else
             echo "❌ Start menu 'MainMenuScene.unity' is missing!"
             exit 1
           fi
-
-      - name: Search for level files matching pattern
-        run: |
           echo "🔍 Searching for level files..."
           matches=$(find Assets/Scenes -type f -regextype posix-extended -regex ".*/Level[A-Z][a-zA-Z]{0,9}[0-9]{3}\.unity")
           if [ -n "$matches" ]; then
@@ -52,3 +47,4 @@ jobs:
           else
             echo "⚠️ No matching level files found"
           fi
+
