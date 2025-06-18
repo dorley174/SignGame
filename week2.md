@@ -18,7 +18,7 @@ This week our project is prepared for the **MVP stage** - the functionality of t
 
 ### Changes
 
-After meeting with TA, we came to the conclusion that we need to change the distribution of duties in the team slightly:
+After meeting with TA, we came to the conclusion that we need to change a little the distribution of member roles in our team:
 
 | Team Member |  Email Address | Track | 
 | :----  | :---- | :---- |
@@ -34,11 +34,18 @@ After meeting with TA, we came to the conclusion that we need to change the dist
 
 ### Game development
 
-1. xxx
+1. Added **release** with **test location** to check current project progress;
 
-2. xxx
+2. **Main hero** *design* and *animations*, *dash* ability;
 
-3. xxx
+3. Created **enemies**, their *taunt* logic and base *movement*;
+
+4. **Main menu** for future management of various play settings;
+
+5. Basic **signs**, their **combinations**, the ability to **draw**, as well as a **model for their recognition**
+
+6. **Checkpoints** and *saving overall progress* when leaving the game
+
 
 ### Design
 
@@ -135,12 +142,12 @@ Stanislav Delyukov:
 
 ### Plan for Week #3
 
+* Prepare a project for **MVP stage**
+
+* Improve combo
+
 *For more information about the tasks, their distribution and responsibilities for each development week, you can visit our [TaskBoard](https://trello.com/b/g98QWgRE/sign-game)*
 
-### How to install and start the game
+##
 
-1. Come to releases page by the link: [https://github.com/IU-Capstone-Project-2025/SignGame/tags](https://github.com/IU-Capstone-Project-2025/SignGame/tags)
-2. Choose the latest one
-3. Download archive file (**.zip**) and extract files in any folder
-4. Open installing (**.exe**) file
-5. Enjoy our game!
+Innopolis University, Capstone project, June 2025
