@@ -47,7 +47,7 @@ jobs:
             echo "⚠️ No matching level files found"
           fi
 
-  lint:
+  code-lint:
     runs-on: ubuntu-latest
     needs: validate-structure
     steps:
@@ -57,33 +57,29 @@ jobs:
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x' 
+          dotnet-version: '8.0.x'
 
-      - name: Restore dependencies
-        run: dotnet restore
+      - name: Install dotnet-format tool
+        run: dotnet tool install -g dotnet-format
 
-      - name: Build project
-        run: dotnet build --no-restore
-
-      - name: Run code analysis and rate score
+      - name: Run dotnet-format and calculate score
         run: |
-          echo "🔍 Running static code analysis..."
-          output=$(dotnet build -warnasmessage)
-          echo "$output" > build_output.txt
-          
-          warnings=$(grep -c "warning" build_output.txt || true)
-          errors=$(grep -c "error" build_output.txt || true)
+          export PATH="$PATH:$HOME/.dotnet/tools"
+          echo "🔍 Running dotnet-format analysis..."
 
-          total_issues=$((warnings + errors))
-          echo "⚠️ Found $warnings warnings, ❌ $errors errors"
+          output=$(dotnet format --verify-no-changes --severity info 2>&1 || true)
+          echo "$output"
 
-          # Псевдооценка: 10 - min(10, total_issues / 5)
-          score=$(echo "scale=1; 10 - ($total_issues / 5)" | bc)
+          issues=$(echo "$output" | grep -E 'formatted|\[info\]' | wc -l)
+          echo "⚠️ Found $issues formatting issues"
+
+          score=$(echo "scale=1; 10 - ($issues / 5)" | bc)
           score=$(echo "$score" | awk '{ if ($1 < 0) print 0; else print }')
 
-          echo "📊 Code quality score: $score/10"
+          echo "📊 Code style score: $score/10"
 
           if (( $(echo "$score < 3" | bc -l) )); then
-            echo "❌ Code quality too low"
+            echo "❌ Code style too poor"
             exit 1
           fi
+
