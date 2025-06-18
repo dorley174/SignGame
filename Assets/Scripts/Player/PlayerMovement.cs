@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayerMask;
 
     [Header("Debug")]
-    [SerializeField] bool onGround = false;
+    [SerializeField] public bool onGround { get; private set; } = false;
 
     Rigidbody2D rb;
     CapsuleCollider2D col;
@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void CheckOnGround() {
-        onGround = Physics2D.CapsuleCast(col.bounds.center, col.size, col.direction, 0, Vector2.down, groundDetectionOffset, ~groundLayerMask);
+        onGround = Physics2D.CapsuleCast(col.bounds.center, col.size, col.direction, 0, Vector2.down, groundDetectionOffset, groundLayerMask);
     }
 
     void HandleJump() {

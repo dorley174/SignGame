@@ -9,7 +9,6 @@ public class LineDrawer : MonoBehaviour
     public float secondsForLineToLive = 3f;
 
     LineRenderer currentLine;
-    Vector3 lastMousePos;
 
     void Update() {
         Draw();
@@ -22,20 +21,18 @@ public class LineDrawer : MonoBehaviour
             currentLine.SetPosition(0, GetMouseLocalPos());
         } else if (Input.GetMouseButton(0)) {
             if (DistanceToLastPoint(GetMouseLocalPos()) < minDistanceForNewPoint) return;
-            lastMousePos = Input.mousePosition;
             ++currentLine.positionCount;
             int posIndex = currentLine.positionCount - 1;
             currentLine.SetPosition(posIndex, GetMouseLocalPos());
-        } else {
+        } else if (Input.GetMouseButtonUp(0)) {
             StartCoroutine(RemoveLineAfter(currentLine, secondsForLineToLive));
             currentLine = null;
         }
     }
 
     Vector3 GetMouseLocalPos() {
-        Vector3 mouseCamPos = cam.ScreenToWorldPoint(Input.mousePosition);
-        mouseCamPos.z = transform.position.z;
-        Vector3 localPos = transform.InverseTransformPoint(mouseCamPos);
+        Vector3 mouseDrawerPos = GetMouseWorldPos();
+        Vector3 localPos = transform.InverseTransformPoint(mouseDrawerPos);
         return localPos;
     }
 
@@ -47,5 +44,12 @@ public class LineDrawer : MonoBehaviour
     IEnumerator RemoveLineAfter(LineRenderer line, float secondsToWait) {
         yield return new WaitForSeconds(secondsToWait);
         Destroy(line.gameObject);
+    }
+
+    public Vector3 GetMouseWorldPos() {
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        Plane xy = new(Vector3.forward, new Vector3(0, 0, transform.position.z));
+        xy.Raycast(ray, out float distance);
+        return ray.GetPoint(distance);
     }
 }
