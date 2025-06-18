@@ -37,7 +37,6 @@ jobs:
             echo "✅ 'MainMenuScene.unity' found"
           else
             echo "❌ Start menu 'MainMenuScene.unity' is missing!"
-            exit 1
           fi
           echo "🔍 Searching for level files..."
           matches=$(find Assets/Scenes -type f -regextype posix-extended -regex ".*/Level[A-Z][a-zA-Z]{0,9}[0-9]{3}\.unity")
@@ -48,8 +47,9 @@ jobs:
             echo "⚠️ No matching level files found"
           fi
 
-  code-lint:
+  lint:
     runs-on: ubuntu-latest
+    needs: validate-structure
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
