@@ -3,12 +3,16 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D), typeof(CapsuleCollider2D))]
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement")]
     public float horizontalVelocity = 3f;
+    public float horizontalAcceleration = 30f;
+    [Header("Jump")]
     public float jumpVelocity = 5f;
+    [Header("Ground")]
     public float groundDetectionOffset;
-    public LayerMask playerLayerMask;
+    public LayerMask groundLayerMask;
 
-    [Tooltip("Debug")]
+    [Header("Debug")]
     [SerializeField] bool onGround = false;
 
     Rigidbody2D rb;
@@ -26,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void CheckOnGround() {
-        onGround = Physics2D.CapsuleCast(col.bounds.center, col.size, col.direction, 0, Vector2.down, groundDetectionOffset, ~playerLayerMask);
+        onGround = Physics2D.CapsuleCast(col.bounds.center, col.size, col.direction, 0, Vector2.down, groundDetectionOffset, ~groundLayerMask);
     }
 
     void HandleJump() {
@@ -34,6 +38,9 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void HandleMovement() {
-        rb.linearVelocityX = Input.GetAxis("Horizontal") * horizontalVelocity;
+        float targetVelocity = Input.GetAxisRaw("Horizontal") * horizontalVelocity;
+        float currentVelocity = rb.linearVelocityX;
+        float newVelocity = Mathf.MoveTowards(currentVelocity, targetVelocity, horizontalAcceleration * Time.deltaTime);
+        rb.linearVelocityX = newVelocity;
     }
 }
