@@ -12,6 +12,8 @@ Week \#2
 
 * Week 2 demo preview: [Demo](https://drive.google.com/file/d/1ZlTNwjkXILwU5iktKVtxvfjICnNpqr_m/view?usp=sharing)
 
+* Week 2 release: [Release](https://github.com/IU-Capstone-Project-2025/SignGame/releases/tag/w2)
+
 This week our project is prepared for the **MVP stage** - the functionality of the tasks required for it is *gradually added and tested*.
 
 ### Changes
@@ -22,11 +24,11 @@ After meeting with TA, we came to the conclusion that we need to change the dist
 | :----  | :---- | :---- |
 | Sviatoslav Fediaev *(Lead)*  | [s.fediaev@innopolis.university](mailto:s.fediaev@innopolis.university) | Unity developer | 
 | Valeriia Kolesnikova  | [v.kolesnikova@innopolis.university](mailto:v.kolesnikova@innopolis.university) | Unity developer | 
-| Fanis Zinnurov  | [f.zinnurov@innopolis.university](mailto:f.zinnurov@innopolis.university) | Unity developer<br>~~Testing~~<br>~~Documentation~~ | 
+| Fanis Zinnurov  | [f.zinnurov@innopolis.university](mailto:f.zinnurov@innopolis.university) | Unity developer | 
 | Egor Savchenko  | [e.savchenko@innopolis.university](mailto:e.savchenko@innopolis.university) | Unity developer | 
-| Danil Valiev  | [d.valiev@innopolis.university](mailto:d.valiev@innopolis.university) | Project Manager<br>DevOps<br>~~Documentation~~ | 
+| Danil Valiev  | [d.valiev@innopolis.university](mailto:d.valiev@innopolis.university) | Project Manager<br>DevOps| 
 | Nikita Stepankov  | [n.stepankov@innopolis.university](mailto:n.stepankov@innopolis.university) | Machine Learning | 
-| Stanislav Delyukov  | [s.delyukov@innopolis.university](mailto:s.delyukov@innopolis.university) | UX/UI <br>Design | 
+| Stanislav Delyukov  | [s.delyukov@innopolis.university](mailto:s.delyukov@innopolis.university) | UX/UI<br>Design | 
 
 ## Project specific progress
 
@@ -40,19 +42,27 @@ After meeting with TA, we came to the conclusion that we need to change the dist
 
 ### Design
 
-1. xxx
+1. Created all location textures in front and background, stone assets for platforms; 
 
-2. xxx
+2. Developed main character movement and animations in different states;
 
-3. xxx
+3. Checkpoint logic and design;
+
+4. Created test location. 
 
 ### ML
 
-1. xxx
+1. Detailed dataset creation with different object positions;
 
-2. xxx
+2. Model training for existing symbols;
 
-3. xxx
+3. Model attaching to C# code from Unity.
+
+### DevOps
+
+1. Check of existing and new scenes from the incoming commit;
+
+2. Code check for grammatical errors and evaluation system.
 
 
 ## Weekly commitments
@@ -63,35 +73,37 @@ Each member of the team made significant changes this week!
 
 Sviatoslav Fediaev:
 
-* 1
+* Enemies base movement
   
-* 2
+* Enemies taunt mechanics to the main character
   
-* 3
+* [Signs](https://trello.com/c/EogBRSpp/11-паттерны-символов), their effects and patterns
 
 Valeriia Kolesnikova:
 
-* 1
+* Implemented the functionality of the [starting menu](https://github.com/IU-Capstone-Project-2025/SignGame/tree/MainMenuScene)
   
-* 2
+* Created a [store functionality](github.com/IU-Capstone-Project-2025/SignGame/commits/TheStorageSystem/)
   
-* 3
+* [Checkpoint mechanics](https://github.com/IU-Capstone-Project-2025/SignGame/commit/3f190782281aeec257330792547c0222a0084cff)
+
+* Implemented the collection of coins, as well as the saving and tracking of their number
 
 Fanis Zinnurov:
 
-* 1
+* Applying effects on the target
   
-* 2
+* Implemented combos
   
-* 3
+* 3 types of [attacks](https://github.com/IU-Capstone-Project-2025/SignGame/tree/Attacks) for 3 different elements
 
 Egor Savchenko:
 
-* 1
+* Main hero [movement](https://github.com/IU-Capstone-Project-2025/SignGame/commit/855b1ef1dc5ca194d613dba6b07f91a550649d32) 
   
-* 2
+* Drawing signs on the screen
   
-* 3
+* [Combining features](https://github.com/IU-Capstone-Project-2025/SignGame/tree/Development) of all participants of this week in a single job
 
 Danil Valiev:
 
@@ -105,19 +117,21 @@ Danil Valiev:
 
 Nikita Stepankov:
 
-* 1
+* Developed Dataset Creation
   
-* 2
+* Model [training](https://github.com/IU-Capstone-Project-2025/SignGame/blob/feature_ml/static_ml/model.py)
   
-* 3
+* Connecting a recognition model to all project
 
 Stanislav Delyukov:
 
-* 1
+* Assets and sprites of all textures were developed to build the first levels
   
-* 2
+* Created [test location](https://drive.google.com/file/d/1ZlTNwjkXILwU5iktKVtxvfjICnNpqr_m/view?usp=sharing) 
   
-* 3
+* Main hero texture and animations
+
+* Created checkpoint design and logic 
 
 ### Plan for Week #3
 
