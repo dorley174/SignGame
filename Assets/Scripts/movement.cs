@@ -63,6 +63,10 @@ public class PlayerController : MonoBehaviour
             coyoteTimer = coyoteTime;
             jumpsLeft = maxJumps;
         }
+        else if (!isGrounded && jumpsLeft == maxJumps)
+        {
+            jumpsLeft -= 1;
+        }
         else
         {
             coyoteTimer -= Time.deltaTime;
@@ -78,7 +82,7 @@ public class PlayerController : MonoBehaviour
         {
             jumpBufferTimer -= Time.deltaTime;
         }
-
+        
         // проверка раннего прыжка, времени кайота и проверки на доп прыжки
         if (jumpBufferTimer > 0f && (coyoteTimer > 0f || jumpsLeft > 0))
         {
