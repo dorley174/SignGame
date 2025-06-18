@@ -1,196 +1,161 @@
-Week \#1
+Week \#2
 
-## Project description
+## Detailed Requirements Elaboration
 
-### **Sign Game**
+### **Sources**
 
-Code repository: [link](https://github.com/IU-Capstone-Project-2025/SignGame)
+* Code repository: [GitHub](https://github.com/IU-Capstone-Project-2025/SignGame)
 
-**Sign game** project is a *2D Unity platformer*, about *a mysterious wizard*, seeking to defeat evil in its world by his power \- *magical runes*.
+* Project TaskBoard: [Trello](https://trello.com/b/g98QWgRE/sign-game)
 
-### Team members
+* Interactive board of ideas: [Miro](https://miro.com/welcomeonboard/NjllanVudnhUd2Fhd3RGQUpCMlN0S3d2Nm9SakkrNzI1YVhsK0VKYmZpQkR6Titjc2xycjRyNnpYRTNGRTlvNyt5anpZa3R4TkZVUEdwNjIwdDVTcjdqQksyeUJBbTcreDg3cXNHWllsZFk2VWlhSHRvTTJ2aU5uU3BuR2hvRG5NakdSWkpBejJWRjJhRnhhb1UwcS9BPT0hdjE=?share_link_id=131423753479)
 
-| Team Member | Telegram Alias | Email Address | Track | Responsibilities |
-| :---- | :---- | :---- | :---- | :---- |
-| Sviatoslav Fediaev *(Lead)* | [@SfedBro](http://t.me/SfedBro) | [s.fediaev@innopolis.university](mailto:s.fediaev@innopolis.university) | Game development | Enemy intelligence;<br>Enemy movement |
-| Danil Valiev | [@Dorley](http://t.me/Dorley) | [d.valiev@innopolis.university](mailto:d.valiev@innopolis.university) | DevOps <br>Documentation | Linting;<br>Build optimizing;<br>Report structure   |
-| Valeriia Kolesnikova | [@Codekd](http://t.me/Codekd) | [v.kolesnikova@innopolis.university](mailto:v.kolesnikova@innopolis.university) | Game development | Shop concept;<br>Characteristics display;<br>GUI |
-| Stanislav Delyukov | [@shines\_light](http://t.me/shines_light) | [s.delyukov@innopolis.university](mailto:s.delyukov@innopolis.university) | UX/UI <br>Design | Draw models;<br>Sign patterns;<br>Game field structure   |
-| Fanis Zinnurov | [@qobz1e](http://t.me/qobz1e) | [f.zinnurov@innopolis.university](mailto:f.zinnurov@innopolis.university) | Testing <br>Documentation | Bug finding;<br>GitHub repo structure |
-| Egor Savchenko | [@KOSMOGOR](http://t.me/KOSMOGOR) | [e.savchenko@innopolis.university](mailto:e.savchenko@innopolis.university) | Game development | Base movement;<br>Character abilities  |
-| Nikita Stepankov | [@NikitaXLV](http://t.me/NikitaXLV) | [n.stepankov@innopolis.university](mailto:n.stepankov@innopolis.university) | Machine Learning | Sign recognition;<br>Accuracy of drawn figures  |
+* Week 2 demo preview: [Demo](https://drive.google.com/file/d/1ZlTNwjkXILwU5iktKVtxvfjICnNpqr_m/view?usp=sharing)
 
-## Brainstorming
+* Week 2 release: [Release](https://github.com/IU-Capstone-Project-2025/SignGame/releases/tag/w2)
 
-### Ideas during brainstorming 
+This week our project is prepared for the **MVP stage** - the functionality of the tasks required for it is *gradually added and tested*.
 
-We decide to complete our Ideas in order, by their priority:
+### Changes
 
-1. **Drawing symbols for battle** *(main idea)*  
-   The player *fights with enemies*, quickly *drawing* the *symbols* that appear on the screen.   
-   The more accurately and faster it draws \- the stronger and faster the attack. 
+After meeting with TA, we came to the conclusion that we need to change a little the distribution of member roles in our team:
 
-2. **Symbols combo**  
-   Several symbols drawn *in a row and for a small period* of time will create a *combo*.   
-   Combo delivers a *critical damage* depending on the complexity of the symbols.  
-     
-3. **Increasing the complexity of enemies and values**  
-   The player *defeats the enemies*, uses progressively more *complex combos*, learning new symbols and getting new abilities.  
-     
-4. **Progressing with store purchases**  
-   From the defeated enemies and some places on the map, the player will receive *coins* that can be exchanged with the merchant in the *store*.   
-   Store \- a *single (small) shop* at a *certain point on the map.*	  
-     
-5. **Setting up the skills of the character**  
-   The possibility of *customization* of the hero: set some of *available symbols/abilities.*
+| Team Member |  Email Address | Track | 
+| :----  | :---- | :---- |
+| Sviatoslav Fediaev *(Lead)*  | [s.fediaev@innopolis.university](mailto:s.fediaev@innopolis.university) | Unity developer | 
+| Valeriia Kolesnikova  | [v.kolesnikova@innopolis.university](mailto:v.kolesnikova@innopolis.university) | Unity developer | 
+| Fanis Zinnurov  | [f.zinnurov@innopolis.university](mailto:f.zinnurov@innopolis.university) | Unity developer | 
+| Egor Savchenko  | [e.savchenko@innopolis.university](mailto:e.savchenko@innopolis.university) | Unity developer | 
+| Danil Valiev  | [d.valiev@innopolis.university](mailto:d.valiev@innopolis.university) | Project Manager<br>DevOps| 
+| Nikita Stepankov  | [n.stepankov@innopolis.university](mailto:n.stepankov@innopolis.university) | Machine Learning | 
+| Stanislav Delyukov  | [s.delyukov@innopolis.university](mailto:s.delyukov@innopolis.university) | UX/UI<br>Design | 
 
- 
+## Project specific progress
 
-### Brief market research / problem validation 
+### Game development
 
-We analyzed the market of such games and collected a small sum of information about them:
+1. Added **release** with **test location** to check current project progress;
 
-| Game                         | Short description                                     | Advantages                                | Disadvantages               |
-|------------------------------|------------------------------------------------------|-------------------------------------------|-----------------------------|
-| Divineko                     | Draw symbols to defeat enemy                         | Same fight principle;<br>2D;<br>Simple game design | Rare gameplay changes;<br>Monotonous |
-| Turgor                      | Manage resources used to draw symbols, to live       | Economy strategy;<br>3D                   | Old game;<br>Too “innovative” |
-| Magic Touch: Wizard for Hire| Draw symbols as fast as you can to make score better | Simple game structure;<br>Max-score principle | No progression;<br>Monotonous  |
+2. **Main hero** *design* and *animations*, *dash* ability;
 
-## Basic requirements
+3. Created **enemies**, their *taunt* logic and base *movement*;
 
-### Target users and their primary needs
+4. **Main menu** for future management of various play settings;
 
-**Target audience:**
+5. Basic **signs**, their **combinations**, the ability to **draw**, as well as a **model for their recognition**;
 
-* Casual players looking for fast and unique combat mechanics.  
-    
-* Fans of original games with elements of reaction skills.  
-    
-* Players interested in visually aesthetic 2D games with fantasy stylistics.
-
-**Primary needs:**
-
-* Dynamic and intuitive gameplay with understandable mechanics.  
-    
-* Satisfaction from overcoming the call: to draw accurately and quickly.  
-    
-* Progress and reward for the development of skills (new symbols, abilities, enemies).  
-    
-* A clear visual feedback of actions.
-
-### User stories
-
-* As a user, I want controls to be plain and responsive.   
-    
-* As a user, I want a detailed tutorial to easily acknowledge basic mechanics.  
-    
-* As a user, I want a high-quality atmosphere for complete/full immersion.
-
-* As a user of complex games, I want an interesting battle with the boss to acquire pleasant memories after passing.  
-    
-* As a user, I want to see interesting mechanics in the game, so that it is interesting to play throughout the game.
+6. **Checkpoints** and *saving overall progress* when leaving the game.
 
 
-### 
+### Design
 
-### Initial scope
+1. Created all location textures in front and background, stone assets for platforms; 
 
-* Drawing signs to win enemies;  
-    
-* Pumping, opening interesting mechanics;  
-    
-* Vertical 2D game;  
-    
-* Boss at the end of the location;  
-    
-* Reviving enemies;  
-    
-* One resource for pumping and access to the boss.
+2. Developed main character movement and animations in different states;
 
-## 
+3. Checkpoint logic and design;
 
-## Releases
+4. Created test location. 
 
-### MVP 0 - Core Functionality (week 3)
+### ML
 
-This is the minimal viable version focused on launching the essential mechanics of the game:
+1. Detailed dataset creation with different object positions;
 
-* Base player movement
+2. Model training for existing symbols;
 
-* Main location
+3. Model attaching to C# code from Unity.
 
-* Spell use (keystrokes on the keyboard)
+### DevOps
 
-* Store entity
+1. Check of existing and new scenes from the incoming commit;
 
-* Checkpoints, progress saving
+2. Code check for grammatical errors and evaluation system.
 
-* Simple enemy
-
-### MVP 1 - Fully Functional Release (week 7)
-
-This version delivers the complete intended functionality for the course project:
-
-* Spell use (combo of abilities, elemental reaction)
-
-* Particles, assets
-
-* A variety of enemies: their complexity and reviving logic
-
-* Boss fight
-
-* Store items, coins logic
-
-
-## Tech stack
-
-While sharing the work, we also discussed the technologies that we will use in the project. Convenient and practical technologies were selected for each IT sphere.
-
-### Technology distribution
-
-| IT sphere  | Technology                                                                  |
-| ----- | ----- |
-| Game development | Unity (2D), C\#, Unity Engine |
-| Machine Learning | Python, Tensorflow, ML.NET, Keras.NET |
-| DevOps | Git, GitHub Actions |
-| Testing | NUnit, Unity Test Framework |
-| Version Control | Git, GitHub |
-| UX/UI | Unity UI Toolkit, Canvas System, Figma, Miro |
-| Asset Management | Unity Asset Store |
-
-### 
-
-### 
-
-## 
 
 ## Weekly commitments
 
 ### Individual contribution of each participant
 
-| Member name          | Week #1 contribution                                                                                          |
-|----------------------|---------------------------------------------------------------------------------------------------------------|
-| Sviatoslav Fediaev   | Setting up team members and their roles;<br>Repository setup;<br>Participation in Miro;<br>Assisting in meeting organization; |
-| Danil Valiev         | The biggest part in PDF Report creating;<br>Assisting in first code setup;<br>Participation in Miro;<br>Technologies Stack organization. |
-| Valeriia Kolesnikova | Assisting with member recruiting;<br>Meeting and stand-ups organization;<br>Participation in Miro.            |
-| Stanislav Delyukov   | Miro board creation and management;<br>Ready-made concepts of a character and enemies.                        |
-| Fanis Zinnurov       | Completing a GitHub part of week #1 work report;<br>Assisting in selection of stack technologies;<br>Participation in Miro. |
-| Egor Savchenko       | Discussing the concept of the game;<br>Formatting Main branch;<br>Loading the first Build.                    |
-| Nikita Stepankov     | Writing the first ML algorithm on a separate branch;<br>Work in dataset generation and model design;<br>Participation in Miro |
+Each member of the team made significant changes this week!
 
+Sviatoslav Fediaev:
 
-### Contribution references:
+* Enemies base movement
+  
+* Enemies taunt mechanics to the main character
+  
+* [Signs](https://trello.com/c/EogBRSpp/11-паттерны-символов), their effects and patterns
 
-1. Main branch in GitHub repository: [https://github.com/IU-Capstone-Project-2025/SignGame](https://github.com/IU-Capstone-Project-2025/SignGame)  
-2. ML branch in GitHub repository: [https://github.com/IU-Capstone-Project-2025/SignGame/tree/feature\_ml](https://github.com/IU-Capstone-Project-2025/SignGame/tree/feature_ml)  
-3. First project release: [https://github.com/IU-Capstone-Project-2025/SignGame/releases/tag/0b](https://github.com/IU-Capstone-Project-2025/SignGame/releases/tag/0b)  
-4. Miro board: [https://miro.com/welcomeonboard/NjllanVudnhUd2Fhd3RGQUpCMlN0S3d2Nm9SakkrNzI1YVhsK0VKYmZpQkR6Titjc2xycjRyNnpYRTNGRTlvNyt5anpZa3R4TkZVUEdwNjIwdDVTcjdqQksyeUJBbTcreDg3cXNHWllsZFk2VWlhSHRvTTJ2aU5uU3BuR2hvRG5NakdSWkpBejJWRjJhRnhhb1UwcS9BPT0hdjE=?share\_link\_id=131423753479](https://miro.com/welcomeonboard/NjllanVudnhUd2Fhd3RGQUpCMlN0S3d2Nm9SakkrNzI1YVhsK0VKYmZpQkR6Titjc2xycjRyNnpYRTNGRTlvNyt5anpZa3R4TkZVUEdwNjIwdDVTcjdqQksyeUJBbTcreDg3cXNHWllsZFk2VWlhSHRvTTJ2aU5uU3BuR2hvRG5NakdSWkpBejJWRjJhRnhhb1UwcS9BPT0hdjE=?share_link_id=131423753479)
+Valeriia Kolesnikova:
 
-### How to install and start the game
+* Implemented the functionality of the [starting menu](https://github.com/IU-Capstone-Project-2025/SignGame/tree/MainMenuScene)
+  
+* Created a [store functionality](github.com/IU-Capstone-Project-2025/SignGame/commits/TheStorageSystem/)
+  
+* [Checkpoint mechanics](https://github.com/IU-Capstone-Project-2025/SignGame/commit/3f190782281aeec257330792547c0222a0084cff)
 
-1. Come to releases page by the link: [https://github.com/IU-Capstone-Project-2025/SignGame/tags](https://github.com/IU-Capstone-Project-2025/SignGame/tags)
-2. Choose the latest one
-3. Download archive file (**.zip**) and extract files in any folder
-4. Open installing (**.exe**) file
-5. Enjoy our game!
+* Implemented the collection of coins, as well as the saving and tracking of their number
 
+Fanis Zinnurov:
+
+* Applying effects on the target
+  
+* Implemented combos
+  
+* 3 types of [attacks](https://github.com/IU-Capstone-Project-2025/SignGame/tree/Attacks) for 3 different elements
+
+Egor Savchenko:
+
+* Main hero [movement](https://github.com/IU-Capstone-Project-2025/SignGame/commit/855b1ef1dc5ca194d613dba6b07f91a550649d32) 
+  
+* Drawing signs on the screen
+  
+* [Combining features](https://github.com/IU-Capstone-Project-2025/SignGame/tree/Development) of all participants of this week in a single job
+
+Danil Valiev:
+
+* Creation and actively management [TaskBoard](https://trello.com/b/g98QWgRE/sign-game);
+  
+* Creation [CI/CD](https://github.com/IU-Capstone-Project-2025/SignGame/tree/main/.github/workflows) for directory validation, as well as code lint;
+  
+* Organization of team meetings, as well as meetings with TA;
+
+* [Week 1 report](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/week1.md) editing and creating [Week 2 report](https://github.com/IU-Capstone-Project-2025/SignGame/edit/reports/week2.md).
+
+Nikita Stepankov:
+
+* Developed Dataset Creation
+  
+* Model [training](https://github.com/IU-Capstone-Project-2025/SignGame/blob/feature_ml/static_ml/model.py)
+  
+* Connecting a recognition model to all project
+
+Stanislav Delyukov:
+
+* Assets and sprites of all textures were developed to build the first levels
+  
+* Created [test location](https://drive.google.com/file/d/1ZlTNwjkXILwU5iktKVtxvfjICnNpqr_m/view?usp=sharing) 
+  
+* Main hero texture and animations
+
+* Created checkpoint design and logic 
+
+### Plan for Week #3
+
+The main goal of this week is to *prepar*e a project *for MVP stage*. To fulfill this goal, we need to **finalize or complete the following tasks**:
+
+* **Achievement system**: their *list* and mechanics of *achieve*
+
+* A full opportunity to **buy items in a store**
+
+* **Design** of a merchant, items, currencies for purchase, main menu and enemies
+
+* The mechanics of **revival** of enemies
+
+* **Spell testing** using the keyboard
+
+*For more information about the tasks, their distribution and responsibilities for each development week, you can visit our [TaskBoard](https://trello.com/b/g98QWgRE/sign-game)*
+
+##
+
+Innopolis University, Capstone project, June 2025
