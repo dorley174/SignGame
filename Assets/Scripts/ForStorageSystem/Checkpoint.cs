@@ -9,7 +9,7 @@ public class Checkpoint : MonoBehaviour
 
     void Awake()
     {
-        player = GameObject.Find("Player").transform;
+        player = GameObject.Find("mage").transform;
         if (DataContainer.checkpointIndex == index)
         {
             player.position = transform.position;
