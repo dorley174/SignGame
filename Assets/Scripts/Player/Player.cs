@@ -6,9 +6,6 @@ public class Player : MonoBehaviour
 
     [Header("Debug")]
     [SerializeField] float hp;
-    // for test
-    private float timer = 0f;
-    // for test
 
     void Start()
     {
@@ -18,11 +15,10 @@ public class Player : MonoBehaviour
     // for test
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer >= 1f)
+        if (Input.GetKeyDown(KeyCode.T))
         {
-            timer = 0f;
-            hp -= 1f;
+            hp -= 10f;
+            Debug.Log($"Player HP: {hp}");
         }
     }
     // for test

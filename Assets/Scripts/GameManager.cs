@@ -3,19 +3,25 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private GameObject player;
+    private Player player;
+    [SerializeField] private float respawnDelay = 3f;
 
     void Start()
     {
-        player = GameObject.Find("mage");
+        player = GameObject.Find("mage").GetComponent<Player>();
     }
 
     void Update()
     {
-        if (player.GetComponent<Player>().GetHP() == 0f)
+        if (player.GetHP() <= 0f)
         {
-            SceneManager.LoadScene("LevelCave000");
-            DataContainer.checkpointIndex = 0;
+            Invoke(nameof(RespawnPlayer), respawnDelay);
         }
+    }
+
+
+    private void RespawnPlayer()
+    {
+        SceneManager.LoadScene("LevelCave000");
     }
 }
