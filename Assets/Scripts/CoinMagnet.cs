@@ -3,40 +3,37 @@ using UnityEngine;
 public class CoinMagnet : MonoBehaviour
 {
     [SerializeField] private float attractionForce = 10f;
+    [SerializeField] private float detectionRadius = 2f;
     private Rigidbody2D rb;
-    private Transform playerTransform;
+    private GameObject player;
     private bool isAttracted;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player");
         isAttracted = false;
     }
 
     void FixedUpdate()
     {
-        if (isAttracted && playerTransform != null)
+        if (player == null)
         {
-            Vector2 directionToPlayer = (playerTransform.position - transform.position).normalized;
+            return;
+        }
+
+        float distance = Vector2.Distance(transform.position, player.transform.position);
+        bool isPlayerNearby = distance <= detectionRadius;
+        if (isPlayerNearby)
+        {
+            Vector2 directionToPlayer = (player.transform.position - transform.position).normalized;
             rb.AddForce(directionToPlayer * attractionForce, ForceMode2D.Force);
         }
     }
 
-    public void OnTriggerEnterChild(Collider2D other)
+    private void OnDrawGizmos()
     {
-        if (other.CompareTag("Player"))
-        {
-            playerTransform = other.transform;
-            isAttracted = true;
-        }
-    }
-
-    public void OnTriggerExitChild(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            isAttracted = false;
-            playerTransform = null;
-        }
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 }

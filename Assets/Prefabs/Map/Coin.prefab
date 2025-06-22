@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3326435442005861496}
   - component: {fileID: 7695057990174669065}
   - component: {fileID: 3374925908723937341}
-  - component: {fileID: 2594438748724844019}
   - component: {fileID: 8738507347201728507}
   - component: {fileID: 1020940649291342074}
   m_Layer: 8
@@ -120,7 +119,7 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Time: 0.2
   m_PreviewTimeScale: 1
   m_Parameters:
@@ -219,20 +218,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2594438748724844019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4748465020767424171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd48f47c95ca8094a935c3c78d493b45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bonusName: coin
-  coinCounter: {fileID: 0}
 --- !u!114 &8738507347201728507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,6 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attractionForce: 10
+  detectionRadius: 1.94
 --- !u!114 &1020940649291342074
 MonoBehaviour:
   m_ObjectHideFlags: 0
