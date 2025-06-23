@@ -264,12 +264,12 @@ TextureImporter:
       name: torgash-animation_0
       rect:
         serializedVersion: 2
-        x: 301
-        y: 2020
+        x: 300
+        y: 2036
         width: 616
         height: 1603
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4836307, y: 0.8388285}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -286,12 +286,12 @@ TextureImporter:
       name: torgash-animation_1
       rect:
         serializedVersion: 2
-        x: 1094
-        y: 2024
+        x: 1085
+        y: 2029
         width: 612
         height: 1604
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4926311, y: 0.83880144}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -309,11 +309,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1910
-        y: 2013
+        y: 2023
         width: 614
         height: 1604
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47638437, y: 0.8361576}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -331,11 +331,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2655
-        y: 2009
+        y: 2012
         width: 616
         height: 1603
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.48232597, y: 0.8480043}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -352,12 +352,12 @@ TextureImporter:
       name: torgash-animation_4
       rect:
         serializedVersion: 2
-        x: 3394
-        y: 2025
+        x: 3395
+        y: 2030
         width: 991
         height: 1604
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.29956967, y: 0.84251714}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -378,8 +378,8 @@ TextureImporter:
         y: 2014
         width: 1362
         height: 1587
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.21825024, y: 0.84776396}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -396,12 +396,12 @@ TextureImporter:
       name: torgash-animation_6
       rect:
         serializedVersion: 2
-        x: 6029
-        y: 2014
+        x: 6032
+        y: 2015
         width: 1485
         height: 1592
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.19834346, y: 0.8442021}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -419,11 +419,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7699
-        y: 2025
+        y: 2028
         width: 1487
         height: 1593
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.2003201, y: 0.8425259}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -444,8 +444,8 @@ TextureImporter:
         y: 2091
         width: 1505
         height: 1593
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.1977075, y: 0.8451416}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -485,11 +485,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2005
-        y: 202
+        y: 203
         width: 1377
         height: 1592
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.2157907, y: 0.84434795}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -506,12 +506,12 @@ TextureImporter:
       name: torgash-animation_11
       rect:
         serializedVersion: 2
-        x: 3526
-        y: 229
+        x: 3527
+        y: 234
         width: 622
         height: 1592
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47598982, y: 0.84115577}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -528,12 +528,12 @@ TextureImporter:
       name: torgash-animation_12
       rect:
         serializedVersion: 2
-        x: 4468
-        y: 223
+        x: 4467
+        y: 224
         width: 618
         height: 1598
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.48359042, y: 0.847466}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -551,11 +551,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5406
-        y: 212
+        y: 213
         width: 616
         height: 1604
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.48224035, y: 0.8477354}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -576,8 +576,8 @@ TextureImporter:
         y: 207
         width: 623
         height: 1647
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.48642924, y: 0.82641774}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -638,12 +638,12 @@ TextureImporter:
       name: torgash-animation_17
       rect:
         serializedVersion: 2
-        x: 312
+        x: 317
         y: 169
         width: 1444
         height: 1592
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.20244956, y: 0.84492755}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -657,37 +657,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: torgash-animation_18
-      rect:
-        serializedVersion: 2
-        x: 3471
-        y: 1453
-        width: 15
-        height: 15
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 51c13de9499267ed0800000000000000
-      internalID: -2416698431741158379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: torgash-animation_19
       rect:
         serializedVersion: 2
-        x: 7220
-        y: 224
+        x: 7219
+        y: 227
         width: 689
         height: 1537
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.42692932, y: 0.8827021}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -701,50 +679,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: torgash-animation_20
-      rect:
-        serializedVersion: 2
-        x: 1779
-        y: 1420
-        width: 15
-        height: 15
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8e2d01e9a16eafbf0800000000000000
-      internalID: -289666224016534808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_21
-      rect:
-        serializedVersion: 2
-        x: 3473
-        y: 1417
-        width: 6
-        height: 10
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e724f801a23c3b0c0800000000000000
-      internalID: -4561087412162313602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: torgash-animation_22
       rect:
         serializedVersion: 2
@@ -753,7 +687,7 @@ TextureImporter:
         width: 1048
         height: 1130
       alignment: 9
-      pivot: {x: 0.4234088, y: 0.0013285679}
+      pivot: {x: 0.69895786, y: 1.2058609}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -767,50 +701,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: torgash-animation_23
-      rect:
-        serializedVersion: 2
-        x: 1781
-        y: 1383
-        width: 5
-        height: 11
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7c0d5c887bc66c3c0800000000000000
-      internalID: -4339661655395413817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_24
-      rect:
-        serializedVersion: 2
-        x: 3466
-        y: 1323
-        width: 9
-        height: 12
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e64fbc9cb48d6f70800000000000000
-      internalID: 9182141160896808674
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: torgash-animation_25
       rect:
         serializedVersion: 2
@@ -819,7 +709,7 @@ TextureImporter:
         width: 407
         height: 611
       alignment: 9
-      pivot: {x: -0.0698854, y: -0.7147614}
+      pivot: {x: 0.31856093, y: 1.482549}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -833,94 +723,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: torgash-animation_26
-      rect:
-        serializedVersion: 2
-        x: 1774
-        y: 1290
-        width: 8
-        height: 12
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 073ce02febced96d0800000000000000
-      internalID: -2981967073400405136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_27
-      rect:
-        serializedVersion: 2
-        x: 9713
-        y: 1224
-        width: 8
-        height: 12
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 932b901662825abf0800000000000000
-      internalID: -313800453730487751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_28
-      rect:
-        serializedVersion: 2
-        x: 1773
-        y: 1086
-        width: 15
-        height: 43
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f5e9d591c08b31cf0800000000000000
-      internalID: -282679989489525153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_29
-      rect:
-        serializedVersion: 2
-        x: 3466
-        y: 1119
-        width: 15
-        height: 38
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: edb0a65d70eff52a0800000000000000
-      internalID: -6746394407178990626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: torgash-animation_30
       rect:
         serializedVersion: 2
@@ -929,7 +731,7 @@ TextureImporter:
         width: 215
         height: 237
       alignment: 9
-      pivot: {x: -0.032662608, y: -2.8091094}
+      pivot: {x: 0.34709758, y: 2.8763387}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -951,7 +753,7 @@ TextureImporter:
         width: 71
         height: 70
       alignment: 9
-      pivot: {x: -0.29628357, y: -10.558734}
+      pivot: {x: -0.117325045, y: 8.733442}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -960,204 +762,6 @@ TextureImporter:
       bones: []
       spriteID: ec913d1e2e5120b80800000000000000
       internalID: -8430151488288646706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_32
-      rect:
-        serializedVersion: 2
-        x: 3466
-        y: 915
-        width: 9
-        height: 22
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a29a4692ce3dc49c0800000000000000
-      internalID: -3941542562595821270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_33
-      rect:
-        serializedVersion: 2
-        x: 1774
-        y: 882
-        width: 8
-        height: 21
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bbd8d59cba0476ba0800000000000000
-      internalID: -6095832464060740165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_34
-      rect:
-        serializedVersion: 2
-        x: 3484
-        y: 590
-        width: 11
-        height: 5
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 86a5363fce11996d0800000000000000
-      internalID: -2983333568762914200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_35
-      rect:
-        serializedVersion: 2
-        x: 4463
-        y: 572
-        width: 16
-        height: 23
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 20b800852e202fe30800000000000000
-      internalID: 4535690945877805826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_36
-      rect:
-        serializedVersion: 2
-        x: 1790
-        y: 555
-        width: 13
-        height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ec47b557749405c0800000000000000
-      internalID: -4250108908070810400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_37
-      rect:
-        serializedVersion: 2
-        x: 3488
-        y: 347
-        width: 15
-        height: 22
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a80ff726990c00ef0800000000000000
-      internalID: -143903423060774774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_38
-      rect:
-        serializedVersion: 2
-        x: 1796
-        y: 314
-        width: 15
-        height: 22
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3a533f74ac41f2e20800000000000000
-      internalID: 3327901508673156515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_39
-      rect:
-        serializedVersion: 2
-        x: 3461
-        y: 290
-        width: 14
-        height: 14
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 781235c018517ecc0800000000000000
-      internalID: -3681950526350351993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torgash-animation_40
-      rect:
-        serializedVersion: 2
-        x: 1768
-        y: 254
-        width: 15
-        height: 17
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 21eaf54797c585dc0800000000000000
-      internalID: -3650065821270561262
       vertices: []
       indices: 
       edges: []
