@@ -147,7 +147,7 @@ def load_dataset(data_dir):
             images.append(img_array)
             labels.append(class_names[label])
     return np.array(images), np.array(labels)
-
+#plooting for analyze
 def plot_history(history):
     plt.figure(figsize=(12, 5))
     
