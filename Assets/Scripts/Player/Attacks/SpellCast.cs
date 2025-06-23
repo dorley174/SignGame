@@ -7,65 +7,97 @@ public class SpellCast : MonoBehaviour
     public GameObject shootSprite;
     public GameObject coilSprite;
 
-    public float shootRange = 10f;
-    public float CoilRange = 4f;
+    private bool lookRight;
 
     void Update()
     {
-
+        lookRight = gameObject.GetComponent<PlayerAttack>().lookRight;
     }
 
     public void HandleSpell(List<string> combo)
     {
-        if (combo[0] == "Fire")
+        if (combo.Count == 1)
         {
-            if (combo.Count == 1)
+            if (combo[0] == "Fire1")
             {
-                CoilSpell(1);
+                ShootingSpell(new Color(1f, 0.6f, 0f));
+                // Шутспелл с уроном без эффекта
             }
-            else if (combo.Count == 2)
+            else if (combo[0] == "Fire2")
             {
-                if (combo[1] == "Fire")
-                {
-                    CoilSpell(2);
-                }
+                SelfSpell(3, "SpeedBoost");
+                // Ускорение
             }
-            else if (combo.Count == 3)
+            else if (combo[0] == "Fire3")
             {
-                if (combo[1] == "Fire")
-                {
-                    if (combo[2] == "Fire")
-                    {
-                        CoilSpell(3);
-                    }
-                }
+                ShootingSpell(new Color(1f, 0.6f, 0f), "Burn");
+                // Шутспелл с поджогом врага
+            }
+            else if (combo[0] == "Earth1")
+            {
+                ShootingSpell(new Color(0.25f, 0.25f, 0.25f), "Knockback");
+                // Шутспелл с отталкиванием (тестирование)
+            }
+            else if (combo[0] == "Venom1")
+            {
+                ShootingSpell(new Color(0f, 1f, 0f), "Poison");
+                // Шутспелл с отравлением (тестирование)
+            }
+            else
+            {
+                Debug.Log("Spell not learned.");
             }
         }
-        else if (combo[0] == "Earth")
+        else if (combo.Count == 2)
         {
-            ShootingSpell(new Color(0.25f, 0.25f, 0.25f), "Knockback");
+            if (combo[0] == "Fire1" && combo[1] == "Fire2")
+            {
+                SelfSpell(3, "ExtraDamage");
+                // Следующее заклинание дополнительно внесёт 3 урона
+            }
+            else if (combo[0] == "Fire1" && combo[1] == "Fire3")
+            {
+                CoilSpell(1, "Burn");
+                // Ожог в области
+            }
+            else if (combo[0] == "Fire2" && combo[1] == "Fire3")
+            {
+                ShootingSpell(new Color(1f, 0.6f, 0f), "BurnLong");
+                // Шутспелл с долгим поджогом врага
+            }
+            else
+            {
+                Debug.Log("Spell not learned.");
+            }
         }
-        else if (combo[0] == "Venom")
+        else if (combo.Count == 3)
         {
-            ShootingSpell(new Color(0f, 1f, 0f), "Poison");
+            if (combo[0] == "Fire1" && combo[1] == "Fire2" && combo[2] == "Fire3")
+            {
+                ShootingSpell(new Color(1f, 0.6f, 0f), "PercentDamage");
+                // Шутспелл с процентным уроном от хп врага
+            }
         }
-    }
+}
 
-    private void ShootingSpell(Color colorOfShoot, string tagForSpell)
+    private void ShootingSpell(Color colorOfShoot, string effectType="No effect")
     {
         GameObject obj = Instantiate(shootSprite, startPos.position, Quaternion.identity);
+        obj.GetComponent<ShootSpell>().lookRight = lookRight;
+        obj.GetComponent<ShootSpell>().effectType = effectType;
         obj.GetComponent<SpriteRenderer>().color = colorOfShoot;
-        obj.tag = tagForSpell;
     }
 
-    private void CoilSpell(int range)
+    private void CoilSpell(int range, string effectType="No effect")
     {
-        Vector3 distance = new Vector3(CoilRange*range, 0, 0);
-        Instantiate(coilSprite, startPos.position + distance, Quaternion.identity);
+        GameObject obj = Instantiate(coilSprite, startPos.position, Quaternion.identity);
+        obj.GetComponent<CoilSpell>().lookRight = lookRight;
+        obj.GetComponent<CoilSpell>().range = range;
+        obj.GetComponent<CoilSpell>().effectType = effectType;
     }
 
-    private void SelfSpell()
+    private void SelfSpell(float amount, string effectType)
     {
-        
+        EffectsManager.Instance.effect.ApplyEffect(gameObject, gameObject, effectType, amount);
     }
 }

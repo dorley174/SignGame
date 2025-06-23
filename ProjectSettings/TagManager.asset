@@ -5,8 +5,6 @@ TagManager:
   serializedVersion: 3
   tags:
   - Enemy
-  - Poison
-  - Knockback
   - Ground
   layers:
   - Default
@@ -17,7 +15,6 @@ TagManager:
   - UI
   - Ground
   - Wall
-
   - 
   - 
   - 
