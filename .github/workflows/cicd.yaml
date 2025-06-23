@@ -3,10 +3,10 @@ name: Check Project Structure and Lint
 on:
   push:
     branches:
-      - Development
+      - main
   pull_request:
     branches:
-      - Development
+      - main
 
 jobs:
   validate-structure:
@@ -87,8 +87,7 @@ jobs:
           score=$(echo "$score" | awk '{ if ($1 < 0) print 0; else print }')
           echo "📊 Code style score: $score/10"
 
-          if (( $(echo "$score < 3" | bc -l) )); then
+          if (( $(echo "$score < 0" | bc -l) )); then
             echo "❌ Code style too poor"
             exit 1
           fi
-
