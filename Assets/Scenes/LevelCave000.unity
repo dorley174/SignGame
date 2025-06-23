@@ -5840,6 +5840,7 @@ GameObject:
   m_Component:
   - component: {fileID: 248995615}
   - component: {fileID: 248995616}
+  - component: {fileID: 248995617}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5875,6 +5876,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnDelay: 3
+--- !u!114 &248995617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248995614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98de29d2d0b3aed418086096bbea1da4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinCounter: {fileID: 2121037968}
 --- !u!1 &257665175
 GameObject:
   m_ObjectHideFlags: 0
@@ -26297,44 +26311,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1885979298}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1168493319 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6756031849493778654, guid: 2e211742f13c79f4da49f37851b24bdd, type: 3}
-  m_PrefabInstance: {fileID: 5924522061158721568}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1168493320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168493319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e779e945a2d3dba4daf7d7c2cf872019, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testDialog:
-  - message: "\u041F\u0420\u0418\u0412\u0415\u0422 :)"
-    isTalkerLeft: 0
-    talkerID: 1
-  - message: "\u042D\u041C\u041C... \u041F\u0420\u0418\u0412\u0415\u0422?"
-    isTalkerLeft: 1
-    talkerID: 0
-  - message: "\u041A\u0410\u041A\u041E\u0415 \u041A\u0420\u0410\u0421\u0418\u0412\u041E\u0415
-      \u0421\u041E\u041B\u041D\u0426\u0415!"
-    isTalkerLeft: 0
-    talkerID: 1
-  - message: "\u041D\u0423 \u0414\u0410"
-    isTalkerLeft: 1
-    talkerID: 0
-  - message: "\u0417\u0410\u0413\u041E\u0420\u0410\u0416\u0418\u0412\u0410\u0415\u0428\u042C,
-      \u0423\u0419\u0414\u0418"
-    isTalkerLeft: 0
-    talkerID: 1
-  - message: "\u0421\u041E\u0420\u0418"
-    isTalkerLeft: 1
-    talkerID: 0
 --- !u!1 &1171770467
 GameObject:
   m_ObjectHideFlags: 0
@@ -35730,7 +35706,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonusName: coin
-  coinCounter: {fileID: 2121037968}
 --- !u!58 &1523670349
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36629,7 +36604,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonusName: coin
-  coinCounter: {fileID: 2121037968}
 --- !u!58 &1556165778
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46432,7 +46406,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonusName: coin
-  coinCounter: {fileID: 2121037968}
 --- !u!58 &1951490066
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50211,6 +50184,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 222079699665945734, guid: 18a58a3b6ef5e5745baf005e50113955, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -780
+      objectReference: {fileID: 0}
+    - target: {fileID: 222079699665945734, guid: 18a58a3b6ef5e5745baf005e50113955, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 357
+      objectReference: {fileID: 0}
+    - target: {fileID: 571672911500798144, guid: 18a58a3b6ef5e5745baf005e50113955, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -900.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 571672911500798144, guid: 18a58a3b6ef5e5745baf005e50113955, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 362
+      objectReference: {fileID: 0}
     - target: {fileID: 1231191988748743822, guid: 18a58a3b6ef5e5745baf005e50113955, type: 3}
       propertyPath: m_IsActive
       value: 0
