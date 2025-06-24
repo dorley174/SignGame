@@ -54771,8 +54771,24 @@ PrefabInstance:
       value: mage
       objectReference: {fileID: 0}
     - target: {fileID: 6779593553360534519, guid: 2e211742f13c79f4da49f37851b24bdd, type: 3}
+      propertyPath: blurLifetime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779593553360534519, guid: 2e211742f13c79f4da49f37851b24bdd, type: 3}
       propertyPath: canDashInAir
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779593553360534519, guid: 2e211742f13c79f4da49f37851b24bdd, type: 3}
+      propertyPath: blurSpawnRate
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6779593553360534519, guid: 2e211742f13c79f4da49f37851b24bdd, type: 3}
+      propertyPath: trailMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: ed3bf424656081342bcff2e768a560a1, type: 2}
+    - target: {fileID: 6779593553360534519, guid: 2e211742f13c79f4da49f37851b24bdd, type: 3}
+      propertyPath: isMotionBlurActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
