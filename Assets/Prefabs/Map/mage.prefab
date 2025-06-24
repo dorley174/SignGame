@@ -131,9 +131,8 @@ GameObject:
   - component: {fileID: 6779593553360534519}
   - component: {fileID: 6493718901206921931}
   - component: {fileID: 3264134942053604156}
-  - component: {fileID: 3661724723506086405}
   - component: {fileID: 5495617925394699211}
-  - component: {fileID: 8835969361204809701}
+  - component: {fileID: 4994101277095168618}
   m_Layer: 0
   m_Name: mage
   m_TagString: Player
@@ -308,25 +307,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.25}
   m_Size: {x: 0.4, y: 1}
   m_Direction: 0
---- !u!114 &3661724723506086405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6756031849493778654}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f44e5058fbef074c8bbbdd8df5128e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalVelocity: 6
-  horizontalAcceleration: 50
-  jumpVelocity: 12
-  groundDetectionOffset: 0.1
-  groundLayerMask:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!95 &5495617925394699211
 Animator:
   serializedVersion: 7
@@ -349,20 +329,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8835969361204809701
+--- !u!114 &4994101277095168618
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6756031849493778654}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c82855996efa654cb8579cb6d4c52ab, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f0794fe08ee8be4dbadd94a16bbe227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reverse: 0
-  facingRight: 0
+  maxHp: 15
+  hp: 15
 --- !u!1 &7703783001909327375
 GameObject:
   m_ObjectHideFlags: 0

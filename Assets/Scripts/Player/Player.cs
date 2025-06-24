@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            hp -= 10f;
+            TakeDamage(10);
             Debug.Log($"Player HP: {hp}");
         }
     }
@@ -26,5 +26,11 @@ public class Player : MonoBehaviour
     public float GetHP()
     {
         return hp;
+    }
+
+    public void TakeDamage(float damage) {
+        if (hp <= 0) return;
+        hp = Mathf.Max(hp - damage, 0);
+        if (hp <= 0) GameManager.I.PlayerDied();
     }
 }
