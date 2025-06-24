@@ -38,7 +38,7 @@ public class LandEnemyMovement : MonoBehaviour
     private CapsuleCollider2D enemyCollider;
     [SerializeField]
     private bool onGround = false;
-    [SerializeField, Range(-10f, 50f)]
+    [SerializeField, Range(-50f, 50f)]
     private float verticalSpeed;
     [SerializeField]
     private float gravity;
@@ -47,7 +47,6 @@ public class LandEnemyMovement : MonoBehaviour
     private bool isJumping;
     [SerializeField]
     private Vector3[] corners;
-    private NavMeshPath path;
     void Awake()
     {
         if (agent == null)
@@ -63,7 +62,6 @@ public class LandEnemyMovement : MonoBehaviour
     {
         playerTag = target.gameObject.tag;
         SetAgentParameters();
-        //path = new NavMeshPath();
     }
     private void SetAgentParameters()
     {
@@ -89,7 +87,6 @@ public class LandEnemyMovement : MonoBehaviour
     private IEnumerator JumpBezier()
     {
         isJumping = true;
-        //agent.isStopped = true;
         Vector2 startPos = corners[0];
         Vector2 endPos = corners[1];
 
@@ -108,7 +105,6 @@ public class LandEnemyMovement : MonoBehaviour
         }
         agent.transform.position = endPos;
         isJumping = false;
-        //agent.isStopped = false;
     }
     private void IsStanding()
     {
@@ -154,17 +150,18 @@ public class LandEnemyMovement : MonoBehaviour
     {
         Vector2 agentPos = agent.transform.position;
         Vector2 targetPos = target.position;
-        if (GeneralEnemyBehaviour.LookingDirectlyAtPlayer(agent.transform.position, target.position, visionRange, consideredMasks, playerTag))
+        if (GeneralEnemyBehaviour.LookingDirectlyAtPlayer(agentPos, targetPos, visionRange, consideredMasks, playerTag))
         {
             agent.stoppingDistance = stoppingDistance;
-            Vector3 apos = agent.transform.position;
-            Vector3 tpos = target.position;
-            Vector3 goalPosition = (Mathf.Abs(tpos.y - apos.y) >= minJumpHeight) ? tpos : new Vector3(tpos.x, apos.y, apos.z);
-            agent.SetDestination(goalPosition);
-        }
-        else
-        {
-            agent.stoppingDistance = 0;
+            Vector2 goalPosition = (Mathf.Abs(targetPos.y - agentPos.y) >= minJumpHeight) ? targetPos : new Vector2(targetPos.x, agentPos.y);
+            if ((agentPos - targetPos).magnitude > stoppingDistance)
+            {
+                agent.SetDestination(goalPosition);
+            }
+            else
+            {
+                agent.SetDestination(agentPos);
+            }
         }
     }
     private bool IsPointOnNavMesh(Vector2 point, float maxDistance = 1.0f)
