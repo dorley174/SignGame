@@ -8,12 +8,12 @@ public class CoinTracker : MonoBehaviour
     void Awake()
     {
         coinCounter.text = PlayerPrefs.GetInt("coins").ToString();
-        Debug.Log($"{PlayerPrefs.GetInt("coins")}");
+        // Debug.Log($"{PlayerPrefs.GetInt("coins")}");
     }
 
     void Update()
     {
         coinCounter.text = PlayerPrefs.GetInt("coins").ToString();
-        Debug.Log($"{PlayerPrefs.GetInt("coins")}");  
+        // Debug.Log($"{PlayerPrefs.GetInt("coins")}");  
     }
 }
