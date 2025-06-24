@@ -3,46 +3,40 @@ using UnityEngine;
 public class PlayerSpellCast : MonoBehaviour
 {
     [Header("Staff Settings")]
-    [SerializeField] private Transform staffTip; // Точка на посохе для эффектов и стрельбы
-    [SerializeField] private float staffOffset = 1f; // Расстояние нижнего конца посоха от центра персонажа
-    [SerializeField] private Transform staffTransform; // Трансформ посоха
-    [SerializeField] private SpriteRenderer staffSpriteRenderer; // Спрайт посоха для изменения цвета
-    [SerializeField] private Vector3 idleStaffPositionLeft = new Vector3(0.335000008f, -0.555999994f, 0f); // Позиция посоха (влево)
-    [SerializeField] private Vector3 idleStaffPositionRight = new Vector3(0.335000008f, -0.555999994f, 0f); // Позиция посоха (вправо)
-    [SerializeField] private Vector3 idleStaffRotationLeft = new Vector3(0f, 0f, 45f); // Поворот посоха (влево)
-    [SerializeField] private Vector3 idleStaffRotationRight = new Vector3(0f, 0f, -45f); // Поворот посоха (вправо)
+    [SerializeField] private Transform wandTip; // точка на посохе для эффектов и каста заклинаний
+    [SerializeField] private float wandOffset = 1f; // расстояние нижнего конца посоха от центра персонажа
+    [SerializeField] private Vector3 wandPlayerCenterOffset = new Vector3(0, 0, 0);
+    [SerializeField] private Transform wandTransform;
+    [SerializeField] private SpriteRenderer wandSpriteRenderer;
+    // положения посоха
+    [SerializeField] private Vector3 idleStaffPositionLeft = new Vector3(0.335000008f, -0.555999994f, 0f);
+    [SerializeField] private Vector3 idleStaffPositionRight = new Vector3(0.335000008f, -0.555999994f, 0f);
+    [SerializeField] private Vector3 idleWandRotationLeft = new Vector3(0f, 0f, 45f);
+    [SerializeField] private Vector3 idleWandRotationRight = new Vector3(0f, 0f, -45f);
 
     [Header("Spell Settings")]
-    [SerializeField] private GameObject aimReticle; // Префаб прицела
-    [SerializeField] private GameObject fireballPrefab; // Префаб фаербола
-    [SerializeField] private float spellSpeed = 30f; // Скорость фаербола
-    [SerializeField] private ParticleSystem suctionParticles; // Частицы всасывания
-    [SerializeField] private float spellDuration = 3f; // Длительность заклинания
-    [SerializeField] private float reticleRotationSpeed = 30f; // Скорость вращения прицела
-    [SerializeField] private float timeSlowFactor = 0.5f; // Фактор замедления времени
+    [SerializeField] private GameObject aim;
+    [SerializeField] private GameObject fireballPrefab;
+    [SerializeField] private float spellSpeed = 30f;
+    [SerializeField] private ParticleSystem redWandParticles;
+    [SerializeField] private float spellDuration = 3f;
+    [SerializeField] private float aimRotationSpeed = 30f;
+    [SerializeField] private float timeSlowFactor = 0.5f;
 
     private float currentSpellTime;
     private bool isCasting;
-    private GameObject activeReticle;
+    private GameObject activeAim;
     private Vector3 targetPosition;
     private Camera mainCamera;
-    private float lastHorizontalInput; // Последнее направление движения
+    private float lastHorizontalInput;
 
     private void Start()
     {
         mainCamera = Camera.main;
-        if (!mainCamera)
-        {
-            Debug.LogError("Main Camera not found! Ensure a camera is tagged as 'MainCamera'.");
-        }
-        if (!staffSpriteRenderer)
-        {
-            Debug.LogError("Staff SpriteRenderer not assigned!");
-        }
-        suctionParticles.Stop();
-        if (aimReticle) aimReticle.SetActive(false);
-        lastHorizontalInput = 0f; // По умолчанию стояние
-        UpdateIdleStaff(); // Устанавливаем начальное положение посоха
+        redWandParticles.Stop();
+        if (aim) aim.SetActive(false);
+        lastHorizontalInput = 0f;
+        UpdateIdleStaff();
     }
 
     private void Update()
@@ -58,7 +52,7 @@ public class PlayerSpellCast : MonoBehaviour
         }
         else
         {
-            UpdateIdleStaff(); // Обновляем положение посоха в состоянии покоя
+            UpdateIdleStaff();
         }
 
         if ((Input.GetMouseButtonUp(1) && isCasting) || (Input.GetKeyUp(KeyCode.LeftControl) && isCasting))
@@ -66,11 +60,10 @@ public class PlayerSpellCast : MonoBehaviour
             CastFireball();
         }
 
-        // Обновляем последнее направление движения
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         if (horizontalInput != 0f)
         {
-            lastHorizontalInput = horizontalInput; // Сохраняем направление, если есть движение
+            lastHorizontalInput = horizontalInput;
         }
     }
 
@@ -81,33 +74,30 @@ public class PlayerSpellCast : MonoBehaviour
         Time.timeScale = timeSlowFactor;
         Time.fixedDeltaTime = 0.02f * Time.timeScale;
 
-        // Показываем прицел
+        // прицел
         targetPosition = GetMouseWorldPosition();
-        activeReticle = Instantiate(aimReticle, targetPosition, Quaternion.identity);
-        activeReticle.SetActive(true);
+        activeAim = Instantiate(aim, targetPosition, Quaternion.identity);
+        activeAim.SetActive(true);
 
-        // Запускаем частицы
-        suctionParticles.Play();
+        redWandParticles.Play();
     }
 
     private void UpdateCasting()
     {
-        // Обновляем позицию прицела в реальном времени
+        // прицел к курсору
         targetPosition = GetMouseWorldPosition();
-        activeReticle.transform.position = targetPosition;
-        activeReticle.transform.Rotate(0, 0, reticleRotationSpeed * Time.unscaledDeltaTime);
+        activeAim.transform.position = targetPosition;
+        activeAim.transform.Rotate(0, 0, aimRotationSpeed * Time.unscaledDeltaTime);
 
-        // Поворачиваем и позиционируем посох
         Vector3 direction = (targetPosition - transform.position).normalized;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        staffTransform.rotation = Quaternion.Euler(0, 0, angle - 90f); // -90, чтобы верх посоха смотрел на прицел
-        staffTransform.position = transform.position + direction * staffOffset;
+        wandTransform.rotation = Quaternion.Euler(0, 0, angle - 90f);
+        wandTransform.position = transform.position + direction * wandOffset + wandPlayerCenterOffset;
 
-        // Изменяем цвет посоха от черного к красному
-        float t = 1f - (currentSpellTime / spellDuration); // Прогресс от 0 до 1
-        staffSpriteRenderer.color = Color.Lerp(Color.black, Color.red, t);
+        // цвет посоха от черного к красному
+        float t = 1f - (currentSpellTime / spellDuration);
+        wandSpriteRenderer.color = Color.Lerp(Color.black, Color.red, t);
 
-        // Обновляем таймер
         currentSpellTime -= Time.unscaledDeltaTime;
 
         if (currentSpellTime <= 0)
@@ -118,23 +108,21 @@ public class PlayerSpellCast : MonoBehaviour
 
     private void UpdateIdleStaff()
     {
-        // Определяем позицию и поворот в зависимости от последнего направления движения
         Vector3 idlePosition = lastHorizontalInput > 0 ? idleStaffPositionRight : idleStaffPositionLeft;
-        Vector3 idleRotation = lastHorizontalInput > 0 ? idleStaffRotationRight : idleStaffRotationLeft;
+        Vector3 idleRotation = lastHorizontalInput > 0 ? idleWandRotationRight : idleWandRotationLeft;
 
-        staffTransform.localPosition = idlePosition;
-        staffTransform.localRotation = Quaternion.Euler(idleRotation);
+        wandTransform.localPosition = idlePosition;
+        wandTransform.localRotation = Quaternion.Euler(idleRotation);
 
-        // Устанавливаем черный цвет в состоянии покоя
-        staffSpriteRenderer.color = Color.black;
+        wandSpriteRenderer.color = Color.black;
     }
 
     private Vector3 GetMouseWorldPosition()
     {
         Vector3 mousePos = Input.mousePosition;
-        mousePos.z = -mainCamera.transform.position.z; // Устанавливаем z для корректного преобразования
+        mousePos.z = -mainCamera.transform.position.z;
         Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
-        worldPos.z = 0; // Обнуляем z для 2D
+        worldPos.z = 0;
         return worldPos;
     }
 
@@ -144,19 +132,15 @@ public class PlayerSpellCast : MonoBehaviour
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f;
 
-        // Останавливаем частицы
-        suctionParticles.Stop();
+        redWandParticles.Stop();
 
-        // Создаем фаербол
-        GameObject fireball = Instantiate(fireballPrefab, staffTip.position, Quaternion.identity);
-        Vector3 direction = (targetPosition - staffTip.position).normalized;
-        fireball.GetComponent<Rigidbody2D>().linearVelocity = direction * spellSpeed; // Используем spellSpeed
+        GameObject fireball = Instantiate(fireballPrefab, wandTip.position, Quaternion.identity);
+        Vector3 direction = (targetPosition - wandTip.position).normalized;
+        fireball.GetComponent<Rigidbody2D>().linearVelocity = direction * spellSpeed;
 
-        // Уничтожаем прицел
-        Destroy(activeReticle);
+        Destroy(activeAim);
 
-        // Возвращаем черный цвет посоха
-        staffSpriteRenderer.color = Color.black;
+        wandSpriteRenderer.color = Color.black;
     }
 
     private void CancelSpell()
@@ -165,14 +149,9 @@ public class PlayerSpellCast : MonoBehaviour
         Time.timeScale = 1f;
         Time.fixedDeltaTime = 0.02f;
 
-        // Останавливаем частицы
-        suctionParticles.Stop();
-
-        // Уничтожаем прицел
-        Destroy(activeReticle);
-
-        // Возвращаем черный цвет посоха
-        staffSpriteRenderer.color = Color.black;
+        redWandParticles.Stop();
+        Destroy(activeAim);
+        wandSpriteRenderer.color = Color.black;
     }
 
     private void OnDestroy()

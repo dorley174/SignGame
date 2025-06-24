@@ -31056,20 +31056,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94dae644243428a44afda65a40825eb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  staffTip: {fileID: 590917246}
-  staffOffset: 0.5
-  staffTransform: {fileID: 2093633309}
-  staffSpriteRenderer: {fileID: 2093633310}
+  wandTip: {fileID: 590917246}
+  wandOffset: 0.5
+  wandPlayerCenterOffset: {x: 0, y: -0.2, z: 0}
+  wandTransform: {fileID: 2093633309}
+  wandSpriteRenderer: {fileID: 2093633310}
   idleStaffPositionLeft: {x: 0.335, y: -0.556, z: 0}
-  idleStaffPositionRight: {x: -0.1, y: -0.556, z: 0}
-  idleStaffRotationLeft: {x: 0, y: 0, z: 45}
-  idleStaffRotationRight: {x: 0, y: 0, z: -45}
-  aimReticle: {fileID: 3722217823535746285, guid: 991277aec79cafb41bc1a075077b903b, type: 3}
+  idleStaffPositionRight: {x: -0.3, y: -0.556, z: 0}
+  idleWandRotationLeft: {x: 0, y: 0, z: 45}
+  idleWandRotationRight: {x: 0, y: 0, z: -45}
+  aim: {fileID: 3722217823535746285, guid: 991277aec79cafb41bc1a075077b903b, type: 3}
   fireballPrefab: {fileID: 3190285968056344791, guid: 37a9480354784f44ba56f2531a5637c3, type: 3}
   spellSpeed: 30
-  suctionParticles: {fileID: 590917248}
+  redWandParticles: {fileID: 590917248}
   spellDuration: 4
-  reticleRotationSpeed: 65
+  aimRotationSpeed: 30
   timeSlowFactor: 0.5
 --- !u!1 &1171770467
 GameObject:

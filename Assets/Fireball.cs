@@ -4,9 +4,9 @@ using UnityEngine;
 public class Fireball : MonoBehaviour { 
     [SerializeField] ParticleSystem collectEffect;
 
-    [SerializeField] private float _explosionRadius = 3f; // Радиус взрыва
-    [SerializeField] private float _explosionForce = 10f; // Сила отталкивания
-    [SerializeField] private LayerMask _affectedLayers; // Какие слои будут реагировать
+    [SerializeField] private float explosionRadius = 3f; 
+    [SerializeField] private float explosionForce = 10f;
+    [SerializeField] private LayerMask affectedLayers;
     private void OnTriggerEnter2D(Collider2D other) {
         Destroy(gameObject);
     }
@@ -19,17 +19,15 @@ public class Fireball : MonoBehaviour {
     }
     private void Explode()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, _explosionRadius, _affectedLayers);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius, affectedLayers);
 
         foreach (Collider2D collider in colliders)
         {
             Rigidbody2D rb = collider.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                // Вычисляем направление от центра взрыва
                 Vector2 direction = (collider.transform.position - transform.position).normalized;
-                // Применяем силу
-                rb.AddForce(direction * _explosionForce, ForceMode2D.Impulse);
+                rb.AddForce(direction * explosionForce, ForceMode2D.Impulse);
             }
         }
     }
