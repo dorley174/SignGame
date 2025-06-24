@@ -287,7 +287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &202102477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_OverrideArea: 1
+  m_OverrideArea: 0
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: 00000000
@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_Width: 0
   m_CostModifier: 1
   m_IsOverridingCost: 0
-  m_Bidirectional: 0
+  m_Bidirectional: 1
   m_AutoUpdatePosition: 1
   m_Area: 2
 --- !u!1 &1362432560
@@ -1035,6 +1035,7 @@ GameObject:
   - component: {fileID: 1362432562}
   - component: {fileID: 1362432561}
   - component: {fileID: 1362432563}
+  - component: {fileID: 1362432564}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -1106,7 +1107,7 @@ Transform:
   m_GameObject: {fileID: 1362432560}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.86, y: 1.72, z: 0}
+  m_LocalPosition: {x: 28.26, y: 11.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1148,6 +1149,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &1362432564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362432560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6f8ec22750e764c8cef41069394a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &1401154044
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,23 +1887,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1362432562}
+  visionRange: 15
   consideredMasks:
     serializedVersion: 2
     m_Bits: 65
   notGroundMasks:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   speed: 3.5
   acceleration: 8
   stoppingDistance: 1
-  visionRange: 100
   groundDetectionOffset: 0.1
   jumpHeight: 10
+  minJumpHeight: 3
   jumpTime: 1
   enemyCollider: {fileID: 1937727981}
   onGround: 0
   verticalSpeed: 0
   gravity: 10
+  isJumping: 0
+  corners: []
 --- !u!70 &1937727981
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1897,7 +1914,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937727974}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}

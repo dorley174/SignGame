@@ -45,27 +45,28 @@ public class FlyingEnemyMovement : MonoBehaviour
     }
     void Start()
     {
+        playerTag = target.gameObject.tag;
+        SetAgentParameters();
+    }
+    private void SetAgentParameters()
+    {
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         agent.speed = speed;
         agent.acceleration = acceleration;
         agent.stoppingDistance = stoppingDistance;
-        playerTag = target.gameObject.tag;
     }
 
     void Update()
     {
-        if ((agent.transform.position - target.position).magnitude <= visionRange)
+        if (GeneralEnemyBehaviour.LookingDirectlyAtPlayer(agent.transform.position, target.position, visionRange, consideredMasks, playerTag))
         {
-            if (GeneralEnemyBehaviour.LookingDirectlyAtPlayer(agent.transform.position, target.position, consideredMasks, playerTag))
-            {
-                agent.SetDestination(target.position);
-                agent.stoppingDistance = stoppingDistance;
-            }
-            else
-            {
-                agent.stoppingDistance = 0;
-            }
+            agent.SetDestination(target.position);
+            agent.stoppingDistance = stoppingDistance;
+        }
+        else
+        {
+            agent.stoppingDistance = 0;
         }
     }
 }
