@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 1355593592257874325}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.55, y: 0.99, z: 0}
-  m_LocalScale: {x: 1.5, y: 2.5, z: 1}
+  m_LocalPosition: {x: 4.1827, y: 1.5565, z: 0}
+  m_LocalScale: {x: 2.7653239, y: 3.633, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -176,3 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 1
+  coilRange: 4
+  range: 0
+  lookRight: 0
+  effectType: 

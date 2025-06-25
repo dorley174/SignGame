@@ -105,6 +105,7 @@ MonoBehaviour:
   force: 20
   lifeDistance: 50
   lookRight: 0
+  effectType: 
 --- !u!50 &307561283863307473
 Rigidbody2D:
   serializedVersion: 5
