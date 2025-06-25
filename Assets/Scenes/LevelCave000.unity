@@ -20010,11 +20010,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2816233087825006353, guid: e1bd47e993237174990b02e7adf604b3, type: 3}
   m_PrefabInstance: {fileID: 1516724838}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &919425112 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 332179138874039825, guid: e1bd47e993237174990b02e7adf604b3, type: 3}
-  m_PrefabInstance: {fileID: 1516724838}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &919425114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6376400539623540540, guid: e1bd47e993237174990b02e7adf604b3, type: 3}
@@ -20035,8 +20030,6 @@ MonoBehaviour:
   letterF: {fileID: 1786293127}
   detectionRadius: 3
   shopCanvas: {fileID: 685076057}
-  torgashAnimator: {fileID: 919425112}
-  isPanelActive: 0
 --- !u!70 &919425116
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -50676,7 +50669,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 99074471}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1854116933501499217, guid: 18a58a3b6ef5e5745baf005e50113955, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1231191988748743822, guid: 18a58a3b6ef5e5745baf005e50113955, type: 3}
