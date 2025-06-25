@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
 public class PlayerController : MonoBehaviour
@@ -27,6 +28,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector2 groundCheckSize = new Vector2(0.4f, 0.1f);
     [SerializeField] private Transform groundCheck;
 
+    [Header("Motion Blur Effect")]
+    [SerializeField] private bool isMotionBlurActive = false;
+    [SerializeField] private float blurSpawnRate = 0.05f;
+    [SerializeField] private float blurLifetime = 0.3f;
+    [SerializeField] private float blurStartAlpha = 0.5f;
+    [SerializeField] private float blurEndAlpha = 0f;
+
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
@@ -40,8 +48,9 @@ public class PlayerController : MonoBehaviour
     private float dashTimer;
     private float dashCooldownTimer;
     private Vector2 lastVelocity;
-
     private float baseGravity;
+    private float blurTimer;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -49,6 +58,7 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         jumpsLeft = maxJumps;
         baseGravity = rb.gravityScale;
+        blurTimer = blurSpawnRate;
     }
 
     private void Update()
@@ -65,7 +75,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (!isGrounded && jumpsLeft == maxJumps)
         {
-            jumpsLeft -= 1;
+            jumpsLeft--;
         }
         else
         {
@@ -82,14 +92,12 @@ public class PlayerController : MonoBehaviour
         {
             jumpBufferTimer -= Time.deltaTime;
         }
-        
-        // проверка раннего прыжка, времени кайота и проверки на доп прыжки
+
         if (jumpBufferTimer > 0f && (coyoteTimer > 0f || jumpsLeft > 0))
         {
             Jump();
         }
 
-        // прыжок меньше, если не зажимаешь кнопку прыжка
         if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * jumpCutMultiplier);
@@ -99,12 +107,25 @@ public class PlayerController : MonoBehaviour
         {
             StartDash();
         }
-
+        if (isMotionBlurActive)
+        {
+            blurTimer -= Time.deltaTime;
+            if (blurTimer <= 0f)
+            {
+                CreateBlurCopy();
+                blurTimer = blurSpawnRate;
+            }
+        }
         if (isDashing)
         {
             dashTimer -= Time.deltaTime;
+            
+
             if (dashTimer <= 0f)
+            {
                 isDashing = false;
+                isMotionBlurActive = false;
+            }
         }
 
         dashCooldownTimer -= Time.deltaTime;
@@ -157,6 +178,41 @@ public class PlayerController : MonoBehaviour
         lastVelocity = rb.linearVelocity;
         rb.linearVelocity = new Vector2((isFacingRight ? 1 : -1) * dashSpeed, 0f);
         rb.gravityScale = 0f;
+        isMotionBlurActive = true;
+    }
+
+    private void CreateBlurCopy()
+    {
+        GameObject blurCopy = new GameObject("BlurCopy");
+        blurCopy.transform.position = transform.position;
+        blurCopy.transform.rotation = transform.rotation;
+        blurCopy.transform.localScale = transform.localScale;
+
+        SpriteRenderer blurRenderer = blurCopy.AddComponent<SpriteRenderer>();
+        blurRenderer.sprite = spriteRenderer.sprite;
+        blurRenderer.sortingLayerName = spriteRenderer.sortingLayerName;
+        blurRenderer.sortingOrder = spriteRenderer.sortingOrder - 1;
+        blurRenderer.color = new Color(1f, 1f, 1f, blurStartAlpha); // Белый полупрозрачный
+        blurRenderer.flipX = spriteRenderer.flipX; // Переворачиваем копию по оси X
+
+        StartCoroutine(FadeOutBlur(blurCopy, blurRenderer));
+    }
+
+    private IEnumerator FadeOutBlur(GameObject blurCopy, SpriteRenderer blurRenderer)
+    {
+        float elapsedTime = 0f;
+        Color startColor = blurRenderer.color;
+        Color endColor = new Color(1f, 1f, 1f, blurEndAlpha);
+
+        while (elapsedTime < blurLifetime)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / blurLifetime;
+            blurRenderer.color = Color.Lerp(startColor, endColor, t);
+            yield return null;
+        }
+
+        Destroy(blurCopy);
     }
 
     private void UpdateAnimations()
@@ -165,7 +221,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("IsGrounded", isGrounded);
         animator.SetBool("IsJumping", !isGrounded && rb.linearVelocity.y > 0f);
         animator.SetBool("IsFalling", !isGrounded && rb.linearVelocity.y < 0f);
-}
+    }
 
     private void LateUpdate()
     {
@@ -176,7 +232,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // для простоты редактирования положения точки IsGroundedIsGrounded
+    // для простоты редактирования положения точки IsGrounded
     private void OnDrawGizmosSelected()
     {
         if (groundCheck != null)
