@@ -1,60 +1,31 @@
+using System.Collections;
 using UnityEngine;
 
 public class GUIManager : MonoBehaviour
 {
-    // [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject panel;
-    // [SerializeField] private float animationSpeed = 5f;
-    // [SerializeField] private RectTransform panelRect;
-
-    // private Vector2 hiddenPosition;
-    // private Vector2 visiblePosition;
-    private bool isPanelActive = false;
-    private bool activated = false;
     public Animator panelAnimator;
-
-    private void Start()
-    {
-        panel.SetActive(false);
-        isPanelActive = false;
-    }
-
-    // private void Awake()
-    // {
-        // hiddenPosition = new Vector2(0, -panelRect.rect.height);
-        // visiblePosition = Vector2.zero;
-
-        // panelRect.anchoredPosition = hiddenPosition;
-    // }
+    public bool IsPanelActive { get; private set; } = false;
 
     public void PanelActivate(bool flag)
     {
-        Activate();
-        //
-        // Vector2 targetPosition = isPanelActive ? visiblePosition : hiddenPosition;
-        // panelRect.anchoredPosition = Vector2.Lerp(
-        //     panelRect.anchoredPosition,
-        //     targetPosition,
-        //     Time.unscaledDeltaTime * animationSpeed
-        // );
         if (flag)
         {
+            panel.SetActive(true);
             panelAnimator.SetBool("slide", true);
+            IsPanelActive = true;
         }
         else
         {
             panelAnimator.SetBool("slide", false);
+            StartCoroutine(DeactivatePanel());
         }
-        //
     }
 
-    private void Activate()
+    private IEnumerator DeactivatePanel()
     {
-        isPanelActive = !isPanelActive;
-        if (isPanelActive)
-        {
-            panel.SetActive(true);
-        }
-        Time.timeScale = isPanelActive ? 0 : 1;
+        yield return new WaitForSeconds(1.1f);
+        panel.SetActive(false);
+        IsPanelActive = false;
     }
 }

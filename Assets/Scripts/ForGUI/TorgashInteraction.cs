@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class TorgashInteraction : MonoBehaviour
@@ -6,46 +7,66 @@ public class TorgashInteraction : MonoBehaviour
     [SerializeField] private float detectionRadius = 3f;
     [SerializeField] private GameObject shopCanvas;
 
-    private bool isPlayerNearby = false;
     private GameObject player;
-    private bool active = false;
-    
-    //
-    public Animator torgashAnimator;
-    public bool isPanelActive = false;
-    //
+    private PlayerController playerController;
+    private bool isPlayerNearby = false;
+    private bool isInteractive = false;
 
     private void Start()
     {
         letterF.SetActive(false);
+        player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playerController = player.GetComponent<PlayerController>();
+        }
+
     }
 
     private void Update()
     {
-        if (player == null)
-        {
-            player = GameObject.FindGameObjectWithTag("Player");
-            return;
-        }
 
         float distance = Vector2.Distance(transform.position, player.transform.position);
         isPlayerNearby = distance <= detectionRadius;
         letterF.SetActive(isPlayerNearby);
 
-        //
-        if (isPlayerNearby && Input.GetKeyDown(KeyCode.F) && !active)
+        if (isPlayerNearby && Input.GetKeyDown(KeyCode.F) && !isInteractive)
         {
-            torgashAnimator.SetBool("open", true);
+            StartCoroutine(HandleInteraction());
+        }
+    }
 
-            // Открываем панель магазина
-            shopCanvas.GetComponent<GUIManager>().PanelActivate(true);
-            // isPanelActive = true;
-        }
-        else if (isPlayerNearby && Input.GetKeyDown(KeyCode.F) && active)
+    private IEnumerator HandleInteraction()
+    {
+        isInteractive = true;
+
+        GUIManager guiManager = shopCanvas.GetComponent<GUIManager>();
+
+        if (!guiManager.IsPanelActive)
         {
-            torgashAnimator.SetBool("open", false);
-            shopCanvas.GetComponent<GUIManager>().PanelActivate(false);
+            if (playerController != null)
+            {
+                playerController.enabled = false;
+            }
+            this.GetComponent<Animator>().SetBool("open", true);
+            yield return new WaitForSeconds(0.3f);
+
+            guiManager.PanelActivate(true);
         }
+        else
+        {
+            guiManager.PanelActivate(false);
+            yield return new WaitForSeconds(1.1f);
+
+            this.GetComponent<Animator>().SetBool("open", false);
+
+            if (playerController != null)
+            {
+                playerController.enabled = true;
+            }
+        }
+
+        isInteractive = false;
     }
     
     void OnTriggerEnter(Collider other)
@@ -64,7 +85,8 @@ public class TorgashInteraction : MonoBehaviour
             isPlayerNearby = false;
             letterF.SetActive(false);
             
-            torgashAnimator.SetBool("open", false);
+            shopCanvas.GetComponent<GUIManager>().PanelActivate(false);
+            this.GetComponent<Animator>().SetBool("open", false);
         }
     }
 }
