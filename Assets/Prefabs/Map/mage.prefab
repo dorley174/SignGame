@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6542800115032726514}
   - component: {fileID: 5065759695881011327}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mage stuff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6798334097850243840}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground Checker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 3661724723506086405}
   - component: {fileID: 5495617925394699211}
   - component: {fileID: 8835969361204809701}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mage
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 747815365633153528}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FollowPointBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}

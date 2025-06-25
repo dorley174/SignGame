@@ -1,26 +1,31 @@
+using System.Collections;
 using UnityEngine;
 
 public class GUIManager : MonoBehaviour
 {
-    [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject panel;
+    public Animator panelAnimator;
+    public bool IsPanelActive { get; private set; } = false;
 
-    private void Start()
+    public void PanelActivate(bool flag)
     {
-        panel.SetActive(false);
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (flag)
         {
-            Activate();
+            panel.SetActive(true);
+            panelAnimator.SetBool("slide", true);
+            IsPanelActive = true;
+        }
+        else
+        {
+            panelAnimator.SetBool("slide", false);
+            StartCoroutine(DeactivatePanel());
         }
     }
 
-    public void Activate()
+    private IEnumerator DeactivatePanel()
     {
-        panel.SetActive(!panel.activeSelf);
-        Time.timeScale = panel.activeSelf ? 0 : 1;
+        yield return new WaitForSeconds(1.1f);
+        panel.SetActive(false);
+        IsPanelActive = false;
     }
 }
