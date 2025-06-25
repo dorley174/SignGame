@@ -4915,7 +4915,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1392388151}
-  - {fileID: 1193807143}
   m_Father: {fileID: 175424193}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -11531,7 +11530,6 @@ GameObject:
   m_Component:
   - component: {fileID: 466974785}
   - component: {fileID: 466974786}
-  - component: {fileID: 470768209}
   m_Layer: 0
   m_Name: Circle (28)
   m_TagString: Untagged
@@ -21242,7 +21240,6 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8736124150618179746, guid: 89eebe4d4c329524cb8d5453ba216dd6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2005254358}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8830624896990379866, guid: 89eebe4d4c329524cb8d5453ba216dd6, type: 3}
       insertIndex: -1
@@ -46743,7 +46740,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 967417611}
-  - {fileID: 1782077620}
   m_Father: {fileID: 175424193}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -50924,7 +50920,6 @@ RectTransform:
   m_LocalScale: {x: 1.0212, y: 1.0212, z: 1.0212}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1790587652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
