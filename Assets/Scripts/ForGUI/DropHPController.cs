@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class DropHPController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject dropItem;
+    [SerializeField] private Transform torgashTransform;
 
-    // Update is called once per frame
-    void Update()
+    public void DropHP()
     {
-        
+        Instantiate(dropItem, torgashTransform.position + new Vector3(-1, 0, 0), Quaternion.identity);
     }
 }

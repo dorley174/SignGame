@@ -9,16 +9,25 @@ public class Shop : MonoBehaviour
     [SerializeField] private GameObject block;
     [SerializeField] private TextMeshProUGUI objectPrice;
     [SerializeField] private TextMeshProUGUI coinCounter;
-    [SerializeField] private DropHPController dropHPController;
+    private DropHPController dropHPController;
     private int access;
+    // for test
+    public bool fl = false;
+    // for test
 
     void Awake()
     {
         // for test
-        // PlayerPrefs.DeleteAll();
-        // PlayerPrefs.SetInt("coins", 1000);
+        if (fl == false)
+        {
+            PlayerPrefs.DeleteAll();
+            PlayerPrefs.SetInt("coins", 1000);
+            fl = true;
+        }
         // for test
-
+        dropHPController = GetComponent<DropHPController>();
+        if (dropHPController == null)
+            Debug.Log($"не нашли {objectName}");
         AccessUpdate();
     }
 
@@ -50,7 +59,8 @@ public class Shop : MonoBehaviour
                 PlayerPrefs.SetInt(objectName + "Access", 1);
                 PlayerPrefs.SetInt("coins", coins - price);
                 coinCounter.text = PlayerPrefs.GetInt("coins").ToString();
-
+                Debug.Log("tut");
+                dropHPController.DropHP();
                 AccessUpdate();
             }
             else
