@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Threading;
 using UnityEngine;
-using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
 public class PlayerController : MonoBehaviour
