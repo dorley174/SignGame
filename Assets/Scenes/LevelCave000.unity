@@ -21080,7 +21080,7 @@ MonoBehaviour:
     m_Bits: 577
   speed: 10
   acceleration: 5
-  stoppingDistance: 0.5
+  stoppingDistance: 1
   visionRange: 25
 --- !u!195 &905102690
 NavMeshAgent:

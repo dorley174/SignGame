@@ -50,6 +50,17 @@ public class LandEnemyMovement : MonoBehaviour
     private bool isJumping;
     [SerializeField]
     private Vector3[] corners;
+    public Transform Target
+    {
+        set
+        {
+            target = value;
+        }
+        get
+        {
+            return target;
+        }
+    }
     private void OnValidate()
     {
         if (stats != null)
