@@ -44,6 +44,8 @@ This week we developed the MVP of our project, making the main functionality of 
 
 - Trained model: [model](https://github.com/IU-Capstone-Project-2025/SignGame/blob/main/static_ml/CNNModelC%23/CNN_model.onnx)
 
+*We also have a [model documentation](https://github.com/IU-Capstone-Project-2025/SignGame/blob/main/static_ml/doc.md), where described how we trained your model, what data used and what parameters model uses to make decisions*
+
 4. All work merged in the [main branch](https://github.com/IU-Capstone-Project-2025/SignGame)
 
 *You can view the process of forming individual areas of the game in more detail in the corresponding [branches](https://github.com/IU-Capstone-Project-2025/SignGame/branches)*
@@ -54,7 +56,7 @@ This week we developed the MVP of our project, making the main functionality of 
 
 ![Main menu](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/MainMenu.gif)
 
-### Hero base movement and animation
+### Hero base movement
 
 ![Movement](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/Movement.gif)
 
@@ -100,6 +102,8 @@ Valeriia Kolesnikova:
 
 * Combining of an storekeeper animation with opening or closing the store 
 
+* HP display in the interface and buying HP boost in the store
+
 Fanis Zinnurov:
 
 * Spells for the fire element and their bind to keys 1, 2 and 3
@@ -122,7 +126,7 @@ Danil Valiev:
   
 * Organization of team meetings, as well as meetings with TA;
 
-* MVP location plan
+* MVP location plan, CI/CD update
 
 * Creating [Week 3 report](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/week3.md).
 
@@ -146,12 +150,16 @@ Stanislav Delyukov:
 
 ### Plan for Week #4
 
-* A
+1. Diversify the game with a second location and add a connection between the initial one
   
-* B
+2. Develop a range enemy and level boss
   
-* C
+3. Optimize current game progress
   
-* D
+4. Impose visual effects on spells
+
+5. Adding traps to current and future levels
+
+6. Store design and full functionality
 
 Innopolis University | Capstone project | Summer 2025
