@@ -38,11 +38,23 @@ This week we developed the MVP of our project, making the main functionality of 
 
 ### Main menu
 
-![Main menu](assets/MainMenu.gif)
+![Main menu](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/MainMenu.gif)
 
 ### Hero base movement and animation
 
-![Movement](assets/Movement.gif)
+![Movement](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/Movement.gif)
+
+### Dash ability
+
+![Movement](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/dash.gif)
+
+### Checkpoint
+
+![Movement](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/checkpoint.gif)
+
+### Game currency - Coins
+
+![Movement](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/coins.gif)
 
 ## Weekly commitments
 
@@ -60,15 +72,15 @@ Sviatoslav Fediaev:
 
 Valeriia Kolesnikova:
 
-* A
+* Mechanics of [collecting coins](https://github.com/IU-Capstone-Project-2025/SignGame/commit/ea56c60c43a63636a54d5757b8e09d0fa6fcfdd1) and their logic
 
-* B
+* Items purchase 
 
-* C
+* Combining of an storekeeper animation with opening or closing the store 
 
 Fanis Zinnurov:
 
-* A
+* 
 
 * B
  
@@ -104,7 +116,9 @@ Stanislav Delyukov:
 
 * Storekeeper model and animation
 
-* Trap, HP bar, coin bar and main menu design
+* Cursor, HP bar, coins, coin bar and main menu design
+
+* Dash effect 
 
 ### Plan for Week #3
 
