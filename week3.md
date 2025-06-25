@@ -40,11 +40,73 @@ This week we developed the MVP of our project, making the main functionality of 
 
 ![Main menu](assets/MainMenu.gif)
 
-### Hero movement
+### Hero base movement and animation
 
 ![Movement](assets/Movement.gif)
 
-## Plan for the next week
+## Weekly commitments
+
+### Individual contribution of each participant
+
+Each member of the team made significant during MVP development!
+
+Sviatoslav Fediaev:
+
+* Enemies attack
+  
+* Updated enemies taunt mechanics 
+  
+* Enemy characteristics and respawn after small time
+
+Valeriia Kolesnikova:
+
+* A
+
+* B
+
+* C
+
+Fanis Zinnurov:
+
+* A
+
+* B
+ 
+* C
+
+Egor Savchenko:
+
+* Creation of mechanics of trap-chip
+
+* Mechanics of obtaining damage
+
+* Merging and resolving problems of all Unity work
+
+Danil Valiev:
+
+* Creation and actively management [TaskBoard](https://trello.com/b/g98QWgRE/sign-game);
+  
+* Organization of team meetings, as well as meetings with TA;
+
+* Creating [Week 3 report](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/week3.md).
+
+Nikita Stepankov:
+
+* ML model [documentation](https://github.com/IU-Capstone-Project-2025/SignGame/blob/main/static_ml/doc.md);
+  
+* Generalize and automate process of generating [datasets](https://github.com/IU-Capstone-Project-2025/SignGame/blob/main/static_ml/test_dataset_generation.ipynb) and training of model;
+
+* [Merge](https://github.com/IU-Capstone-Project-2025/SignGame/pull/11) model to actual branch.
+
+Stanislav Delyukov:
+
+* Special MVP location
+
+* Storekeeper model and animation
+
+* Trap, HP bar, coin bar and main menu design
+
+### Plan for Week #3
 
 * A
   
