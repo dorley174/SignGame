@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+        DataContainer.checkpointIndex = 0;
         SceneManager.LoadScene(startSceneName);
     }
 

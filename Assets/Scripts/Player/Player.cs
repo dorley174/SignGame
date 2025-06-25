@@ -7,7 +7,24 @@ public class Player : MonoBehaviour
     [Header("Debug")]
     [SerializeField] float hp;
 
-    void Start() {
+    void Start()
+    {
         hp = maxHp;
+    }
+
+    // for test
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            hp -= 10f;
+            Debug.Log($"Player HP: {hp}");
+        }
+    }
+    // for test
+
+    public float GetHP()
+    {
+        return hp;
     }
 }
