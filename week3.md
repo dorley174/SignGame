@@ -10,10 +10,6 @@ Week \#3
 
 * Interactive board of ideas: [Miro](https://miro.com/welcomeonboard/NjllanVudnhUd2Fhd3RGQUpCMlN0S3d2Nm9SakkrNzI1YVhsK0VKYmZpQkR6Titjc2xycjRyNnpYRTNGRTlvNyt5anpZa3R4TkZVUEdwNjIwdDVTcjdqQksyeUJBbTcreDg3cXNHWllsZFk2VWlhSHRvTTJ2aU5uU3BuR2hvRG5NakdSWkpBejJWRjJhRnhhb1UwcS9BPT0hdjE=?share_link_id=131423753479)
 
-* MVP demo preview: []()
-
-* MVP release: []()
-
 This week we developed the MVP of our project, making the main functionality of our future game.
 
 ### Implemented MVP features
@@ -50,7 +46,7 @@ In general, a finished MVP fragment was created in a week: the user can launch t
 
 ### Demonstration of the Working MVP
 
-You can view the demo and screenshots [here]()
+You can view the demo and screenshots [here](https://drive.google.com/file/d/1gOAShk36HPOXfU-XGOHnhAzwJOA_3oHy/view?usp=sharing)
 
 ### ML
 
@@ -239,4 +235,4 @@ We confirm that the code in the main branch:
 * [✓] In working condition.
 * [✓] Run via docker-compose (or another alternative described in the README.md).
 
-Innopolis University | Capstone project | Summer 2025
+*Innopolis University    |   Capstone project    |   Summer 2025*
