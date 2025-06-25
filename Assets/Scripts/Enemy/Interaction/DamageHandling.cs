@@ -15,4 +15,8 @@ public class DamageHandling : MonoBehaviour
     {
         collision.gameObject.GetComponent<Player>().TakeDamage(damage);
     }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        collision.gameObject.GetComponent<Player>().TakeDamage(damage);
+    }
 }
