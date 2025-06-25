@@ -16,19 +16,33 @@ Week \#3
 
 This week we developed the MVP of our project, making the main functionality of our future game.
 
+### Team members and tracks
+
+| Team Member |  Email Address | Track | 
+| :----  | :---- | :---- |
+| Sviatoslav Fediaev *(Lead)*  | [s.fediaev@innopolis.university](mailto:s.fediaev@innopolis.university) | Unity developer | 
+| Valeriia Kolesnikova  | [v.kolesnikova@innopolis.university](mailto:v.kolesnikova@innopolis.university) | Unity developer | 
+| Fanis Zinnurov  | [f.zinnurov@innopolis.university](mailto:f.zinnurov@innopolis.university) | Unity developer | 
+| Egor Savchenko  | [e.savchenko@innopolis.university](mailto:e.savchenko@innopolis.university) | Unity developer | 
+| Danil Valiev  | [d.valiev@innopolis.university](mailto:d.valiev@innopolis.university) | Project Manager<br>DevOps| 
+| Nikita Stepankov  | [n.stepankov@innopolis.university](mailto:n.stepankov@innopolis.university) | Machine Learning | 
+| Stanislav Delyukov  | [s.delyukov@innopolis.university](mailto:s.delyukov@innopolis.university) | UX/UI<br>Design | 
+
 ## Project specific progress
 
 ### Core Feature Implementation
 
-1. All game features were discussed between the participants, balancedly distributed and completed
+1. All game features were discussed between the participants, balancedly [distributed](https://trello.com/b/g98QWgRE/sign-game) and completed
 
 2. Design textures and/or animations were issued on all the necessary models
 
 3. Fully developed, trained and integrated ML model
 
-- Training code source: [code]()
+- Training code source: [code](https://github.com/IU-Capstone-Project-2025/SignGame/blob/main/static_ml/model.py)
 
-- Initial model artifacts: [artifacts]()
+- Initial model artifacts: [artifacts](https://github.com/IU-Capstone-Project-2025/SignGame/blob/main/static_ml/test_dataset_generation.ipynb)
+
+- Trained model: [model](https://github.com/IU-Capstone-Project-2025/SignGame/blob/main/static_ml/CNNModelC%23/CNN_model.onnx)
 
 4. All work merged in the [main branch](https://github.com/IU-Capstone-Project-2025/SignGame)
 
@@ -46,15 +60,15 @@ This week we developed the MVP of our project, making the main functionality of 
 
 ### Dash ability
 
-![Movement](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/dash.gif)
+![Dash](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/dash.gif)
 
 ### Checkpoint
 
-![Movement](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/checkpoint.gif)
+![Checkpoint](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/checkpoint.gif)
 
 ### Game currency - Coins
 
-![Movement](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/coins.gif)
+![Coins](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/coins.gif)
 
 ## Weekly commitments
 
@@ -64,7 +78,7 @@ Each member of the team made significant during MVP development!
 
 Sviatoslav Fediaev:
 
-* Enemies attack
+* Enemy attacks
   
 * Updated enemies taunt mechanics 
   
@@ -80,11 +94,11 @@ Valeriia Kolesnikova:
 
 Fanis Zinnurov:
 
-* 
+* Spells for the fire element and their bind to keys 1, 2 and 3
 
-* B
+* Enemy taking damage and death
  
-* C
+* Some [technical changes](https://github.com/IU-Capstone-Project-2025/SignGame/commit/10821f94f7dbe20b16831fcc2bb29088d6723e54) to attack scripts
 
 Egor Savchenko:
 
@@ -92,13 +106,15 @@ Egor Savchenko:
 
 * Mechanics of obtaining damage
 
-* Merging and resolving problems of all Unity work
+* Merging and [resolving problems](https://github.com/IU-Capstone-Project-2025/SignGame/commit/dd100336a94ceae10005f302679562d22573ef12) of all Unity work
 
 Danil Valiev:
 
 * Creation and actively management [TaskBoard](https://trello.com/b/g98QWgRE/sign-game);
   
 * Organization of team meetings, as well as meetings with TA;
+
+* MVP location plan
 
 * Creating [Week 3 report](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/week3.md).
 
