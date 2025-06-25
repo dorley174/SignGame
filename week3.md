@@ -70,6 +70,14 @@ This week we developed the MVP of our project, making the main functionality of 
 
 ![Coins](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/coins.gif)
 
+### Store
+
+![Store](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/store.gif)
+
+### Spell cast
+
+![Fireball](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/spell.gif)
+
 ## Weekly commitments
 
 ### Individual contribution of each participant
@@ -82,7 +90,7 @@ Sviatoslav Fediaev:
   
 * Updated enemies taunt mechanics 
   
-* Enemy characteristics and respawn after small time
+* Enemy [damage dealing](https://github.com/IU-Capstone-Project-2025/SignGame/commit/18d2caf8dafcbb240593fb164d7d68a8ad92d1f3) and respawn after small time
 
 Valeriia Kolesnikova:
 
@@ -134,9 +142,9 @@ Stanislav Delyukov:
 
 * Cursor, HP bar, coins, coin bar and main menu design
 
-* Dash effect 
+* Dash [effect](https://github.com/IU-Capstone-Project-2025/SignGame/commit/9554e9ad7689ff3a1e4ffe88ca94c3b031f2cb0c) 
 
-### Plan for Week #3
+### Plan for Week #4
 
 * A
   
