@@ -64,6 +64,52 @@ We fully developed, trained and integrated ML model
 
 *We also have a [model documentation](https://github.com/IU-Capstone-Project-2025/SignGame/blob/main/static_ml/doc.md), where described how we trained your model, what data used and what parameters model uses to make decisions*
 
+## Internal demo
+
+During testing we identified the following issues:
+
+* No clear instruction on what symbol to draw
+
+* Sometimes a dash works incorrectly
+
+* Sometimes the hero's spells are applied too slowly and are canceled when pressed again
+
+* There is no accurate recipe for the spell, it is not known what to mix with
+
+* There is no explanation of the game process lore
+
+Then we discussed the priority of this ideas
+
+### Priority tasks
+
+This tasks will completed during next week
+
+* Diversify the game with a second location and add a connection between the initial one
+  
+* Develop a level boss
+  
+* Impose visual effects on spells
+
+* Adding traps to current and future levels
+
+* Store design and full functionality
+
+### Need to be discussed
+
+This problems will fixed during next week
+
+* Fix hero abilities work
+
+* Fix spell cast- and tick rate
+
+### Need to be done later 
+
+This conflicts need to be resolved, but for now it is not prioriry target
+
+* Optimize current game process
+
+* Update some beta applied textures or models
+
 ### Core Feature Implementation
 
 1. All game features were discussed between the participants, balancedly [distributed](https://trello.com/b/g98QWgRE/sign-game) and completed
@@ -105,6 +151,9 @@ We fully developed, trained and integrated ML model
 ### Spell cast
 
 ![Fireball](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/spell.gif)
+
+
+
 
 ## Weekly commitments
 
@@ -174,18 +223,11 @@ Stanislav Delyukov:
 
 * Dash [effect](https://github.com/IU-Capstone-Project-2025/SignGame/commit/9554e9ad7689ff3a1e4ffe88ca94c3b031f2cb0c) 
 
-### Plan for Week #4
+## Confirmation of the code's operability
 
-1. Diversify the game with a second location and add a connection between the initial one
-  
-2. Develop a range enemy and level boss
-  
-3. Optimize current game progress
-  
-4. Impose visual effects on spells
+We confirm that the code in the main branch:
 
-5. Adding traps to current and future levels
-
-6. Store design and full functionality
+* [✓] In working condition.
+* [✓] Run via docker-compose (or another alternative described in the README.md).
 
 Innopolis University | Capstone project | Summer 2025
