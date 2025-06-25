@@ -1343,8 +1343,9 @@ GameObject:
   - component: {fileID: 6408670751012439368}
   - component: {fileID: 6062996060016139942}
   - component: {fileID: 5085647953492665921}
-  - component: {fileID: 2087902037736908032}
+  - component: {fileID: 3296062809074158793}
   - component: {fileID: 944097122131958232}
+  - component: {fileID: 8661930681364204310}
   m_Layer: 5
   m_Name: BuyButton1
   m_TagString: Untagged
@@ -1455,7 +1456,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2087902037736908032
+--- !u!114 &3296062809074158793
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1472,7 +1473,9 @@ MonoBehaviour:
     \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u0435"
   block: {fileID: 5684041738383117598}
   objectPrice: {fileID: 7570233997760588375}
-  coinCounter: {fileID: 0}
+  coinCounter: {fileID: 8522026398726075382}
+  gameManager: {fileID: 0}
+  fl: 0
 --- !u!114 &944097122131958232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1490,7 +1493,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2087902037736908032}
+        - m_Target: {fileID: 3296062809074158793}
           m_TargetAssemblyTypeName: Shop, Assembly-CSharp
           m_MethodName: OnButtonDown
           m_Mode: 1
@@ -1502,6 +1505,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &8661930681364204310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2282205456623195887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdeb1995ab355754bb11c24359959fd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropItem: {fileID: 9046816548370757077, guid: 448218495c2936a439377a5f516439af, type: 3}
+  torgashTransform: {fileID: 0}
 --- !u!1 &2466817620064889455
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,7 +2156,9 @@ MonoBehaviour:
   objectName: "\u0428\u0438\u043F\u0430\u0441\u0442\u044B\u0439 \u043D\u0430\u0433\u0440\u0443\u0434\u043D\u0438\u043A"
   block: {fileID: 8248932357042887607}
   objectPrice: {fileID: 8953471401780926121}
-  coinCounter: {fileID: 0}
+  coinCounter: {fileID: 8522026398726075382}
+  gameManager: {fileID: 0}
+  fl: 0
 --- !u!114 &970449318906184857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2656,7 +2675,9 @@ MonoBehaviour:
   objectName: "\u0417\u043D\u0430\u043D\u0438\u044F \u043C\u0430\u0433\u0438\u0438"
   block: {fileID: 1193576644187537687}
   objectPrice: {fileID: 536459120458714194}
-  coinCounter: {fileID: 0}
+  coinCounter: {fileID: 8522026398726075382}
+  gameManager: {fileID: 0}
+  fl: 0
 --- !u!114 &3769676592118376864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3533,7 +3554,9 @@ MonoBehaviour:
   objectName: "\u0417\u0430\u043F\u0438\u0441\u0438 \u043E \u0431\u043E\u0433\u0430\u0445"
   block: {fileID: 4314124562285922074}
   objectPrice: {fileID: 7414823228420449848}
-  coinCounter: {fileID: 0}
+  coinCounter: {fileID: 8522026398726075382}
+  gameManager: {fileID: 0}
+  fl: 0
 --- !u!114 &8217834243979034900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4105,7 +4128,9 @@ MonoBehaviour:
   objectName: "\u0421\u043A\u043E\u0440\u043E\u0445\u043E\u0434"
   block: {fileID: 2466817620064889455}
   objectPrice: {fileID: 5731573887155368393}
-  coinCounter: {fileID: 0}
+  coinCounter: {fileID: 8522026398726075382}
+  gameManager: {fileID: 0}
+  fl: 0
 --- !u!114 &6769982680707714328
 MonoBehaviour:
   m_ObjectHideFlags: 0

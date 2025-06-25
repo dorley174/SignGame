@@ -141,12 +141,12 @@ TextureImporter:
       name: enemy-crystal_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 18
-        width: 325
-        height: 248
-      alignment: 9
-      pivot: {x: 0.5081892, y: 0.9901167}
+        x: 27
+        y: 19
+        width: 329
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,12 +163,12 @@ TextureImporter:
       name: enemy-crystal_1
       rect:
         serializedVersion: 2
-        x: 378
-        y: 19
-        width: 311
-        height: 248
-      alignment: 9
-      pivot: {x: 0.5316745, y: 0.99378854}
+        x: 389
+        y: 20
+        width: 309
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,12 +185,12 @@ TextureImporter:
       name: enemy-crystal_2
       rect:
         serializedVersion: 2
-        x: 695
-        y: 28
-        width: 324
-        height: 248
-      alignment: 9
-      pivot: {x: 0.5684543, y: 0.99173}
+        x: 733
+        y: 30
+        width: 292
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -207,12 +207,12 @@ TextureImporter:
       name: enemy-crystal_3
       rect:
         serializedVersion: 2
-        x: 1031
-        y: 26
+        x: 1039
+        y: 27
         width: 314
-        height: 248
-      alignment: 9
-      pivot: {x: 0.5261872, y: 0.99065804}
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -229,12 +229,12 @@ TextureImporter:
       name: enemy-crystal_4
       rect:
         serializedVersion: 2
-        x: 1376
-        y: 28
-        width: 318
-        height: 248
-      alignment: 9
-      pivot: {x: 0.5191562, y: 0.99064034}
+        x: 1377
+        y: 29
+        width: 329
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

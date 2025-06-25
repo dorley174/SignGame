@@ -11,8 +11,8 @@ public class CoinDestroyer : MonoBehaviour
         }
             
     }
-    private void OnDestroy()
-    {
+    private void OnDestroy() {
+        if (!gameObject.scene.isLoaded) return;
         ParticleSystem effect = Instantiate(collectEffect, transform.position, Quaternion.identity);
         effect.Play();
         Destroy(effect.gameObject, effect.main.duration);

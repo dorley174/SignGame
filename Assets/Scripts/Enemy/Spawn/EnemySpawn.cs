@@ -5,6 +5,8 @@ public class EnemySpawn : MonoBehaviour
 {
     [SerializeField]
     private GameObject enemyPrefab;
+    [SerializeField]
+    private Transform parentObject;
     private GameObject enemyInstance;
     [SerializeField]
     private float respawnTime;
@@ -31,18 +33,33 @@ public class EnemySpawn : MonoBehaviour
             vectorPos = spawnPos.position;
         }
     }
+    private void Start()
+    {
+        SpawnEnemy();
+    }
     public void SpawnEnemy()
     {
         if (enemyInstance == null)
         {
-            enemyInstance = Instantiate(enemyPrefab, vectorPos, enemyPrefab.transform.rotation);
+            if (parentObject != null)
+            {
+                enemyInstance = Instantiate(enemyPrefab, vectorPos, Quaternion.identity, parentObject);
+            }
+            else
+            {
+                enemyInstance = Instantiate(enemyPrefab, vectorPos, Quaternion.identity);
+            }
+            if (enemyInstance.GetComponent<Enemy>())
+            {
+                enemyInstance.GetComponent<Enemy>().Spawn = this;
+            }
         }
     }
     public void DeleteEnemy()
     {
         if (enemyInstance != null)
         {
-            Destroy(enemyInstance); // уничтожается ТОЛЬКО инстанс, а не префаб
+            Destroy(enemyInstance);
             enemyInstance = null;
         }
         StartCoroutine(SpawnAfterSeconds(TimeInSeconds));

@@ -50,6 +50,17 @@ public class LandEnemyMovement : MonoBehaviour
     private bool isJumping;
     [SerializeField]
     private Vector3[] corners;
+    public Transform Target
+    {
+        set
+        {
+            target = value;
+        }
+        get
+        {
+            return target;
+        }
+    }
     private void OnValidate()
     {
         if (stats != null)
@@ -80,6 +91,10 @@ public class LandEnemyMovement : MonoBehaviour
         if (enemyCollider == null)
         {
             enemyCollider = GetComponent<CapsuleCollider2D>();
+        }
+        if (target == null)
+        {
+            target = FindFirstObjectByType<Player>().transform;
         }
     }
     void Start()

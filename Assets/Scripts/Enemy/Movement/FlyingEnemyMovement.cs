@@ -58,6 +58,10 @@ public class FlyingEnemyMovement : MonoBehaviour
         {
             agent = GetComponent<NavMeshAgent>();
         }
+        if (target == null)
+        {
+            target = FindFirstObjectByType<Player>().transform;
+        }
     }
     void Start()
     {
@@ -83,6 +87,25 @@ public class FlyingEnemyMovement : MonoBehaviour
         else
         {
             agent.stoppingDistance = 0;
+        }
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+
+        float circleSegments = 36;
+        float radius = visionRange;
+        Vector2 center = transform.position;
+        float angleStep = 360f / circleSegments;
+
+        Vector2 prevPoint = center + new Vector2(Mathf.Cos(0), Mathf.Sin(0)) * radius;
+
+        for (int i = 1; i <= circleSegments; i++)
+        {
+            float angle = i * angleStep * Mathf.Deg2Rad;
+            Vector2 nextPoint = center + new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * radius;
+            Gizmos.DrawLine(prevPoint, nextPoint);
+            prevPoint = nextPoint;
         }
     }
 }
