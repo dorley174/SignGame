@@ -1083,8 +1083,9 @@ GameObject:
   - component: {fileID: 1362432562}
   - component: {fileID: 1362432561}
   - component: {fileID: 1362432563}
+  - component: {fileID: 1362432565}
   - component: {fileID: 1362432564}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1206,10 +1207,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1362432560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d6f8ec22750e764c8cef41069394a48, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ee386737a2d10641bfc210068caab4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &1362432565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362432560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a94809e5f802a54486e033862ad1e92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTag: Enemy
+  burnDuration: 3
+  poisonDuration: 5
+  KnockbackForce: 5
 --- !u!1 &1401154044
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,8 +2003,8 @@ GameObject:
   - component: {fileID: 2013620206}
   - component: {fileID: 2013620207}
   m_Layer: 0
-  m_Name: Square (1)
-  m_TagString: Ground
+  m_Name: Enemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
