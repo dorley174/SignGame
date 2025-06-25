@@ -10,9 +10,9 @@ Week \#3
 
 * Interactive board of ideas: [Miro](https://miro.com/welcomeonboard/NjllanVudnhUd2Fhd3RGQUpCMlN0S3d2Nm9SakkrNzI1YVhsK0VKYmZpQkR6Titjc2xycjRyNnpYRTNGRTlvNyt5anpZa3R4TkZVUEdwNjIwdDVTcjdqQksyeUJBbTcreDg3cXNHWllsZFk2VWlhSHRvTTJ2aU5uU3BuR2hvRG5NakdSWkpBejJWRjJhRnhhb1UwcS9BPT0hdjE=?share_link_id=131423753479)
 
-* MVP demo preview: [Demo]()
+* MVP demo preview: []()
 
-* MVP release: [Release]()
+* MVP release: []()
 
 This week we developed the MVP of our project, making the main functionality of our future game.
 
