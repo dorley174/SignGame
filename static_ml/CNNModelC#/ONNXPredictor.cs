@@ -29,6 +29,7 @@ namespace ONNXPredictor
         private readonly MLContext _mlContext;
         private readonly PredictionEngine<ModelInput, ModelOutput> _predictionEngine;
         private readonly float _confidenceThreshold;
+        Dictionary<int, String> _class_cnt;
 
         public ONNXPredictor(string onnxModelPath, float confidenceThreshold = 0.7f)
         {
@@ -45,6 +46,13 @@ namespace ONNXPredictor
             var model = pipeline.Fit(emptyData);
 
             _predictionEngine = _mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(model);
+
+            string targetDirectory = "static_ml\etalon";
+            string[] fileEntries = Directory.GetFiles(targetDirectory);
+            _class_cnt = new Dictionary<int, String>();
+            int cnt = 0;
+            foreach (string fileName in fileEntries)
+                _class_cnt.Add(cnt++, fileName);
         }
 
         public static float[] ProcessImageToArray(string imgPath)
@@ -119,40 +127,12 @@ namespace ONNXPredictor
 
             return classProbabilities;
         }
+        
+         
 
         public string GetClassName(int classIndex)
         {
-            return classIndex switch
-            {
-                0 => "air1",
-                1 => "air2",
-                2 => "air3",
-                3 => "fire1",
-                4 => "fire2",
-                5 => "fire3",
-                6 => "dark1",
-                7 => "dark2",
-                8 => "dark3",
-                9 => "water1",
-                10 => "water2",
-                11 => "water3",
-                12 => "light1",
-                13 => "light2",
-                14 => "light3",
-                15 => "poison1",
-                16 => "poison2",
-                17 => "poison3",
-                18 => "reflection1",
-                19 => "reflection2",
-                20 => "reflection3",
-                21 => "life1",
-                22 => "life2",
-                23 => "life3",
-                24 => "earth1",
-                25 => "earth2",
-                26 => "earth3",
-                _ => "unknown"
-            };
+            return _class_cnt[classIndex];
         }
 
         public void Dispose()

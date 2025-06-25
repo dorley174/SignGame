@@ -11,6 +11,7 @@ import tf2onnx
 import onnx
 from keras.models import load_model
 import cv2
+import json
 
 class CNNModel:
     #initialize model with threshlod of 0.7
@@ -130,6 +131,11 @@ def load_dataset(data_dir):
     class_names = {}
     for names, cnt in enum:
         class_names[cnt] = names
+    print(class_names)
+        
+    with open('static_ml\CNNModelC#\classes.json', 'w') as f:
+        json.dump(f,class_names)
+        
     for filename in listdir(data_dir):
         if filename.endswith('.png'):
             if filename.startswith('x'):
@@ -173,7 +179,7 @@ if __name__ == "__main__":
     hc_model = CNNModel(input_shape=X_train[0].shape, num_classes=len(np.unique(y)))
     history, model_path = hc_model.train(X_train, y_train, X_test, y_test, epochs=50)
     
-    hc_model.save_as_onnx(model_path, "model.onnx")
+    hc_model.save_as_onnx(model_path, "static_ml\CNNModelC#\CNN_model.onnx")
     
     plot_history(history)
     
