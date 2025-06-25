@@ -11609,11 +11609,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
 --- !u!114 &470768209
-=======
 --- !u!114 &466974787
->>>>>>> 3930c3361b9bd9f7f4e9072eba700693af2ed3fc
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
