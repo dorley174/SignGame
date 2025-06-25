@@ -15,8 +15,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Check for level folder
+      - name: Check for level folders
         run: |
+          if [ -d "static_ml" ]; then
+            echo "✅ Found ML model!"
+          else
+            echo "❌ You somewhere miss our ML model("
+            exit 1
+          fi
+
+          if [ -d "ProjectSettings" ]; then
+            echo "✅ Found settings managers!"
+          else
+            echo "❌ You somewhere miss our settings managers("
+            exit 1
+          fi
+          
           if [ -d "Assets" ]; then
             echo "✅ 'Assets' folder found!"
             if [ -d "Assets/Scenes" ]; then
@@ -83,11 +97,7 @@ jobs:
 
           echo "⚠️ Total formatting issues: $issue_count"
 
-          score=$(echo "scale=1; 10 - ($issue_count / 5)" | bc)
-          score=$(echo "$score" | awk '{ if ($1 < 0) print 0; else print }')
-          echo "📊 Code style score: $score/10"
-
-          if (( $(echo "$score < 0" | bc -l) )); then
+          if (( $(echo "$issue_count > 100" | bc -l) )); then
             echo "❌ Code style too poor"
             exit 1
           fi
