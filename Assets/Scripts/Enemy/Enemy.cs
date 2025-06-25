@@ -6,7 +6,28 @@ public class Enemy : MonoBehaviour
     public float maxHp = 100f;
 
     [Header("Debug")]
-    [SerializeField] float hp;
+    [SerializeField]
+    private float hp;
+    [SerializeField]
+    private EnemySpawn spawn;
+    public float GetHp
+    {
+        get
+        {
+            return hp;
+        }
+    }
+    public EnemySpawn Spawn
+    {
+        get
+        {
+            return spawn;
+        }
+        set
+        {
+            spawn = value;
+        }
+    }
 
     private Color originalColor;
 
@@ -30,15 +51,10 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
-
-    public float GetHP()
-    {
-        return hp;
-    }
     public void Die()
     {
         Debug.Log($"Объект {name} был уничтожен!");
-        Destroy(gameObject);
+        spawn.DeleteEnemy();
     }
 
     public void ReturnToOrig()

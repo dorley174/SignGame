@@ -28,12 +28,21 @@ public class ShootSpell : MonoBehaviour
         CheckIfAlive();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.tag == "Enemy")
+    //    {
+    //        Debug.Log("Collision!");
+    //        EffectsManager.Instance.effect.ApplyEffect(gameObject, other.gameObject, effectType);
+    //        Destroy(gameObject);
+    //    }
+    //}
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy")
         {
             Debug.Log("Collision!");
-            EffectsManager.Instance.effect.ApplyEffect(gameObject, other.gameObject, effectType);
+            EffectsManager.Instance.effect.ApplyEffect(gameObject, collision.gameObject, effectType);
             Destroy(gameObject);
         }
     }

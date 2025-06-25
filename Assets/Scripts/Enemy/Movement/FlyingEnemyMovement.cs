@@ -58,6 +58,10 @@ public class FlyingEnemyMovement : MonoBehaviour
         {
             agent = GetComponent<NavMeshAgent>();
         }
+        if (target == null)
+        {
+            target = FindFirstObjectByType<Player>().transform;
+        }
     }
     void Start()
     {
