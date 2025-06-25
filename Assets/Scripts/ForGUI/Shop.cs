@@ -20,7 +20,7 @@ public class Shop : MonoBehaviour
         // for test
         if (fl == false)
         {
-            PlayerPrefs.DeleteAll();
+            // PlayerPrefs.DeleteAll();
             PlayerPrefs.SetInt("coins", 1000);
             fl = true;
         }
