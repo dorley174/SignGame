@@ -9,6 +9,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private GameObject block;
     [SerializeField] private TextMeshProUGUI objectPrice;
     [SerializeField] private TextMeshProUGUI coinCounter;
+    [SerializeField] private DropHPController dropHPController;
     private int access;
 
     void Awake()
@@ -49,6 +50,7 @@ public class Shop : MonoBehaviour
                 PlayerPrefs.SetInt(objectName + "Access", 1);
                 PlayerPrefs.SetInt("coins", coins - price);
                 coinCounter.text = PlayerPrefs.GetInt("coins").ToString();
+
                 AccessUpdate();
             }
             else
