@@ -1,9 +1,13 @@
+using Unity.Android.Gradle.Manifest;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(LayerMask), typeof(NavMeshAgent))]
 public class FlyingEnemyMovement : MonoBehaviour
 {
+    [SerializeField]
+    private EnemyInteractionCharacteristics stats;
     [SerializeField] 
     private Transform target;
     [SerializeField]
@@ -34,6 +38,20 @@ public class FlyingEnemyMovement : MonoBehaviour
         get
         {
             return agent;
+        }
+    }
+    private void OnValidate()
+    {
+        if (stats != null)
+        {
+            visionRange = stats.visionRange;
+            speed = stats.speed;
+            acceleration = stats.acceleration;
+            stoppingDistance = stats.stoppingDistance;
+            if (stats.isGround)
+            {
+                Debug.Log("Wrong enemy type! :: FlyingEnemyMovement; OnValidate");
+            }
         }
     }
     private void Awake()

@@ -7,6 +7,9 @@ using UnityEngine.AI;
 [RequireComponent(typeof(CapsuleCollider2D), typeof(LayerMask), typeof(NavMeshAgent))]
 public class LandEnemyMovement : MonoBehaviour
 {
+    //ScriptableObject
+    [SerializeField]
+    private EnemyInteractionCharacteristics stats;
     //Target detection
     [SerializeField]
     private Transform target;
@@ -47,6 +50,27 @@ public class LandEnemyMovement : MonoBehaviour
     private bool isJumping;
     [SerializeField]
     private Vector3[] corners;
+    private void OnValidate()
+    {
+        if (stats != null)
+        {
+            visionRange = stats.visionRange;
+            speed = stats.speed;
+            acceleration = stats.acceleration;
+            stoppingDistance = stats.stoppingDistance;
+            if (stats.isGround)
+            {
+                jumpHeight = stats.maxJumpHeight;
+                minJumpHeight = stats.minJumpHeight;
+                jumpTime = stats.jumpTime;
+                gravity = stats.gravity;
+            }
+            else
+            {
+                Debug.Log("Wrong enemy type! :: LandEnemyMovement; OnValidate");
+            }
+        }
+    }
     void Awake()
     {
         if (agent == null)
