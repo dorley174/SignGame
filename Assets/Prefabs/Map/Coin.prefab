@@ -259,7 +259,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonusName: coin
-  coinCounter: {fileID: 0}
 --- !u!1 &5704964473467543553
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +334,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 140931410904029152, guid: 4d0959b07f1f1cb4a91b387cfb70079c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -425,7 +424,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 3678958158781673079, guid: 4d0959b07f1f1cb4a91b387cfb70079c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -603,7 +602,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 3678958158781673079, guid: 4d0959b07f1f1cb4a91b387cfb70079c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -712,7 +711,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 140931410904029152, guid: 4d0959b07f1f1cb4a91b387cfb70079c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
