@@ -128,12 +128,12 @@ GameObject:
   m_Component:
   - component: {fileID: 282918613760511247}
   - component: {fileID: 4466998318849624972}
-  - component: {fileID: 6779593553360534519}
   - component: {fileID: 6493718901206921931}
   - component: {fileID: 3264134942053604156}
-  - component: {fileID: 3661724723506086405}
   - component: {fileID: 5495617925394699211}
-  - component: {fileID: 8835969361204809701}
+  - component: {fileID: 6779593553360534519}
+  - component: {fileID: 2763881574030608279}
+  - component: {fileID: 9209459962610079209}
   m_Layer: 9
   m_Name: mage
   m_TagString: Player
@@ -154,6 +154,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4155156812212076975}
   - {fileID: 747815365633153528}
   - {fileID: 6542800115032726514}
   - {fileID: 6798334097850243840}
@@ -214,36 +215,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6779593553360534519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6756031849493778654}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 283da228703071a4ea91fcc8b397dc93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 6
-  acceleration: 50
-  deceleration: 50
-  airControl: 0.8
-  jumpForce: 12
-  maxJumps: 1
-  jumpCutMultiplier: 0.5
-  coyoteTime: 0.1
-  jumpBufferTime: 0.1
-  dashSpeed: 20
-  dashTime: 0.2
-  dashCooldown: 0.5
-  canDashInAir: 1
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  groundCheckSize: {x: 0.4, y: 0.1}
-  groundCheck: {fileID: 6798334097850243840}
 --- !u!50 &6493718901206921931
 Rigidbody2D:
   serializedVersion: 5
@@ -308,25 +279,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.25}
   m_Size: {x: 0.4, y: 1}
   m_Direction: 0
---- !u!114 &3661724723506086405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6756031849493778654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f44e5058fbef074c8bbbdd8df5128e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalVelocity: 6
-  horizontalAcceleration: 50
-  jumpVelocity: 12
-  groundDetectionOffset: 0.1
-  groundLayerMask:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!95 &5495617925394699211
 Animator:
   serializedVersion: 7
@@ -349,7 +301,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8835969361204809701
+--- !u!114 &6779593553360534519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -358,11 +310,62 @@ MonoBehaviour:
   m_GameObject: {fileID: 6756031849493778654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c82855996efa654cb8579cb6d4c52ab, type: 3}
+  m_Script: {fileID: 11500000, guid: 283da228703071a4ea91fcc8b397dc93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reverse: 0
-  facingRight: 0
+  moveSpeed: 6
+  acceleration: 50
+  deceleration: 50
+  airControl: 0.8
+  jumpForce: 12
+  maxJumps: 1
+  jumpCutMultiplier: 0.5
+  coyoteTime: 0.1
+  jumpBufferTime: 0.1
+  dashSpeed: 20
+  dashTime: 0.2
+  dashCooldown: 0.5
+  canDashInAir: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheckSize: {x: 0.4, y: 0.1}
+  groundCheck: {fileID: 6798334097850243840}
+  isMotionBlurActive: 0
+  blurSpawnRate: 0.05
+  blurLifetime: 0.3
+  blurStartAlpha: 0.5
+  blurEndAlpha: 0
+--- !u!114 &2763881574030608279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6756031849493778654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a94809e5f802a54486e033862ad1e92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTag: Enemy
+  timeAvailableForCombo: 1
+  lookRight: 0
+--- !u!114 &9209459962610079209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6756031849493778654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09796cd555c3f1247a85a9fb98fc2c6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPos: {fileID: 4155156812212076975}
+  shootSprite: {fileID: 4762664593250855657, guid: e7556e302d47de64aa2171a72d3c2a05, type: 3}
+  coilSprite: {fileID: 1355593592257874325, guid: e777bb5642dcbeb429df116e731c0953, type: 3}
 --- !u!1 &7703783001909327375
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +393,37 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.641, y: -0.273, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 282918613760511247}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8123249881431553463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4155156812212076975}
+  m_Layer: 6
+  m_Name: ShootPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4155156812212076975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123249881431553463}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -54.7, y: -20.3, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 282918613760511247}
