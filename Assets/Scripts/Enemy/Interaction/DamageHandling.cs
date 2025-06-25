@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class DamageHandling : MonoBehaviour
 {
-    public float damage;
     [SerializeField]
-    private Player player;
+    private float damage;
     [SerializeField]
     private EnemyInteractionCharacteristics stats;
 
@@ -14,13 +13,6 @@ public class DamageHandling : MonoBehaviour
     }
     void OnCollisionStay2D(Collision2D collision)
     {
-        if (player == null)
-        {
-            player = collision.gameObject.GetComponent<Player>();
-        }
-        if (player)
-        {
-            player.TakeDamage(damage);
-        }
+        collision.gameObject.GetComponent<Player>().TakeDamage(damage);
     }
 }
