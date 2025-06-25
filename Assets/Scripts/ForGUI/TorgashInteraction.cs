@@ -6,6 +6,7 @@ public class TorgashInteraction : MonoBehaviour
     [SerializeField] private GameObject letterF;
     [SerializeField] private float detectionRadius = 3f;
     [SerializeField] private GameObject shopCanvas;
+    // [SerializeField] private GameObject cameraObject;
 
     private GameObject player;
     private PlayerController playerController;
@@ -48,6 +49,10 @@ public class TorgashInteraction : MonoBehaviour
             {
                 playerController.enabled = false;
             }
+            // if (cameraObject != null)
+            // {
+            //     cameraObject.GetComponent<LineDrawer>().gameObject.SetActive(false);
+            // }
             this.GetComponent<Animator>().SetBool("open", true);
             yield return new WaitForSeconds(0.3f);
 
@@ -64,6 +69,10 @@ public class TorgashInteraction : MonoBehaviour
             {
                 playerController.enabled = true;
             }
+            // if (cameraObject != null)
+            // {
+            //     cameraObject.GetComponent<LineDrawer>().gameObject.SetActive(true);
+            // }
         }
 
         isInteractive = false;
