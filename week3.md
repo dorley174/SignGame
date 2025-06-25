@@ -34,7 +34,15 @@ This week we developed the MVP of our project, making the main functionality of 
 
 *You can view the process of forming individual areas of the game in more detail in the corresponding [branches](https://github.com/IU-Capstone-Project-2025/SignGame/branches)*
 
-###
+## Game features
+
+### Main menu
+
+![Main menu](assets/MainMenu.gif)
+
+### Hero movement
+
+![Movement](assets/Movement.gif)
 
 ## Plan for the next week
 
