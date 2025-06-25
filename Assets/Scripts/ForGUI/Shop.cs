@@ -14,8 +14,8 @@ public class Shop : MonoBehaviour
     void Awake()
     {
         // for test
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.SetInt("coins", 1000);
+        // PlayerPrefs.DeleteAll();
+        // PlayerPrefs.SetInt("coins", 1000);
         // for test
 
         AccessUpdate();
