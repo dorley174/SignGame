@@ -8,7 +8,7 @@ public class CoilSpell : MonoBehaviour
     public int range;
     public bool lookRight;
     public string effectType;
-    
+
     private void Start()
     {
         if (lookRight)
@@ -45,6 +45,16 @@ public class CoilSpell : MonoBehaviour
         if (other.tag == "Enemy")
         {
             EffectsManager.Instance.effect.ApplyEffect(gameObject, other.gameObject, effectType);
+        }
+    }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Collision!");
+            EffectsManager.Instance.effect.ApplyEffect(gameObject, collision.gameObject, effectType);
+            Destroy(gameObject);
         }
     }
 }

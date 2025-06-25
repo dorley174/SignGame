@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System;
 
-public class AttackEffect : MonoBehaviour
+public class SpellEffect : MonoBehaviour
 {
     public float burnDuration = 3f;
     public float poisonDuration = 5f;
@@ -14,7 +14,7 @@ public class AttackEffect : MonoBehaviour
     private bool extraDamageApplied = false;
     private float extraDamageAmount = 0f;
 
-    public void ApplyEffect(GameObject self, GameObject target, string type = "No effect", float amount = 1)
+    public void ApplyEffect(GameObject self, GameObject target, string type = "No effect", float amount = 3)
     {
         if (extraDamageApplied && type != "SpeedBoost" && type != "ExtraDamage")
         {
