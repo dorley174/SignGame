@@ -151,13 +151,13 @@ GameObject:
   - component: {fileID: 8736124150618179746}
   - component: {fileID: 1777213328217730171}
   - component: {fileID: 3041724634402187982}
-  - component: {fileID: 4802411276834231897}
   - component: {fileID: 5890362554139958232}
   - component: {fileID: 1069963108207734509}
   - component: {fileID: 104629769590998563}
+  - component: {fileID: 4719359554338171692}
   m_Layer: 2
   m_Name: enemy-crystal
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,27 +255,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4802411276834231897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8830624896990379866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 797ac7fe2e269e74faf252be0b8f98e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 35215d32f5f288245ab45eb473f3d4ac, type: 2}
-  target: {fileID: 0}
-  consideredMasks:
-    serializedVersion: 2
-    m_Bits: 576
-  speed: 10
-  acceleration: 5
-  stoppingDistance: 1.5
-  visionRange: 25
 --- !u!70 &5890362554139958232
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -356,3 +335,18 @@ MonoBehaviour:
   acceleration: 5
   stoppingDistance: 1.5
   visionRange: 25
+--- !u!114 &4719359554338171692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8830624896990379866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325e94732bcfbf64f8fd1f5527a14421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 100
+  hp: 0
+  spawn: {fileID: 0}

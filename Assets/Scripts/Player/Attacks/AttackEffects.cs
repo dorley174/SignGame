@@ -74,7 +74,7 @@ public class AttackEffect : MonoBehaviour
     {
         if (obj.CompareTag("Enemy"))
         {
-            obj.GetComponent<Enemy>().TakeDamage((float)Math.Round(obj.GetComponent<Enemy>().GetHP() * hpPercentDamage));
+            obj.GetComponent<Enemy>().TakeDamage((float)Math.Round(obj.GetComponent<Enemy>().GetHp * hpPercentDamage));
         }
         else if (obj.CompareTag("Player"))
         {

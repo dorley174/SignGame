@@ -7,8 +7,6 @@ public class EnemySpawn : MonoBehaviour
     private GameObject enemyPrefab;
     [SerializeField]
     private Transform parentObject;
-    [SerializeField]
-    private Transform player;
     private GameObject enemyInstance;
     [SerializeField]
     private float respawnTime;
@@ -51,16 +49,9 @@ public class EnemySpawn : MonoBehaviour
             {
                 enemyInstance = Instantiate(enemyPrefab, vectorPos, Quaternion.identity);
             }
-            if (player != null)
+            if (enemyInstance.GetComponent<Enemy>())
             {
-                if (enemyInstance.GetComponent<FlyingEnemyMovement>())
-                {
-                    enemyInstance.GetComponent<FlyingEnemyMovement>().Target = player;
-                }
-                else if (enemyInstance.GetComponent<LandEnemyMovement>())
-                {
-                    enemyInstance.GetComponent<LandEnemyMovement>().Target = player;
-                }
+                enemyInstance.GetComponent<Enemy>().Spawn = this;
             }
         }
     }
