@@ -15,10 +15,19 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        player = FindFirstObjectByType<Player>();
+        player = GameObject.Find("mage").GetComponent<Player>();
     }
 
-    public void PlayerDied() {
+    void Update()
+    {
+        if (player.GetHP() <= 0f)
+        {
+            Invoke(nameof(RespawnPlayer), respawnDelay);
+        }
+    }
+
+    public void PlayerDied()
+    {
         Invoke(nameof(RespawnPlayer), respawnDelay);
     }
 

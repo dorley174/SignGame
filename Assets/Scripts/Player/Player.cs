@@ -2,16 +2,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float maxHp = 100f;
     public float iSeconds = 2f;
 
     [Header("Debug")]
-    [SerializeField] float hp;
+    [SerializeField] int hp;
     [SerializeField] float iSecondsCount;
 
     void Start()
     {
-        hp = maxHp;
+        hp = PlayerPrefs.GetInt("hp");
     }
 
     // for test
@@ -20,18 +19,21 @@ public class Player : MonoBehaviour
         iSecondsCount = Mathf.Max(iSecondsCount - Time.deltaTime, 0);
         if (Input.GetKeyDown(KeyCode.T))
         {
-            TakeDamage(10);
-            Debug.Log($"Player HP: {hp}");
+            hp = PlayerPrefs.GetInt("hp");
+            PlayerPrefs.SetInt("hp", hp - 1);
+            Debug.Log($"Player HP: {hp - 1}");
+
+            TakeDamage(1);
         }
     }
     // for test
 
     public float GetHP()
     {
-        return hp;
+        return PlayerPrefs.GetInt("hp");
     }
 
-    public void TakeDamage(float damage) {
+    public void TakeDamage(int damage) {
         if (hp <= 0 || iSecondsCount > 0) return;
         hp = Mathf.Max(hp - damage, 0);
         iSecondsCount = iSeconds;
