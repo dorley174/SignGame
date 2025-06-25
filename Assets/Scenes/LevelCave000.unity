@@ -49463,31 +49463,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1885979298}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.529}
---- !u!1 &2090636913 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2282205456623195887, guid: 1781dabcf5705624887b830f728096a1, type: 3}
-  m_PrefabInstance: {fileID: 1632872994983296941}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2090636922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090636913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdeb1995ab355754bb11c24359959fd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropItem: {fileID: 9046816548370757077, guid: 448218495c2936a439377a5f516439af, type: 3}
-  torgashTransform: {fileID: 919425114}
 --- !u!114 &2090636928 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3296062809074158793, guid: 1781dabcf5705624887b830f728096a1, type: 3}
   m_PrefabInstance: {fileID: 1632872994983296941}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090636913}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e76f3d45858b1d48b9ce3e7b5b2c446, type: 3}
@@ -50745,6 +50726,10 @@ PrefabInstance:
       propertyPath: coinCounter
       value: 
       objectReference: {fileID: 5437794826708776646}
+    - target: {fileID: 3296062809074158793, guid: 1781dabcf5705624887b830f728096a1, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 248995614}
     - target: {fileID: 4816082358215984451, guid: 1781dabcf5705624887b830f728096a1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -50857,6 +50842,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShopCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5603072849381623478, guid: 1781dabcf5705624887b830f728096a1, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 248995614}
     - target: {fileID: 5684041738383117598, guid: 1781dabcf5705624887b830f728096a1, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -50873,13 +50862,26 @@ PrefabInstance:
       propertyPath: panelAnimator
       value: 
       objectReference: {fileID: 1434448102}
+    - target: {fileID: 7616917461403902336, guid: 1781dabcf5705624887b830f728096a1, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 248995614}
+    - target: {fileID: 8024659001067488374, guid: 1781dabcf5705624887b830f728096a1, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 248995614}
+    - target: {fileID: 8661930681364204310, guid: 1781dabcf5705624887b830f728096a1, type: 3}
+      propertyPath: torgashTransform
+      value: 
+      objectReference: {fileID: 919425114}
+    - target: {fileID: 9071004846323174972, guid: 1781dabcf5705624887b830f728096a1, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 248995614}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2282205456623195887, guid: 1781dabcf5705624887b830f728096a1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2090636922}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1781dabcf5705624887b830f728096a1, type: 3}
 --- !u!1001 &1632883813990544922
 PrefabInstance:
@@ -51176,9 +51178,9 @@ SceneRoots:
   - {fileID: 1632872994983296941}
   - {fileID: 1034153105}
   - {fileID: 1105397328}
-  - {fileID: 1632883813990544922}
   - {fileID: 813609858}
   - {fileID: 248995615}
+  - {fileID: 1632883813990544922}
   - {fileID: 1516724838}
   - {fileID: 905102687}
   - {fileID: 821166583}

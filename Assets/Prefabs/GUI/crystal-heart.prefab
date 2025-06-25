@@ -99,9 +99,12 @@ GameObject:
   - component: {fileID: 7383615354632577805}
   - component: {fileID: 8533753239299632648}
   - component: {fileID: 2674057555533959240}
+  - component: {fileID: 8942501183954624074}
+  - component: {fileID: 2881600546925511329}
+  - component: {fileID: 1674696080001199109}
   m_Layer: 0
   m_Name: crystal-heart
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,3 +253,42 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.34, y: 1.31}
   m_EdgeRadius: 0
+--- !u!114 &8942501183954624074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9046816548370757077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 917f3271b88ceac49b369211f596f294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attractionForce: 10
+  detectionRadius: 2
+--- !u!114 &2881600546925511329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9046816548370757077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abdf0ddbdb7af584dbfd7c38004b1500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1674696080001199109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9046816548370757077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd48f47c95ca8094a935c3c78d493b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonusName: hp

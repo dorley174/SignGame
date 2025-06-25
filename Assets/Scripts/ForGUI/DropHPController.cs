@@ -8,5 +8,6 @@ public class DropHPController : MonoBehaviour
     public void DropHP()
     {
         Instantiate(dropItem, torgashTransform.position + new Vector3(-1, 0, 0), Quaternion.identity);
+        Debug.Log("упал");
     }
 }
