@@ -26,7 +26,7 @@ This week we developed the MVP of our project, making the main functionality of 
 
 * Integrated ML model into Unity2D to recognize signs
 
-* Added initial unit tests for interaction and recognition logic
+* Added area of economic strategy with items in the store 
 
 In general, a finished MVP fragment was created in a week: the user can launch the game, go through the first scene, interact with objects and use jamming to move on.
 
@@ -152,9 +152,6 @@ This conflicts need to be resolved, but for now it is not prioriry target
 
 ![Fireball](https://github.com/IU-Capstone-Project-2025/SignGame/blob/reports/assets/spell.gif)
 
-
-
-
 ## Weekly commitments
 
 ### Individual contribution of each participant
@@ -222,6 +219,18 @@ Stanislav Delyukov:
 * Cursor, HP bar, coins, coin bar and main menu design
 
 * Dash [effect](https://github.com/IU-Capstone-Project-2025/SignGame/commit/9554e9ad7689ff3a1e4ffe88ca94c3b031f2cb0c) 
+
+## Plan for the Week #4
+
+The most important to us is to complete the main game features, then to move on to progression
+
+* MVP bug fix
+
+* Achievement system logic - separate menu of special achievements obtained in different ways
+
+* Traps in any existing level
+
+* Level boss with a special room 
 
 ## Confirmation of the code's operability
 
