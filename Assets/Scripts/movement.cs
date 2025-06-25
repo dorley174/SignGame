@@ -138,7 +138,7 @@ public class PlayerController : MonoBehaviour
         if (moveInput != 0)
         {
             isFacingRight = moveInput > 0;
-            spriteRenderer.flipX = !isFacingRight;
+            spriteRenderer.flipX = isFacingRight;
         }
     }
 
