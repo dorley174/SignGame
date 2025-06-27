@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private Player player;
-    [SerializeField] private float respawnDelay = 3f;
+    [SerializeField] private float respawnDelay = 1f;
 
     public static GameManager I;
 
