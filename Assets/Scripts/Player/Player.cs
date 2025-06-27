@@ -31,5 +31,12 @@ public class Player : MonoBehaviour
     public void IncreaseHP(int plusHP)
     {
         hp += plusHP;
+        if (hp > maxHP)
+            hp = maxHP;
+    }
+
+    public void IncreaseHPToFull()
+    {
+        hp = maxHP;
     }
 }

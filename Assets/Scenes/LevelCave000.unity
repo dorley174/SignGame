@@ -13545,6 +13545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
+  maxHP: 10
 --- !u!1 &585280033
 GameObject:
   m_ObjectHideFlags: 0
@@ -17831,6 +17832,7 @@ MonoBehaviour:
   - {fileID: 185352903}
   - {fileID: 206192469}
   - {fileID: 1731401941}
+  playerScript: {fileID: 580930084}
 --- !u!1 &813751494
 GameObject:
   m_ObjectHideFlags: 0

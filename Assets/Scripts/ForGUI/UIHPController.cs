@@ -15,6 +15,8 @@ public class UIHPController : MonoBehaviour
 
     void Update()
     {
+        if (playerScript != null)
+            hp = playerScript.GetHP();
         UpdateHearts();
     }
 
