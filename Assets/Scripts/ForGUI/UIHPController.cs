@@ -3,23 +3,19 @@ using UnityEngine;
 public class UIHPController : MonoBehaviour
 {
     [SerializeField] private GameObject[] heartSlots;
+    [SerializeField] private Player playerScript;
     private int hp;
 
     void Start()
     {
-        hp = PlayerPrefs.GetInt("hp");
-        // for test
-        PlayerPrefs.SetInt("hp", 10);
+        if (playerScript != null)
+            hp = playerScript.GetHP();
         UpdateHearts();
     }
 
     void Update()
     {
-        if (PlayerPrefs.GetInt("hp") != hp)
-        {
-            hp = PlayerPrefs.GetInt("hp");
-            UpdateHearts();
-        }
+        UpdateHearts();
     }
 
     private void UpdateHearts()

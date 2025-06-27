@@ -4,11 +4,12 @@ public class Player : MonoBehaviour
 {
 
     [Header("Debug")]
-    [SerializeField] int hp;
+    [SerializeField] private int hp;
+    [SerializeField] private int maxHP = 10;
 
     void Start()
     {
-        hp = PlayerPrefs.GetInt("hp");
+        hp = maxHP;
     }
 
     // for test
@@ -16,15 +17,19 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            hp = PlayerPrefs.GetInt("hp");
-            PlayerPrefs.SetInt("hp", hp - 1);
-            Debug.Log($"Player HP: {hp - 1}");
+            hp--;
+            Debug.Log($"Player HP: {hp}");
         }
     }
     // for test
 
-    public float GetHP()
+    public int GetHP()
     {
-        return PlayerPrefs.GetInt("hp");
+        return hp;
+    }
+
+    public void IncreaseHP(int plusHP)
+    {
+        hp += plusHP;
     }
 }
