@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float maxHp = 100f;
 
     [Header("Debug")]
-    [SerializeField] float hp;
+    [SerializeField] private int hp;
+    [SerializeField] private int maxHP = 10;
 
     void Start()
     {
-        hp = maxHp;
+        hp = maxHP;
     }
 
     // for test
@@ -17,14 +17,26 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            hp -= 10f;
+            hp--;
             Debug.Log($"Player HP: {hp}");
         }
     }
     // for test
 
-    public float GetHP()
+    public int GetHP()
     {
         return hp;
+    }
+
+    public void IncreaseHP(int plusHP)
+    {
+        hp += plusHP;
+        if (hp > maxHP)
+            hp = maxHP;
+    }
+
+    public void IncreaseHPToFull()
+    {
+        hp = maxHP;
     }
 }
