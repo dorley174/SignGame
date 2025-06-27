@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     [Header("Debug")]
     [SerializeField] private int hp;
     [SerializeField] private int maxHP = 10;
+    [SerializeField] float iSecondsCount = 2;
 
     void Start()
     {
@@ -40,5 +41,12 @@ public class Player : MonoBehaviour
     public void IncreaseHPToFull()
     {
         hp = maxHP;
+    }
+
+    public void TakeDamage(int damage) {
+        if (hp <= 0 || iSecondsCount > 0) return;
+        hp = Mathf.Max(hp - damage, 0);
+        iSecondsCount = iSeconds;
+        if (hp <= 0) GameManager.I.PlayerDied();
     }
 }
