@@ -3,13 +3,16 @@ using UnityEngine;
 public class DamageHandling : MonoBehaviour
 {
     [SerializeField]
-    private float damage;
+    private int damage;
     [SerializeField]
     private EnemyInteractionCharacteristics stats;
 
     private void Start()
     {
-        damage = stats.damage;
+        if (stats != null)
+        {
+            damage = stats.damage;
+        }
     }
     void OnCollisionStay2D(Collision2D collision)
     {

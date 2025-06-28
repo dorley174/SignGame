@@ -99,6 +99,16 @@ public class LandEnemyMovement : MonoBehaviour
     }
     void Start()
     {
+        StartCoroutine(InitAgent());
+    }
+    IEnumerator InitAgent()
+    {
+        yield return new WaitForEndOfFrame(); // Подождать 1 кадр
+
+        if (!agent.isOnNavMesh)
+        {
+            Debug.LogWarning("NavMeshAgent не на NavMesh!");
+        }
         playerTag = target.gameObject.tag;
         SetAgentParameters();
     }
