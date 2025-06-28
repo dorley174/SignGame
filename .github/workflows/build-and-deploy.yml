@@ -32,7 +32,8 @@ jobs:
         with:
           targetPlatform: WebGL
           projectPath: ${{ github.workspace }}
-          customParameters: -executeMethod WebGLCompressionConfigurator.DisableCompression
+          customParameters: -quit -batchmode -nographics -executeMethod WebGLCompressionConfigurator.DisableCompression
+
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
