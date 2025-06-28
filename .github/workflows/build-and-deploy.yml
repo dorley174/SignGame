@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Cache Unity Library
         uses: actions/cache@v3
@@ -22,12 +21,12 @@ jobs:
             Library-${{ runner.os }}-
 
       - name: Set up Unity
-        uses: game-ci/unity-setup@v3
+        uses: game-ci/unity-actions/setup@v3
         with:
           unityVersion: 6000.0.50f1
 
       - name: Build WebGL
-        uses: game-ci/unity-builder@v3
+        uses: game-ci/unity-actions/builder@v3
         with:
           targetPlatform: WebGL
 
