@@ -1474,7 +1474,6 @@ MonoBehaviour:
   block: {fileID: 5684041738383117598}
   objectPrice: {fileID: 7570233997760588375}
   coinCounter: {fileID: 8522026398726075382}
-  gameManager: {fileID: 0}
   fl: 0
 --- !u!114 &944097122131958232
 MonoBehaviour:
@@ -2157,7 +2156,6 @@ MonoBehaviour:
   block: {fileID: 8248932357042887607}
   objectPrice: {fileID: 8953471401780926121}
   coinCounter: {fileID: 8522026398726075382}
-  gameManager: {fileID: 0}
   fl: 0
 --- !u!114 &970449318906184857
 MonoBehaviour:
@@ -2676,7 +2674,6 @@ MonoBehaviour:
   block: {fileID: 1193576644187537687}
   objectPrice: {fileID: 536459120458714194}
   coinCounter: {fileID: 8522026398726075382}
-  gameManager: {fileID: 0}
   fl: 0
 --- !u!114 &3769676592118376864
 MonoBehaviour:
@@ -3555,7 +3552,6 @@ MonoBehaviour:
   block: {fileID: 4314124562285922074}
   objectPrice: {fileID: 7414823228420449848}
   coinCounter: {fileID: 8522026398726075382}
-  gameManager: {fileID: 0}
   fl: 0
 --- !u!114 &8217834243979034900
 MonoBehaviour:
@@ -4129,7 +4125,6 @@ MonoBehaviour:
   block: {fileID: 2466817620064889455}
   objectPrice: {fileID: 5731573887155368393}
   coinCounter: {fileID: 8522026398726075382}
-  gameManager: {fileID: 0}
   fl: 0
 --- !u!114 &6769982680707714328
 MonoBehaviour:
