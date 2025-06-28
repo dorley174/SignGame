@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "SignGame - dev2.sln"
+    "dotnet.defaultSolution": "SignGame.sln"
 }
