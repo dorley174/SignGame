@@ -1,5 +1,4 @@
 using UnityEditor;
-
 public class WebGLCompressionConfigurator
 {
     [MenuItem("WebGL/Disable Compression (for CI)")]
