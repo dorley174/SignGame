@@ -2,7 +2,7 @@ name: Build & Deploy WebGL
 
 on:
   push:
-    branches: [ DevOps ]  
+    branches: [ DevOps ]
 
 jobs:
   buildAndDeploy:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Cache Library
+      - name: Cache Unity Library
         uses: actions/cache@v3
         with:
           path: Library
@@ -22,13 +22,12 @@ jobs:
             Library-${{ runner.os }}-
 
       - name: Set up Unity
-        uses: game-ci/unity-actions/setup@v2
+        uses: game-ci/unity-setup@v2
         with:
-          unityVersion: 6000.0.50f1  
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          unityVersion: 6000.0.50f1
 
       - name: Build WebGL
-        uses: game-ci/unity-actions/build@v2
+        uses: game-ci/unity-builder@v2
         with:
           targetPlatform: WebGL
 
@@ -36,4 +35,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/WebGL/WebGL  
+          publish_dir: build/WebGL/WebGL
