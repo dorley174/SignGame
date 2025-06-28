@@ -34,6 +34,8 @@ jobs:
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
           customParameters: -executeMethod WebGLCompressionConfigurator.DisableCompression
+          projectPath: .
+
 
 
       - uses: actions/upload-artifact@v4
