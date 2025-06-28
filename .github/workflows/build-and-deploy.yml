@@ -1,0 +1,39 @@
+name: Build & Deploy WebGL
+
+on:
+  push:
+    branches: [ DevOps ]  
+
+jobs:
+  buildAndDeploy:
+    name: Build and Deploy WebGL
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Cache Library
+        uses: actions/cache@v3
+        with:
+          path: Library
+          key: Library-${{ runner.os }}-${{ hashFiles('**/Assets/**', '**/ProjectSettings/**') }}
+          restore-keys: |
+            Library-${{ runner.os }}-
+
+      - name: Set up Unity
+        uses: game-ci/unity-actions/setup@v2
+        with:
+          unityVersion: 6000.0.50f1  
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build WebGL
+        uses: game-ci/unity-actions/build@v2
+        with:
+          targetPlatform: WebGL
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/WebGL/WebGL  
